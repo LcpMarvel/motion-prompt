@@ -1,0 +1,15 @@
+请使用「浮世绘木版画（Ukiyo-e woodblock print）」，它是「图像生成常用的画风名称」中的一个名称。
+Motion Prompt #196
+
+这是什么：轮廓线加平涂色块的木版画
+示例画面：同一幅线稿变成江户时代的彩色木版画：房子变成瓦顶日式民居，树变成松树，太阳变成红色圆轮，天空自上而下由深靛蓝渐淡。
+规格：
+- Medium: Edo-period multi-color woodblock print
+- Look: thin, even black outlines, flat areas of color, slight misregistration between blocks, washi fibers and uneven printing
+- Sky: graded from deep indigo at the top to pale below, with a band of mist across it; the sun as a red circle (the sample leaves out Mount Fuji, waves, people and text)
+- Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+适用场景：For Japanese subjects shown boldly with flat color and line.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/196.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

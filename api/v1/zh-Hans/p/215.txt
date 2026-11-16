@@ -1,0 +1,15 @@
+请使用「合成器浪潮（Synthwave）（Synthwave）」，它是「图像生成常用的画风名称」中的一个名称。
+Motion Prompt #215
+
+这是什么：80年代风的霓虹网格与条纹夕阳
+示例画面：同一幅线稿变成 1980 年代的霓虹世界：地面是发光的紫青色网格，太阳是带条纹的巨大落日，房子与树化作霓虹轮廓。
+规格：
+- Color: purple, cyan and pink neon
+- Look: a neon grid for the ground, a big sunset with horizontal stripes, neon outlines
+- Feel: 1980s retro-futurism
+- Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out) (this sample is cropped taller so the grid on the ground shows)
+适用场景：For retro-futuristic music, game or event visuals.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/215.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

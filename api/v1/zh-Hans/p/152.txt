@@ -1,0 +1,15 @@
+请使用「滚动放大（Zoom on scroll）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #152
+
+这是什么：图片随滚动放大至铺满屏幕
+示例画面：页面滚动时，中央的小照片长大至充满窗口，周围文字淡出，照片上浮现标题。
+规格：
+- A 511 × 168 viewport. Scroll progress p: 0→1 over 0.3–2.3 s, 1→0 over 3.0–4.4 s (cubic ease-in-out). One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- Photo frame: from 155 × 90 in the middle (x = 178, y = 58, radius 8) to the full 511 × 168 window (radius 0); position, width, height and radius change in proportion to p.
+- The heading and text around it fade out while p goes 0→0.45 (opacity 1 − 2.2p).
+- While p goes 0.7→1, a white headline (26 px, 2 px letter spacing) fades in at the center of the photo. The scrollbar thumb follows the scroll.
+适用场景：Use it on travel, real-estate or brand sites to pull the visitor into the photo.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/152.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

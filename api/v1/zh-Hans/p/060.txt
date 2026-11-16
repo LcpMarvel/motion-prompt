@@ -1,0 +1,15 @@
+请使用「分段控制器（Segmented control）」，它是「UI 组件」中的一个名称。
+Motion Prompt #060
+
+这是什么：一排相连按钮用于切换视图
+示例画面：点击「日 / 周 / 月」，蓝色高亮滑过，下方柱状图高度切换。
+规格：
+- 4.5 s cycle on a 542×191 card. A grey 300×40 base (radius 10) at (121, 12), split into three 100-wide segments: Day, Week, Month (in Japanese).
+- Selection: blue 92×32, radius 8, shadow blur 6; the selected label is white.
+- The cursor clicks Week at 1.0 s, Month at 2.1 s and Day at 3.3 s; the selection slides over 0.25 s each with easeInOutCubic.
+- Chart below: seven bars 34 wide, 58 px apart (the sixth is blue). Heights move between three data sets (about 30–85, 40–100, 60–115) together with the selection, eased the same way.
+适用场景：Use it to switch between two to four views of the same content, such as day, week and month.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/060.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

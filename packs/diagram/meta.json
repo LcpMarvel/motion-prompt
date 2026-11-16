@@ -62,7 +62,8 @@
    },
    "summary": {
     "ja": "2つの円が左右から寄って重なり、重なった部分だけが濃い青になる。",
-    "en": "Two circles slide in from the sides and overlap, and only the shared part turns dark blue."
+    "en": "Two circles slide in from the sides and overlap, and only the shared part turns dark blue.",
+        "zh-Hans": "两个圆从两侧滑入并重叠，只有重叠部分变成深蓝色。"
    },
    "spec": {
     "ja": [
@@ -121,7 +122,8 @@
    },
    "summary": {
     "ja": "中央から縦横の軸が伸びて4つの区画ができ、点が置かれていく。右上の区画と点だけ青い。",
-    "en": "Two axes grow out from the center, four areas appear and dots are placed; only the top-right area and its dot are blue."
+    "en": "Two axes grow out from the center, four areas appear and dots are placed; only the top-right area and its dot are blue.",
+        "zh-Hans": "两条轴自中心长出，四个区域浮现并落上圆点；只有右上区域与其圆点是蓝色。"
    },
    "spec": {
     "ja": [
@@ -178,7 +180,8 @@
    },
    "summary": {
     "ja": "左の「?」の箱から右へ、1→2→4と枝分かれしていく。枝はかぎ形の線でつながる。",
-    "en": "From the \"?\" box on the left, the tree branches to the right, 1 → 2 → 4, joined by elbow lines."
+    "en": "From the \"?\" box on the left, the tree branches to the right, 1 → 2 → 4, joined by elbow lines.",
+        "zh-Hans": "从左侧的「?」方框向右逐级分叉，1→2→4，以折线相连。"
    },
    "spec": {
     "ja": [
@@ -237,7 +240,8 @@
    },
    "summary": {
     "ja": "4段の三角形が、下の段から順に上から落ちてきて積み上がる。一番上の段だけ濃い青。",
-    "en": "A triangle in four layers stacks up from the bottom, each layer dropping into place; only the top layer is dark blue."
+    "en": "A triangle in four layers stacks up from the bottom, each layer dropping into place; only the top layer is dark blue.",
+        "zh-Hans": "四层三角形自下而上堆叠，每层依次落位；只有顶层是深蓝色。"
    },
    "spec": {
     "ja": [
@@ -294,7 +298,8 @@
    },
    "summary": {
     "ja": "中央の「テーマ」から左右へ曲線の枝が6本伸び、その先からさらに細い枝と小さな語のノードが出る。",
-    "en": "Six curved branches grow from the central \"テーマ\" (topic) to both sides, then thinner twigs with small word nodes."
+    "en": "Six curved branches grow from the central \"テーマ\" (topic) to both sides, then thinner twigs with small word nodes.",
+        "zh-Hans": "六条弯曲分支自中心的「テーマ」（主题）向两侧生长，再长出细枝与小文字节点。"
    },
    "spec": {
     "ja": [
@@ -353,7 +358,8 @@
    },
    "summary": {
     "ja": "開始→処理→ひし形の分岐→処理→終了が横1列に並び、分岐から前の処理へ戻る矢印が引かれる。最後に点が一度戻ってから終了まで進む。",
-    "en": "Start → step → diamond decision → step → end appear in one row, with a loop arrow from the decision back to the first step; then a dot walks the path, loops back once and goes on to the end."
+    "en": "Start → step → diamond decision → step → end appear in one row, with a loop arrow from the decision back to the first step; then a dot walks the path, loops back once and goes on to the end.",
+        "zh-Hans": "开始→步骤→菱形判断→步骤→结束排成一行，判断处有一条回到首步的回环箭头；随后一个圆点沿路径行走，回环一次后走到结束。"
    },
    "spec": {
     "ja": [
@@ -413,7 +419,8 @@
    },
    "summary": {
     "ja": "輪の上に1〜4の丸が並び、矢印が順に引かれて輪が閉じる。そのあと、青い強調が輪を1周する。",
-    "en": "Circles numbered 1 to 4 sit on a ring, arrows draw one after another until the ring closes, then a blue highlight goes round once."
+    "en": "Circles numbered 1 to 4 sit on a ring, arrows draw one after another until the ring closes, then a blue highlight goes round once.",
+        "zh-Hans": "编号 1–4 的圆圈分布在圆环上，箭头依次画出直至闭环，然后一个蓝色高亮沿环巡行一圈。"
    },
    "spec": {
     "ja": [
@@ -470,7 +477,8 @@
    },
    "summary": {
     "ja": "背骨が右の頭（結果）へ伸び、上下から斜めの大骨がつながり、それぞれに小骨（原因）が付く。",
-    "en": "A spine runs right to the head (the result); slanted bones join it from above and below, each with small side bones (the causes)."
+    "en": "A spine runs right to the head (the result); slanted bones join it from above and below, each with small side bones (the causes).",
+        "zh-Hans": "一条主骨通向鱼头（结果），斜骨自上下汇入，每根斜骨再带小刺（原因）。"
    },
    "spec": {
     "ja": [
@@ -527,7 +535,8 @@
    },
    "summary": {
     "ja": "L字の軸の上に、小さな青い点が左から右へ次々に現れて右上がりに散らばり、点線の傾向線が引かれる。",
-    "en": "Small blue dots pop in from left to right on L-shaped axes, scattered upward to the right, and a dashed trend line follows."
+    "en": "Small blue dots pop in from left to right on L-shaped axes, scattered upward to the right, and a dashed trend line follows.",
+        "zh-Hans": "L 形坐标轴上蓝色小点自左向右弹出，向右上方散布，虚线趋势线随后画出。"
    },
    "spec": {
     "ja": [
@@ -586,7 +595,8 @@
    },
    "summary": {
     "ja": "L字の軸の上に、大きさの違う半透明の円が5つ、順に膨らんで出る。一番大きい円だけ濃い青。",
-    "en": "Five semi-transparent circles of different sizes grow one by one on L-shaped axes; only the largest is dark blue."
+    "en": "Five semi-transparent circles of different sizes grow one by one on L-shaped axes; only the largest is dark blue.",
+        "zh-Hans": "L 形轴上五个大小不一的半透明圆依次长大；只有最大的一个是深蓝色。"
    },
    "spec": {
     "ja": [
@@ -645,7 +655,8 @@
    },
    "summary": {
     "ja": "12列×5行の表のマスが、左上から右下へ波のように青の濃淡で塗られ、最後に同じ向きでグレーへ戻る。",
-    "en": "The cells of a 12 × 5 table fill with shades of blue in a wave from top-left to bottom-right, then turn back to gray the same way."
+    "en": "The cells of a 12 × 5 table fill with shades of blue in a wave from top-left to bottom-right, then turn back to gray the same way.",
+        "zh-Hans": "12×5 表格的单元格按从左上到右下的波次填上深浅蓝色，再以同样方式退回灰色。"
    },
    "spec": {
     "ja": [
@@ -704,7 +715,8 @@
    },
    "summary": {
     "ja": "6本の軸のくもの巣の上に、グレーの多角形が中心から広がり、続いて青い多角形が少し行き過ぎながら広がる。",
-    "en": "On a six-axis spider web, a gray polygon spreads out from the center, then a blue one spreads with a slight overshoot."
+    "en": "On a six-axis spider web, a gray polygon spreads out from the center, then a blue one spreads with a slight overshoot.",
+        "zh-Hans": "六边形蛛网上，灰色多边形自中心展开，随后蓝色多边形略带回弹地展开。"
    },
    "spec": {
     "ja": [
@@ -761,7 +773,8 @@
    },
    "summary": {
     "ja": "半円のメーターの針が振れて少し行き過ぎ、揺れながら72%で止まる。針に合わせて青い帯と数字が伸びる。",
-    "en": "The needle of a half-circle dial swings past, wobbles and settles at 72%; the blue band and the number follow the needle."
+    "en": "The needle of a half-circle dial swings past, wobbles and settles at 72%; the blue band and the number follow the needle.",
+        "zh-Hans": "半圆仪表的指针扫过、摆动后停在 72%；蓝色弧带与数字跟随指针。"
    },
    "spec": {
     "ja": [
@@ -818,7 +831,8 @@
    },
    "summary": {
     "ja": "左の目盛り（グレー）で6本の棒が伸び、そのあと右の目盛り（青）で折れ線が左から右へ引かれる。",
-    "en": "Six bars grow against the left scale (gray ticks), then a line is drawn left to right against the right scale (blue ticks)."
+    "en": "Six bars grow against the left scale (gray ticks), then a line is drawn left to right against the right scale (blue ticks).",
+        "zh-Hans": "六根柱子对着左侧刻度（灰色）长出，随后一条折线对着右侧刻度（蓝色）从左到右画出。"
    },
    "spec": {
     "ja": [
@@ -875,7 +889,8 @@
    },
    "summary": {
     "ja": "人のアイコン10人が横1列にグレーで出て、左の3人が順に青くなり、「30%」が数え上がる。",
-    "en": "Ten person icons appear in gray in one row, the first three turn blue one by one, and \"30%\" counts up."
+    "en": "Ten person icons appear in gray in one row, the first three turn blue one by one, and \"30%\" counts up.",
+        "zh-Hans": "十个人形图标以灰色排成一行，前三个逐个变蓝，「30%」同步递增计数。"
    },
    "spec": {
     "ja": [
@@ -934,7 +949,8 @@
    },
    "summary": {
     "ja": "同じ長さの帯4本が左から右へ塗られ、帯どうしの区切りが点線でつながり、最初の区分に%が出る。",
-    "en": "Four bars of the same length fill from left to right, dotted lines join the borders between neighbouring bars, and the first part shows its %."
+    "en": "Four bars of the same length fill from left to right, dotted lines join the borders between neighbouring bars, and the first part shows its %.",
+        "zh-Hans": "四根等长条形从左向右填充，相邻条的分段边界以虚线对齐，第一段标出百分比。"
    },
    "spec": {
     "ja": [
@@ -993,7 +1009,8 @@
    },
    "summary": {
     "ja": "上に日付の目盛り（1〜8）、左に作業A〜E。横棒が少しずつずれた位置から順に右へ伸びる。",
-    "en": "A date scale (1–8) on top and tasks A–E on the left; bars start at staggered columns and grow to the right one after another."
+    "en": "A date scale (1–8) on top and tasks A–E on the left; bars start at staggered columns and grow to the right one after another.",
+        "zh-Hans": "顶部日期刻度（1–8），左侧任务 A–E；各条从错开的列起依次向右生长。"
    },
    "spec": {
     "ja": [
@@ -1052,7 +1069,8 @@
    },
    "summary": {
     "ja": "1本の線が左から右へ引かれ、線の先が届いた所に点と月のラベルが上下交互に出る。最後の点だけ青い。",
-    "en": "One line is drawn from left to right; as its tip passes each point, a dot and a month label appear, alternating above and below. The last one is blue."
+    "en": "One line is drawn from left to right; as its tip passes each point, a dot and a month label appear, alternating above and below. The last one is blue.",
+        "zh-Hans": "一条线从左向右画出，笔尖每经过一个点就落下一个圆点与月份标签，上下交替；最后一个点是蓝色。"
    },
    "spec": {
     "ja": [
@@ -1109,7 +1127,8 @@
    },
    "summary": {
     "ja": "中央揃えの横棒4本が上から順に中央から左右へ伸び、下の段ほど短い。段の間を薄いグレーの台形がつなぐ。",
-    "en": "Four centered bars grow out from the middle one after another from the top, each shorter than the one above, joined by light gray trapezoids."
+    "en": "Four centered bars grow out from the middle one after another from the top, each shorter than the one above, joined by light gray trapezoids.",
+        "zh-Hans": "四根居中的条自上而下依次从中部展开，一根比一根短，之间以浅灰色梯形相连。"
    },
    "spec": {
     "ja": [
@@ -1170,7 +1189,8 @@
    },
    "summary": {
     "ja": "5つの段階の見出しと行動のカードが並び、気持ちの線が左から右へ上下しながら引かれ、各点に笑顔・困り顔の印が出る。",
-    "en": "Five stage headers and action cards line up, then a feeling line rises and falls from left to right, with a smiling or frowning mark on each point."
+    "en": "Five stage headers and action cards line up, then a feeling line rises and falls from left to right, with a smiling or frowning mark on each point.",
+        "zh-Hans": "五个阶段标题与行为卡片排开，随后一条情绪线左右起伏，每个点上带笑脸或皱眉标记。"
    },
    "spec": {
     "ja": [
@@ -1231,7 +1251,8 @@
    },
    "summary": {
     "ja": "点線の外枠の中が、大きい四角から順に、大きさの違う7つの四角で埋まっていく。",
-    "en": "A dashed outer frame fills up with seven rectangles of different sizes, biggest first."
+    "en": "A dashed outer frame fills up with seven rectangles of different sizes, biggest first.",
+        "zh-Hans": "虚线外框内七个大小不一的矩形按从大到小依次填满。"
    },
    "spec": {
     "ja": [
@@ -1290,7 +1311,8 @@
    },
    "summary": {
     "ja": "左にレーン名（顧客・営業・制作）の3レーン。手順の箱がレーンを行き来しながら順に出て、かぎ形の矢印でつながる。",
-    "en": "Three lanes named on the left (顧客 customer, 営業 sales, 制作 production); step boxes appear one by one, moving between lanes, joined by elbow arrows."
+    "en": "Three lanes named on the left (顧客 customer, 営業 sales, 制作 production); step boxes appear one by one, moving between lanes, joined by elbow arrows.",
+        "zh-Hans": "左侧标注三个泳道（顧客·客户／営業·销售／制作·生产）；步骤框逐个出现并在泳道间移动，以折线箭头相连。"
    },
    "spec": {
     "ja": [
@@ -1349,7 +1371,8 @@
    },
    "summary": {
     "ja": "矢羽根の形の工程1〜5が左から順にすべり込んで並び、それぞれの下に短いメモが出る。右へ行くほど濃い青。",
-    "en": "Arrow-shaped steps 1 to 5 slide in from the left one after another, each with short notes below; the blue gets darker to the right."
+    "en": "Arrow-shaped steps 1 to 5 slide in from the left one after another, each with short notes below; the blue gets darker to the right.",
+        "zh-Hans": "箭头形的步骤 1–5 从左依次滑入，各带简短说明；蓝色向右逐渐加深。"
    },
    "spec": {
     "ja": [
@@ -1408,7 +1431,8 @@
    },
    "summary": {
     "ja": "同じ中心から、外・中・内の円が順に広がって入れ子になり、TAM・SAM・SOMのラベルが出る。",
-    "en": "Outer, middle and inner circles grow from the same center one after another, nested inside each other, with the labels TAM, SAM and SOM."
+    "en": "Outer, middle and inner circles grow from the same center one after another, nested inside each other, with the labels TAM, SAM and SOM.",
+        "zh-Hans": "外、中、内三圈自同一圆心依次长大、层层嵌套，标注 TAM、SAM、SOM。"
    },
    "spec": {
     "ja": [

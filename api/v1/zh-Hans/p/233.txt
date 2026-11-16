@@ -1,0 +1,16 @@
+请使用「甘特图（Gantt chart）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #233
+
+这是什么：在日期刻度上用横条排出工作期间
+示例画面：顶部日期刻度（1–8），左侧任务 A–E；各条从错开的列起依次向右生长。
+规格：
+- Scale: dates 1–8 across the top (52 px columns) with light vertical lines; they stay for the whole cycle
+- Tasks: five rows A–E on the left, 27 px apart; bars are 20 px tall with 6 px corners, running A 0–2, B 1.5–3.5, C 3–4.5, D 3.5–6.5 and E 6–8 (in columns)
+- Motion: from 0.4 s, 0.3 s apart, each bar grows from its left end to the right over 0.5 s (ease-out)
+- Color: D is dark blue, the others mid blue
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show how long each task in a project takes, and how the tasks overlap and follow each other.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/233.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

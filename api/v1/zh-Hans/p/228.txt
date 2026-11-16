@@ -1,0 +1,15 @@
+请使用「雷达图（Radar chart）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #228
+
+这是什么：用蛛网的形状比较多个项目
+示例画面：六边形蛛网上，灰色多边形自中心展开，随后蓝色多边形略带回弹地展开。
+规格：
+- Scale: four nested hexagons up to radius 86 px (the outer one darker) and six spokes; they stay for the whole cycle
+- Comparison: a gray polygon (values 0.46–0.74, fill opacity 0.22) spreads out from the center from 0.4 s to 1.1 s (ease-out)
+- Main: a blue polygon (values 0.92, 0.58, 0.84, 0.4, 0.76, 0.52; fill opacity 0.28, 3 px outline, dots on the corners) spreads from 0.95 s to 1.85 s, a 55:45 blend of ease-out and ease-out-back for a slight overshoot
+- End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
+适用场景：To compare the balance of several items, or the strengths and weaknesses of two things.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/228.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

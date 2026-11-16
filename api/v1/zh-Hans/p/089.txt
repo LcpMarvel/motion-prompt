@@ -1,0 +1,16 @@
+请使用「预加载画面（Preloader）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #089
+
+这是什么：页面加载期间显示的过渡界面
+示例画面：深蓝屏上 Logo 下的数字从 0% 计到 100%；随后屏面掀起，下层页面淡入。
+规格：
+- A navy screen fills the viewport with a logo, a number (28 px) and a bar (180 × 4).
+- 0→100% at 0.25–2.1 s (cubic ease-out, rounded to whole numbers); the bar fills in orange at the same rate.
+- At 2.3–2.85 s the whole screen moves up 168 px and out (cubic ease-in-out).
+- The page heading and photo fade in 0→1 and rise from 14 px below at 2.35–2.95 s (cubic ease-out).
+- At 4.25–4.75 s the screen comes back down from the top, at 0% (the next load).
+适用场景：Use it on image- or video-heavy sites to turn the loading wait into a brand moment.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/089.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

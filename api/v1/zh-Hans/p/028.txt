@@ -1,0 +1,17 @@
+请使用「变焦推近（Zoom in）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #028
+
+这是什么：相机不动，通过镜头变焦放大
+示例画面：机位不动，只拉长焦距，整幅画面按相同比例放大。
+规格：
+- Camera: position and direction fixed (height 1.5 m); only the focal length changes, 330 px → 1200 px (shown as 24mm → 87mm, about 3.6×)
+- Exponential interpolation: f = 330 × (8/2.2)^p, where p is a cubic ease-in-out from 0.5 s to 3.4 s (2.9 s)
+- Subject: a person stands still 8 m ahead; the final size matches 03 Dolly in (about 3.6×)
+- No parallax: the foreground post and rock, the person, buildings and mountains all scale by the same ratio (overlaps do not change)
+- Return: hold 3.4–4.2 s, then cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
+- Top-right readout shows the focal length in mm (24mm → 87mm)
+适用场景：To direct attention to one point without moving the camera; it looks flatter and more observational than a dolly in.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/028.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

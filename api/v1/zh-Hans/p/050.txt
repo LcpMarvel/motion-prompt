@@ -1,0 +1,16 @@
+请使用「抽屉面板（Drawer (Off-canvas)）」，它是「UI 组件」中的一个名称。
+Motion Prompt #050
+
+这是什么：从屏幕侧边滑出的面板
+示例画面：点击「菜单」，一块高面板从左侧滑入；点击面板外则滑回。
+规格：
+- 4.5 s cycle on a 542×191 card. The cursor clicks the "Menu" button (110×34, top left) at 1.0 s.
+- Open amount a: 0→1 over 1.0–1.38 s with easeOutCubic. Full-card scrim rgba(18,20,28) at opacity 0.36·a.
+- Panel: white, 210 wide, full card height, x = −210 + 210·a so it slides in from the left edge. Shadow blur 22, alpha 0.25.
+- Inside: an avatar (radius 14) and name at the top, then four menu rows 32 px apart; the first row is selected with a light-blue band.
+- Close: the cursor clicks outside at (420, 120) at 3.3 s; a is multiplied by (1 − easeInOutCubic over 3.3–3.65 s) and the panel slides back.
+适用场景：Use it to keep navigation or filters off screen until needed, especially on mobile.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/050.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

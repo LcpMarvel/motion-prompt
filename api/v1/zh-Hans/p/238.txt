@@ -1,0 +1,16 @@
+请使用「泳道图（Swimlane diagram）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #238
+
+这是什么：按负责人分泳道排列步骤
+示例画面：左侧标注三个泳道（顧客·客户／営業·销售／制作·生产）；步骤框逐个出现并在泳道间移动，以折线箭头相连。
+规格：
+- Lanes: three white lanes 60 px tall, with gray lane names (18 px) in a 62 px column on the left; they stay for the whole cycle
+- Boxes: five 56×30 px rounded boxes from x = 138 to 474, in the lanes customer → sales → production → sales → customer, popping in over 0.28 s (ease-out-back) from 0.4 s, 0.38 s apart; the last one dark blue
+- Arrows: from the right edge of the previous box, across and then up or down into the next (dark gray, 2.5 px, 9 px head), growing over 0.26 s from 0.24 s before each box
+- Unlike #233 Gantt chart: no date scale; the lane names and the arrows crossing lanes carry it
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show who does what, and when, in a process shared by several people or teams.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/238.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

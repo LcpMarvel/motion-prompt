@@ -1,0 +1,16 @@
+请使用「滚动固定（Pinning）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #076
+
+这是什么：区块固定，滚动推动内部内容变化
+示例画面：深蓝色区块占满视口后停住；继续滚动会让数字与照片按 1→2→3 步进，然后区块继续滚走。
+规格：
+- Scroll: 0→500 px at 0.3–3.0 s, 500→0 at 3.5–4.5 s (cubic ease-in-out).
+- The section (168 tall, navy) reaches the top at 110 px of scroll and stays there for the next 300 px (a GSAP ScrollTrigger pin).
+- Progress while pinned: p = (scroll − 110) / 300. A vertical line (124 long) on the left fills in orange with p.
+- At p = 1/3 and 2/3 (±0.07, cubic ease-in-out) it moves to the next step: the number (46 px) rolls up 52 px and the photo (226 × 124) slides up 124 px.
+- After 300 px the pin is released and the section scrolls up with the white section below it.
+适用场景：Use it to walk through steps, features or a before/after in one screen.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/076.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,16 @@
+请使用「文字乱码效果（Text scramble）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #129
+
+这是什么：字符随机变换后定格为正确文字
+示例画面：随机字符不停变换，然后从左到右锁定成正确的单词。
+规格：
+- "HELLO" in the first 2.35 s, "WORLD" in the second. Five monospaced letters (92 px).
+- Unsettled slots show random characters from A–Z (without I and O), 0–9 and #$%&@?, changing 76 times per 4.7 s (about every 0.062 s), mint at 75% opacity.
+- Slots lock from left to right: slot i at 0.45 + 0.18i s (the last at 1.17 s). A newly locked letter is yellow for 0.22 s, then white, settling with scale 1 + 0.2·e^(−14t).
+- From 1.85 s the slots return to random from right to left (slot i at 1.85 + 0.08 × (4 − i) s).
+- A bar under each slot: blue when locked, yellow for the next one to lock, navy otherwise.
+适用场景：Use it to bring in a headline, a number or a code name with a decoding, hacker or tech feel.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/129.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

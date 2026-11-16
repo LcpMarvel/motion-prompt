@@ -1,0 +1,17 @@
+请使用「故障效果（Glitch）」，它是「动态图形」中的一个名称。
+Motion Prompt #023
+
+这是什么：画面像发生故障一样错位和分色
+示例画面：文字切片横移、颜色分离、出现细条，但没有亮度闪烁。
+规格：
+- White bold text (104 px). It glitches twice per 4.7 s: 0.55–1.25 s (5 steps) and 2.9–3.74 s (6 steps); otherwise it is still.
+- Each step lasts 0.14 s and shows one fixed disturbance (stepped, not smoothly animated).
+- Colour split: a coral copy shifted 7–16 px left and 2 px down, a cyan (#22D3EE) copy shifted the same amount right and 2 px up, with the white text on top.
+- Slice shift: 2–4 horizontal strips (10–35 px tall, y 40–150) are displaced 18–64 px to the left or right.
+- Three small colour bars (coral, cyan, yellow; 30–120 wide × 5–12 tall) at random positions.
+- Background brightness never changes (no full-frame flashing). The random values use a fixed seed.
+适用场景：Use it for a digital, error or uneasy feel, as an accent on titles and scene changes.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/023.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

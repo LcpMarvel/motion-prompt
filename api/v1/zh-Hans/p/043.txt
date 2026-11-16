@@ -1,0 +1,17 @@
+请使用「甩镜头转场（Whip pan）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #043
+
+这是什么：快速横摇形成模糊并切入下一镜头
+示例画面：镜头极快地横向一甩，在拖影模糊中换入下一个场景。
+规格：
+- Join: 0.8 s, from 1.7 s to 2.5 s; in the first 0.4 s the outgoing shot swings away, in the last 0.4 s the incoming shot swings in and settles
+- First half: outgoing yaw 0 → +0.45 rad (about 26°), quadratic ease-in-out; second half: incoming yaw -0.45 rad → 0, same easing
+- Swap: a straight replacement at the 50% point, hidden because the blur is at its strongest
+- Blur: 9 renders spread over ±1.6 frames (at 30 fps) are averaged
+- Camera: height 1.4 m, fixed except during the swing; the subjects (a person in A, a car and city in B) do not move
+- Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "A → B" / "B → A"
+适用场景：To change location or topic while keeping the energy up.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/043.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

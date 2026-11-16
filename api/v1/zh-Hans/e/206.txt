@@ -1,0 +1,21 @@
+// Motion Prompt #206 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#206
+//
+// 层叠纸雕 / Layered paper art
+// 包: artstyle (图像生成常用的画风名称) · element 14 · 分类: 平面设计风格
+// 画面内容: 同一幅线稿变成多层裁切彩色纸的层叠纸雕，层与层的落差投下阴影，产生纵深。
+// 运动规格:
+//   - Material: cut colored paper stacked in many layers
+//   - Look: shadows fall at each step between layers, giving depth
+//   - Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+// 适用场景: For warm, dimensional visuals like a picture book or a card.
+// 标签: paper cut, layered paper, papercut, shadow box, depth, craft
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#206
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 14
+// 重ね切り絵: 色紙を切って重ね、段差の影で奥行き
+CELLS[13] = (k, w, h, u) => gafu(k, w, h, u, '14');

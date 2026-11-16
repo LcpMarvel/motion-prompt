@@ -1,4 +1,4 @@
-// Motion Prompt #195 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#195
+// Motion Prompt #195 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#195
 //
 // 水墨画 / Ink wash painting (sumi-e)
 // パック: artstyle (画像生成で使う画風の名前) · element 03 · カテゴリ: 絵画・版画
@@ -10,8 +10,8 @@
 // 使いどころ: 和の静けさや余白のある画面を作りたいとき。
 // タグ: ink wash, sumi-e, monochrome, japanese, brush, black ink
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#195
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#195
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,0 +1,45 @@
+// Motion Prompt #233 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#233
+//
+// 甘特图 / Gantt chart
+// 包: diagram (资料中常用的图解与图表名称) · element 17 · 分类: 展示流程与全局的图
+// 画面内容: 顶部日期刻度（1–8），左侧任务 A–E；各条从错开的列起依次向右生长。
+// 运动规格:
+//   - Scale: dates 1–8 across the top (52 px columns) with light vertical lines; they stay for the whole cycle
+//   - Tasks: five rows A–E on the left, 27 px apart; bars are 20 px tall with 6 px corners, running A 0–2, B 1.5–3.5, C 3–4.5, D 3.5–6.5 and E 6–8 (in columns)
+//   - Motion: from 0.4 s, 0.3 s apart, each bar grows from its left end to the right over 0.5 s (ease-out)
+//   - Color: D is dark blue, the others mid blue
+//   - End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+// 适用场景: To show how long each task in a project takes, and how the tasks overlap and follow each other.
+// 标签: gantt, gantt chart, schedule, project plan, timeline bars, tasks, roadmap
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#233
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 17
+// 17 ガントチャート: date scale on top, bars start at staggered columns and grow to the right
+function gantt(k, w, h, u) {
+  bg(k, w, h);
+  const x0 = 84, cols = 8, cw = 52, yAxis = 44, f = fade(u);
+  // skeleton: date scale + grid (always visible)
+  for (let i = 0; i < cols; i++) txt(k, String(i + 1), x0 + cw * i + cw / 2, 34, `500 18px ${FONT}`, C.sub, 'center');
+  k.strokeStyle = C.g2; k.lineWidth = 2;
+  for (let i = 0; i <= cols; i++) { k.beginPath(); k.moveTo(x0 + cw * i, yAxis); k.lineTo(x0 + cw * i, 194); k.stroke(); }
+  k.strokeStyle = C.g4; k.lineWidth = 2.5; k.lineCap = 'round';
+  k.beginPath(); k.moveTo(x0, yAxis); k.lineTo(x0 + cw * cols, yAxis); k.stroke();
+  for (let i = 0; i <= cols; i++) { k.beginPath(); k.moveTo(x0 + cw * i, yAxis - 6); k.lineTo(x0 + cw * i, yAxis); k.stroke(); }
+  const T = [[0, 2], [1.5, 2], [3, 1.5], [3.5, 3], [6, 2]];
+  T.forEach(([s, len], i) => {
+    const y = 62 + i * 27;
+    txt(k, 'ABCDE'[i], 54, y + 1, `600 18px ${FONT}`, C.g4, 'center', 'middle');
+    const p = appear(u, 0.4 + i * 0.3, 0.5) * f;
+    if (p <= 0.001) return;
+    k.globalAlpha = Math.min(1, p * 3) * f;
+    k.fillStyle = i === 3 ? C.blue : C.blueM;
+    rr(k, x0 + cw * s + 3, y - 10, Math.max(6, (cw * len - 6) * appear(u, 0.4 + i * 0.3, 0.5)), 20, 6); k.fill();
+    k.globalAlpha = 1;
+  });
+}
+CELLS[16] = gantt;

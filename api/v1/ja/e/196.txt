@@ -1,4 +1,4 @@
-// Motion Prompt #196 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#196
+// Motion Prompt #196 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#196
 //
 // 浮世絵 / Ukiyo-e woodblock print
 // パック: artstyle (画像生成で使う画風の名前) · element 04 · カテゴリ: 絵画・版画
@@ -11,8 +11,8 @@
 // 使いどころ: 和の題材を、平らな色と線で印象的に見せたいとき。
 // タグ: ukiyo-e, woodblock, japanese print, flat color, edo, printmaking
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#196
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#196
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

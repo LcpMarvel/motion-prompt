@@ -1,4 +1,4 @@
-// Motion Prompt #240 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#240
+// Motion Prompt #240 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#240
 //
 // 同心円図 / Concentric circle diagram
 // パック: diagram (資料で使う図解・グラフの名前) · element 24 · カテゴリ: 流れと全体を見せる図
@@ -12,8 +12,8 @@
 // 使いどころ: 市場規模（TAM・SAM・SOM）のように、全体から狙う範囲へ絞り込む様子を見せるとき。
 // タグ: concentric circles, tam sam som, market size, nested circles, onion diagram, target market, layers
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#240
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#240
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,0 +1,44 @@
+// Motion Prompt #226 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#226
+//
+// 气泡图 / Bubble chart
+// 包: diagram (资料中常用的图解与图表名称) · element 10 · 分类: 展示数字的图表
+// 画面内容: L 形轴上五个大小不一的半透明圆依次长大；只有最大的一个是深蓝色。
+// 运动规格:
+//   - Axes: the same L-shaped axes and grid lines as #225 Scatter plot; they stay for the whole cycle
+//   - Circles: five, radius 14–44 px, semi-transparent fill (opacity 0.5; the largest is dark blue at 0.42) with a 2.5 px outline in the same color
+//   - Motion: from 0.45 s, 0.24 s apart, each grows over 0.5 s with a small overshoot (ease-out-back)
+//   - Unlike #225 Scatter plot: only a few points, and the circle size carries a third number
+//   - End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
+// 适用场景: To compare three numbers at once: across, up and size.
+// 标签: bubble chart, bubble, three variables, circle size, portfolio, xy chart, data
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#226
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 10
+// 10 バブルチャート: a few semi-transparent circles of different sizes grow on the axes
+const BB = [   // x, y (0..1 in the plot), radius px, emphasized
+  [0.16, 0.30, 18, 0], [0.34, 0.64, 34, 0], [0.53, 0.34, 25, 0], [0.67, 0.6, 44, 1], [0.89, 0.30, 14, 0],
+];
+function bubble(k, w, h, u) {
+  bg(k, w, h);
+  const A = SC; axes(k, A.x0, A.y0, A.x1, A.y1);
+  const fo = dataFade(u);
+  const X = x => lerp(A.x0 + 10, A.x1 - 8, x), Y = y => lerp(A.y1 - 8, A.y0 + 6, y);
+  BB.forEach(([bx, by, br, em], i) => {
+    const t0 = 0.45 + i * 0.24;
+    const r = br * easeOutBack(P(u, t0, t0 + 0.5));
+    if (r <= 0.3) return;
+    const col = em ? C.blue : C.blueM;
+    k.save(); k.globalAlpha = fo * (em ? 0.42 : 0.5);
+    dot(k, X(bx), Y(by), r, col);
+    k.restore();
+    k.save(); k.globalAlpha = fo; k.strokeStyle = col; k.lineWidth = 2.5;
+    k.beginPath(); k.arc(X(bx), Y(by), r, 0, Math.PI * 2); k.stroke();
+    k.restore();
+  });
+}
+CELLS[9] = bubble;

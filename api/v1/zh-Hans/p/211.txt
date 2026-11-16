@@ -1,0 +1,14 @@
+请使用「低多边形（Low poly）（Low poly）」，它是「图像生成常用的画风名称」中的一个名称。
+Motion Prompt #211
+
+这是什么：用三角面拼成的3D
+示例画面：同一幅线稿变成仅由三角面构成的 3D 造型，每个面明暗不同，形体呈现切割般的棱面感。
+规格：
+- Build: 3D made only of triangular faces with no gaps
+- Look: each face has its own shade of color; faceted forms
+- Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+适用场景：For simple, modern 3D backgrounds or icons.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/211.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

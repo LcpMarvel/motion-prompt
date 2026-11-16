@@ -1,0 +1,15 @@
+请使用「翻页转场（Page curl）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #140
+
+这是什么：像纸张一样卷起，翻到下一页
+示例画面：书页从一角掀起翻折过去，露出下面的一页。
+规格：
+- Page 1 (white) → page 2 (cream) → page 1, 2.35 s each. The curl starts at the bottom-right corner, 0.35–1.75 s (1.4 s), quadratic ease-in-out.
+- The fold line moves from the corner in the direction (−1, −0.42), normalised, by 0→600 px.
+- The part beyond the fold line is mirrored across it to form the flap, the back of the page (light grey or beige), with a drop shadow (blur 14, offset 4, 4) and a white 2 px edge.
+- The next page shows where the paper has lifted, with a 50 px shadow gradient along the fold.
+适用场景：Use it for books, catalogues, albums or chapter breaks, where a paper feel or reading on suits the content.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/140.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

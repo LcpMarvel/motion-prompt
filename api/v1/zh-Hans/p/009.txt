@@ -1,0 +1,17 @@
+请使用「缓动（Easing）」，它是「动态图形」中的一个名称。
+Motion Prompt #009
+
+这是什么：动作通过加减速变化而非匀速移动
+示例画面：两个方块用相同时间走相同距离：上面的匀速，下面的带缓动。
+规格：
+- One round trip per 4.7 s. Two 62 px squares (radius 16) travel 316 px horizontally: out at 0.2–1.75 s (1.55 s), hold 0.8 s, back at 2.55–4.1 s.
+- Top (constant): linear motion; shape and colour never change.
+- Bottom (eased): cubic-bezier(.86, 0, .14, 1). Slow start, very fast middle, slow stop.
+- The bottom square stretches horizontally up to 1.5× and flattens to 0.8× in proportion to speed (speed ÷ 3.6, clamped to 0–1).
+- Behind it: 3 speed lines (up to 150 px × 0.8–1.25) and 4 ghost copies lagging 0.035 s each.
+- Each rail shows 12 dots marking positions at equal time intervals (evenly spaced on top, bunched at both ends below).
+适用场景：Use it on any move, scale or rotation so the motion accelerates and decelerates instead of looking mechanical.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/009.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

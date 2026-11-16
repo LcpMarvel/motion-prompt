@@ -1,0 +1,15 @@
+请使用「悬停切换图片（Image swap on hover）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #155
+
+这是什么：悬停时换成另一张照片
+示例画面：光标停在商品卡上时，T 恤正面照片交叉淡化为背面照；离开后回到正面。
+规格：
+- A 511 × 168 viewport with two product cards (photo frame 196 × 112, radius 8, name and price below). The cursor rests on the left card, then the right one, for about 1.3 s each. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- On hover, over 0.3 s (quadratic ease-in-out), the front photo (small dot on the chest) cross-fades to the back photo (large star on the back); on leave it fades back over the same 0.3 s.
+- Two dots under the photo (radius 3) show which photo is showing (the dark dot is the current one).
+- The hover area is the whole card, including the name. The frame, name and price do not move.
+适用场景：Use it on e-commerce product grids to show another angle or an on-model shot without leaving the list.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/155.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

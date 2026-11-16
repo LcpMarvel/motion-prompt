@@ -1,4 +1,4 @@
-// Motion Prompt #226 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#226
+// Motion Prompt #226 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#226
 //
 // Bubble chart / バブルチャート
 // Pack: diagram (Diagrams and charts for slides) · element 10 · Category: Charts that show numbers
@@ -12,8 +12,8 @@
 // When to use it: To compare three numbers at once: across, up and size.
 // Tags: bubble chart, bubble, three variables, circle size, portfolio, xy chart, data
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#226
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#226
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

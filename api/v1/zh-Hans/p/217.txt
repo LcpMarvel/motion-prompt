@@ -1,0 +1,16 @@
+请使用「维恩图（Venn diagram）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #217
+
+这是什么：用重叠的圆表示共同点
+示例画面：两个圆从两侧滑入并重叠，只有重叠部分变成深蓝色。
+规格：
+- Circles: two circles of radius 78 px; A on the left in light blue with a blue outline, B on the right in light gray with a gray outline; only the overlap is filled dark blue
+- Motion: fade in from 0.3 s to 0.7 s (ease-out), then the centers move from ±150 px to ±44 px from the middle between 0.5 s and 1.6 s (cubic ease-in-out)
+- Labels: A and B (26 px) on the outer side of each circle
+- #240 Concentric circle diagram nests circles inside each other; a Venn diagram sets them side by side and overlaps only part
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show what two or more things share and where they differ, on one slide.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/217.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

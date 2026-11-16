@@ -1,0 +1,17 @@
+请使用「匹配剪辑（Match cut）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #042
+
+这是什么：利用相似形状或动作衔接镜头
+示例画面：抛出的球在下一个镜头变成同一位置、同一大小的太阳；两个不同场景靠形状匹配衔接。
+规格：
+- Join: a straight cut at 2.3 s (0 frames); the blue circle has the same position (120 px right, 46 px above centre) and radius 17 px on both sides
+- Outgoing shot (0–2.3 s): fixed camera (height 1.4 m); a person (1.2 m left, 7 m away) throws a ball from 0.5 s, cubic ease-out (about cubic-bezier(0.33,1,0.68,1))
+- Ball: travels from above the person's head (2.3 m high) to the match point; radius 5 px → 17 px, on an arc bulging up to 30 px
+- Incoming shot (2.3–4.7 s): a different place (no buildings, height 1.2 m); the blue circle in the same spot is now the sun and sinks 14 px over 2.4 s
+- Marker: a blue dashed circle of radius 26 px fades in and out within 0.7 s either side of the cut
+- Top-right readout shows "SHOT 1" → "SHOT 2"; at 4.7 s it cuts straight back to SHOT 1
+适用场景：To link two scenes far apart in time or place through a shared shape or motion.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/042.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

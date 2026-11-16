@@ -1,0 +1,36 @@
+// Motion Prompt #188 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#188
+//
+// 圈出 / Iris out
+// 包: camera2 (镜头运动与转场（第 2 弹）) · element 20 · 分类: 转场与剪辑
+// 画面内容: 一个圆形光圈向人物收缩直至全黑，再张开进入下一个场景。
+// 运动规格:
+//   - Iris out: from 1.3 s to 2.7 s (1.4 s) the circular window shrinks from radius 340 px to 0 (quadratic ease-in-out (about cubic-bezier(0.45,0,0.55,1))); outside the circle is black (#141418)
+//   - Centre of the window: the current picture's subject, the person's head in A (0.6 m left, 1.63 m high, 7 m away) or the car in B (1.2 m right, 0.9 m high, 9 m away), projected to the screen
+//   - Black: 2.7–3.1 s; at 2.9 s the incoming picture is swapped in with a straight cut
+//   - Iris in: from 3.1 s to 4.4 s (1.3 s) the circle grows from 0 to 340 px around the incoming picture's subject
+//   - Edge: while the radius is at least 1 px, a 2 px blue circle marks the rim; the camera is fixed in both pictures
+//   - Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "IRIS OUT" / "IRIS IN"
+// 适用场景: For a silent-film or cartoon-style ending, or a playful break.
+// 标签: iris out, iris in, iris wipe, circle, old film, cartoon, transition
+// 尺寸: 539x208 px · 循环: 9.4 s
+// Needs: kit camera2 -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#188
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 20
+// 20 アイリスアウト: 人物を中心に丸い窓が閉じて黒になり、次の場面は丸い窓が開いて現れる
+CELLS[19] = shot(abCell((k, w, h, u, A, B) => {
+  const out = eIOs(P(u, 1.3, 2.7)), inn = eIOs(P(u, 3.1, 4.4));
+  const first = u < 2.9, cur = first ? A : B;
+  cur(k, w, h);
+  // 窓の中心は、いま映っている場面の主役（Aは人物の頭、Bは車）
+  const c = cur === sceneA ? proj(cam({ y: 1.4 }), -0.6, 1.63, 7) : proj(cam({ y: 1.6, pitch: 0.1 }), 1.2, 0.9, 9);
+  const rad = first ? lerp(340, 0, out) : lerp(0, 340, inn);
+  const cx = w / 2 + c.x, cy = h / 2 + c.y;
+  if (rad < 339) {
+    k.fillStyle = '#141418'; k.beginPath(); k.rect(0, 0, w, h); k.arc(cx, cy, Math.max(0, rad), 0, Math.PI * 2, true); k.fill('evenodd');
+    if (rad > 1) { k.strokeStyle = C.blue; k.lineWidth = 2; k.beginPath(); k.arc(cx, cy, rad, 0, 7); k.stroke(); }
+  }
+}, u => u < 2.9 ? 'IRIS OUT' : 'IRIS IN'));

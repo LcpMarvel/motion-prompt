@@ -1,0 +1,15 @@
+请使用「循环图（Cycle diagram）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #223
+
+这是什么：箭头连成一圈，循环往复
+示例画面：编号 1–4 的圆圈分布在圆环上，箭头依次画出直至闭环，然后一个蓝色高亮沿环巡行一圈。
+规格：
+- Layout: four light-blue circles (radius 26 px, numbered 1–4) at the top, right, bottom and left of an ellipse 128 px wide and 70 px tall (radii), popping in from 0.4 s, 0.32 s apart
+- Arrows: arcs along the ellipse from each circle to the next (mid blue, 3 px, 13 px heads), drawn over 0.28 s from 0.7 s, 0.32 s apart; the ring closes at 1.94 s
+- Highlight: from 2.2 s to 3.8 s a solid blue fill moves 1 → 2 → 3 → 4, 0.4 s per step, with soft edges
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show a process that returns to the start and keeps repeating, such as PDCA.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/223.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

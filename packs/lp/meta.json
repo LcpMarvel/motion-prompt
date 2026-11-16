@@ -62,7 +62,8 @@
       },
       "summary": {
         "ja": "ページを下へスクロールすると、見出しはふつうに上がり、空と太陽・遠い山・近い山はそれより遅く動く。",
-        "en": "As the page scrolls down, the headline moves up normally while the sky and sun, far hills and near hills move more slowly."
+        "en": "As the page scrolls down, the headline moves up normally while the sky and sun, far hills and near hills move more slowly.",
+        "zh-Hans": "页面向下滚动时，标题正常上移，而天空与太阳、远山、近山移动得更慢。"
       },
       "spec": {
         "ja": [
@@ -121,7 +122,8 @@
       },
       "summary": {
         "ja": "スクロールで画面に入った見出し・カード・本文が、それぞれ下から浮かび上がりながら現れる。",
-        "en": "As the page scrolls, the heading, the cards and the body text each rise into place and fade in when they enter the view."
+        "en": "As the page scrolls, the heading, the cards and the body text each rise into place and fade in when they enter the view.",
+        "zh-Hans": "页面滚动时，标题、卡片与正文各自上移就位并在进入视野时淡入。"
       },
       "spec": {
         "ja": [
@@ -180,7 +182,8 @@
       },
       "summary": {
         "ja": "上のお知らせの帯はスクロールで消えるが、その下のヘッダーは画面の上端に来たところで止まり、本文がその下を通っていく。",
-        "en": "The announcement strip scrolls away, but the header below it stops at the top edge and the content scrolls underneath."
+        "en": "The announcement strip scrolls away, but the header below it stops at the top edge and the content scrolls underneath.",
+        "zh-Hans": "公告条滚走后，下方的页头停在顶边，内容从其下方滚过。"
       },
       "spec": {
         "ja": [
@@ -239,7 +242,8 @@
       },
       "summary": {
         "ja": "濃紺のセクションが画面いっぱいに来たところで止まり、スクロールし続けると番号と写真がステップ1→2→3と切り替わり、終わると再び流れていく。",
-        "en": "A navy section stops when it fills the view; further scrolling steps the number and photo through 1→2→3, then the section scrolls on."
+        "en": "A navy section stops when it fills the view; further scrolling steps the number and photo through 1→2→3, then the section scrolls on.",
+        "zh-Hans": "深蓝色区块占满视口后停住；继续滚动会让数字与照片按 1→2→3 步进，然后区块继续滚走。"
       },
       "spec": {
         "ja": [
@@ -298,7 +302,8 @@
       },
       "summary": {
         "ja": "縦にスクロールすると、セクションが止まったまま、番号付きの作品カード4枚が左へ流れていく。",
-        "en": "As the page scrolls down, the section holds still and four numbered work cards travel to the left."
+        "en": "As the page scrolls down, the section holds still and four numbered work cards travel to the left.",
+        "zh-Hans": "页面下滚时该区块固定不动，四张编号作品卡向左移动。"
       },
       "spec": {
         "ja": [
@@ -357,7 +362,8 @@
       },
       "summary": {
         "ja": "少しだけスクロールすると、残りは自動で送られて、次のセクションの頭がちょうど画面の上にそろう。",
-        "en": "After a small scroll, the page carries itself the rest of the way until the next section's top lines up with the top of the view."
+        "en": "After a small scroll, the page carries itself the rest of the way until the next section's top lines up with the top of the view.",
+        "zh-Hans": "轻滚一下后，页面自动补足余程，直到下一区块顶部与视口顶边对齐。"
       },
       "spec": {
         "ja": [
@@ -414,7 +420,8 @@
       },
       "summary": {
         "ja": "記事を少しずつ読み進めるごとに、画面の上端の線が左から伸び、最後まで来ると端まで届く。",
-        "en": "As the article is read a bit at a time, the line along the top grows from the left and reaches the far end at the bottom of the page."
+        "en": "As the article is read a bit at a time, the line along the top grows from the left and reaches the far end at the bottom of the page.",
+        "zh-Hans": "随文章一点点读下去，顶部细线从左端生长，到页面底部到达右端。"
       },
       "spec": {
         "ja": [
@@ -470,7 +477,8 @@
       },
       "summary": {
         "ja": "スクロールで文章が画面に入ると、大事な言葉の下半分に黄色い蛍光ペンの線が左から引かれる。",
-        "en": "As the copy scrolls into view, a yellow highlighter stroke is drawn left to right across the lower half of the key words."
+        "en": "As the copy scrolls into view, a yellow highlighter stroke is drawn left to right across the lower half of the key words.",
+        "zh-Hans": "文案滚入视野时，黄色荧光笔迹从左到右划过关键词的下半部分。"
       },
       "spec": {
         "ja": [
@@ -529,7 +537,8 @@
       },
       "summary": {
         "ja": "カーソルが乗ったカードだけが少し上に持ち上がり、下の影が広がる。カーソルが離れると元に戻る。",
-        "en": "Only the card under the cursor lifts slightly and its shadow spreads; it settles back when the cursor leaves."
+        "en": "Only the card under the cursor lifts slightly and its shadow spreads; it settles back when the cursor leaves.",
+        "zh-Hans": "只有光标下的卡片轻微抬起、阴影扩散；光标离开后落回原位。"
       },
       "spec": {
         "ja": [
@@ -586,7 +595,8 @@
       },
       "summary": {
         "ja": "カーソルが乗った写真だけが、枠の大きさは変えずに中身がゆっくり拡大し、離れると戻る。",
-        "en": "The photo under the cursor slowly enlarges while its frame stays the same size, and shrinks back when the cursor leaves."
+        "en": "The photo under the cursor slowly enlarges while its frame stays the same size, and shrinks back when the cursor leaves.",
+        "zh-Hans": "光标下的照片缓缓放大而画框尺寸不变，光标离开后缩回。"
       },
       "spec": {
         "ja": [
@@ -641,7 +651,8 @@
       },
       "summary": {
         "ja": "カーソルがページの上を動き回ると、朱色の丸が少し遅れてそのあとを追いかける。",
-        "en": "As the cursor moves around the page, an orange circle follows it a little behind."
+        "en": "As the cursor moves around the page, an orange circle follows it a little behind.",
+        "zh-Hans": "光标在页面上移动时，一个橙色圆圈滞后少许跟随。"
       },
       "spec": {
         "ja": [
@@ -698,7 +709,8 @@
       },
       "summary": {
         "ja": "カーソルが近づくとボタンがカーソルの方へ引き寄せられてついていき、離れるとぷるんと揺れて元の位置に戻る。",
-        "en": "As the cursor comes near, the button is drawn toward it and follows; when the cursor leaves, the button wobbles back to its place."
+        "en": "As the cursor comes near, the button is drawn toward it and follows; when the cursor leaves, the button wobbles back to its place.",
+        "zh-Hans": "光标靠近时按钮被吸引并跟随之；光标离开后，按钮晃动着回到原位。"
       },
       "spec": {
         "ja": [
@@ -755,7 +767,8 @@
       },
       "summary": {
         "ja": "ボタンを押すたびに、押した場所を中心に白い円が広がってボタンの中を満たし、薄れて消える。",
-        "en": "Each click sends a white circle out from the click point to fill the button, then it fades away."
+        "en": "Each click sends a white circle out from the click point to fill the button, then it fades away.",
+        "zh-Hans": "每次点击都从点击点扩出一个白色圆环铺满按钮，随后淡去。"
       },
       "spec": {
         "ja": [
@@ -812,7 +825,8 @@
       },
       "summary": {
         "ja": "カーソルが乗ったリンクの下に、朱色の線が左から伸び、離れると線は右へ縮んで抜けていく。",
-        "en": "Under the link the cursor is on, an orange line grows from the left; when the cursor leaves, the line shrinks away to the right."
+        "en": "Under the link the cursor is on, an orange line grows from the left; when the cursor leaves, the line shrinks away to the right.",
+        "zh-Hans": "光标所在的链接下方，橙色线条从左端长出；离开时向右端收缩消失。"
       },
       "spec": {
         "ja": [
@@ -869,7 +883,8 @@
       },
       "summary": {
         "ja": "写真の真ん中の線をドラッグして左右に動かすと、左側は色のない「前」、右側は色のある「後」の範囲が入れ替わる。",
-        "en": "Dragging the line in the middle of the photo left and right changes how much of the grey \"before\" (left) and the coloured \"after\" (right) is shown."
+        "en": "Dragging the line in the middle of the photo left and right changes how much of the grey \"before\" (left) and the coloured \"after\" (right) is shown.",
+        "zh-Hans": "左右拖动照片中缝，改变灰色「处理前」（左）与彩色「处理后」（右）的显示比例。"
       },
       "spec": {
         "ja": [
@@ -926,7 +941,8 @@
       },
       "summary": {
         "ja": "カーソルがページの上の方（タブや閉じるボタンのある所）へ出ていくと、背景が暗くなって「ちょっと待って！」の小窓が開く。×で閉じる。",
-        "en": "When the cursor heads out through the top of the page (toward the tabs and close button), the page dims and a \"Wait!\" popup opens. The × closes it."
+        "en": "When the cursor heads out through the top of the page (toward the tabs and close button), the page dims and a \"Wait!\" popup opens. The × closes it.",
+        "zh-Hans": "光标朝页面顶部（标签页与关闭按钮方向）离开时，页面变暗并弹出「等等！」弹窗；点 × 关闭。"
       },
       "spec": {
         "ja": [
@@ -985,7 +1001,8 @@
       },
       "summary": {
         "ja": "濃紺の画面でロゴの下の数字が0%から100%まで進み、終わると画面が上へ抜けて、下のページがふわっと現れる。",
-        "en": "On a navy screen the number under the logo counts from 0% to 100%; then the screen lifts away and the page underneath fades in."
+        "en": "On a navy screen the number under the logo counts from 0% to 100%; then the screen lifts away and the page underneath fades in.",
+        "zh-Hans": "深蓝屏上 Logo 下的数字从 0% 计到 100%；随后屏面掀起，下层页面淡入。"
       },
       "spec": {
         "ja": [
@@ -1044,7 +1061,8 @@
       },
       "summary": {
         "ja": "スクロールで画面に入った灰色の枠に読み込み中の印が回り、画像が届くと順にフェードインする。上の段は最初から読み込み済み。",
-        "en": "As grey placeholders scroll into view, a spinner turns in each, and the images fade in as they arrive. The top row is loaded from the start."
+        "en": "As grey placeholders scroll into view, a spinner turns in each, and the images fade in as they arrive. The top row is loaded from the start.",
+        "zh-Hans": "灰色占位块滚入视野时内部出现转圈，图片到达后淡入；第一行从一开始就已加载。"
       },
       "spec": {
         "ja": [
@@ -1103,7 +1121,8 @@
       },
       "summary": {
         "ja": "一覧を下へスクロールして最後まで来ると、読み込み中の印が回り、新しい項目が3件足されて続きが読めるようになる。",
-        "en": "Scrolling down to the end of the list brings up a spinner, then three new items are added so reading can go on."
+        "en": "Scrolling down to the end of the list brings up a spinner, then three new items are added so reading can go on.",
+        "zh-Hans": "滚到列表末尾出现转圈指示，随后追加三条新内容，阅读得以继续。"
       },
       "spec": {
         "ja": [
@@ -1160,7 +1179,8 @@
       },
       "summary": {
         "ja": "作品の一覧でカードを押すと朱色の幕が左から画面を覆い、URLが変わって幕が右へ抜けると詳しいページになっている。「一覧へ」で同じように戻る。",
-        "en": "Clicking a card in the work list sweeps an orange panel across from the left; the URL changes and the panel exits to the right on the detail page. \"Back to list\" returns the same way."
+        "en": "Clicking a card in the work list sweeps an orange panel across from the left; the URL changes and the panel exits to the right on the detail page. \"Back to list\" returns the same way.",
+        "zh-Hans": "点击作品列表中的卡片，橙色面板从左扫入；URL 切换后详情页上面板向右退出。「返回列表」以同样方式返回。"
       },
       "spec": {
         "ja": [
@@ -1219,7 +1239,8 @@
       },
       "summary": {
         "ja": "メニューの「料金」を押すとページがなめらかに料金の欄まで動き、右下の上向きボタンを押すと同じように一番上へ戻る。",
-        "en": "Clicking \"Pricing\" in the menu glides the page down to the pricing section; the up arrow at the bottom right glides it back to the top."
+        "en": "Clicking \"Pricing\" in the menu glides the page down to the pricing section; the up arrow at the bottom right glides it back to the top.",
+        "zh-Hans": "点击菜单中的「定价」，页面平滑滑至定价区块；右下角的上箭头再把它送回顶部。"
       },
       "spec": {
         "ja": [
@@ -1277,7 +1298,8 @@
       },
       "summary": {
         "ja": "濃紺の帯の中で、大きな英字のサービス名と朱色の点が、途切れずに左へ流れ続ける。",
-        "en": "Inside a navy band, large service names separated by orange dots keep moving to the left without a gap."
+        "en": "Inside a navy band, large service names separated by orange dots keep moving to the left without a gap.",
+        "zh-Hans": "深蓝色横带内，以橙色圆点分隔的大号服务名称不停向左移动，首尾无缝。"
       },
       "spec": {
         "ja": [
@@ -1334,7 +1356,8 @@
       },
       "summary": {
         "ja": "見出しの後ろで、朱色・薄い朱色・青・薄い青のぼんやりした色の塊がゆっくり回り、混ざり方が変わり続ける。",
-        "en": "Behind the headline, soft patches of orange, light orange, blue and light blue drift in circles and keep blending differently."
+        "en": "Behind the headline, soft patches of orange, light orange, blue and light blue drift in circles and keep blending differently.",
+        "zh-Hans": "标题身后，橙、浅橙、蓝、浅蓝的柔和色团缓慢环行，不断变化混合。"
       },
       "spec": {
         "ja": [
@@ -1391,7 +1414,8 @@
       },
       "summary": {
         "ja": "見出しの横で、スマホの画像とハートの丸・評価の札が、それぞれ少しずつずれてゆっくり上下し、スマホの下の影も伸び縮みする。",
-        "en": "Next to the headline, a phone, a heart badge and a rating chip each bob gently out of step, and the shadow under the phone grows and shrinks."
+        "en": "Next to the headline, a phone, a heart badge and a rating chip each bob gently out of step, and the shadow under the phone grows and shrinks.",
+        "zh-Hans": "标题旁的手机、爱心徽章与评分小片各自错拍轻轻浮动，手机下的阴影随之胀缩。"
       },
       "spec": {
         "ja": [

@@ -1,4 +1,4 @@
-// Motion Prompt #239 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#239
+// Motion Prompt #239 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#239
 //
 // Chevron process / 矢羽根図（シェブロン）
 // Pack: diagram (Diagrams and charts for slides) · element 23 · Category: Diagrams of flow and the whole picture
@@ -12,8 +12,8 @@
 // When to use it: To show steps that follow each other, such as a training schedule or a rollout, in one row.
 // Tags: chevron, chevron process, process arrows, steps, phases, smartart, roadmap
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#239
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#239
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,0 +1,16 @@
+请使用「固定镜头（Locked-off shot）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #175
+
+这是什么：相机固定不动，只有主体移动
+示例画面：人从固定在三脚架上的镜头前走过，车从后方驶过；机位一像素都不动。
+规格：
+- Camera: completely fixed (height 1.4 m, facing forward, focal length 330 px); only the subjects move
+- Subject: a person crosses left to right at constant speed 6.5 m ahead (x = -6.2 m → +6.2 m in 4.7 s); legs and arms swing by sin(u×7)×0.42 rad
+- A grey car crosses right to left 15 m away (x = +16 m → -16 m in 4.7 s)
+- Both start and end outside the frame, so it loops seamlessly every 4.7 s
+- A grey tripod mark at bottom left; top-right readout shows "LOCKED" (#040 Freeze frame stops the footage time; here time runs and only the camera is still)
+适用场景：To make the subject stand out by contrast, for fixed-point observation, or as a base for time-lapse and compositing.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/175.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

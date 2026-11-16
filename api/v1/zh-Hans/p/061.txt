@@ -1,0 +1,15 @@
+请使用「筛选标签（Filter chips）」，它是「UI 组件」中的一个名称。
+Motion Prompt #061
+
+这是什么：点击小标签组合筛选条件
+示例画面：点选「新品」「免费」标签，打上对勾并变蓝，不匹配的卡片淡出。
+规格：
+- 4.5 s cycle on a 542×191 card. Four chips ("All, New, Popular, Free" in Japanese): 34 tall, radius 17, width = text + 32, 10 px apart from the left.
+- Clicks: New on at 0.95 s, Free on at 1.75 s, New off at 3.0 s, Free off at 3.6 s.
+- Each change takes 0.15 s with easeOutCubic: the chip widens 18 px to make room for a check mark; fill light blue, border and text blue.
+- List below: four cards (242×54, two columns, two rows); cards that do not match drop from opacity 1 to 0.12.
+适用场景：Use it to let people narrow a list or search results by combining a few quick filters.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/061.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

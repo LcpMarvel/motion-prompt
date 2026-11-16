@@ -12,11 +12,11 @@ import vm from 'node:vm';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
-const SITE = 'https://showheyohtaki.github.io/motion-prompt/';
-const REPO = 'https://github.com/showheyohtaki/motion-prompt';
+const SITE = 'https://lcpmarvel.github.io/motion-prompt/';
+const REPO = 'https://github.com/LcpMarvel/motion-prompt';
 const LICENCE = 'MIT License (c) 2026 Shohei Ohtaki';
 const VERSION = 1;
-const LANGS = ['ja', 'en'];   // languages of the gallery, the API folders and the copyable prompt
+const LANGS = ['ja', 'en', 'zh-Hans'];   // languages of the gallery, the API folders and the copyable prompt
 const BASE_LANG = 'en';       // every text field needs this one; any other language code is optional
 
 const args = process.argv.slice(2);
@@ -37,14 +37,13 @@ const isStr = v => typeof v === 'string' && v.trim() !== '';
 // This function is also written into assets/catalog.js (as source text), so the site's
 // "copy prompt" button and api/v1/<lang>/p/<id>.txt can never drift apart. Keep it self-contained.
 function mpPrompt(el, packTitle, lang) {
-  var base = 'https://showheyohtaki.github.io/motion-prompt/';
-  var en = lang === 'en';
+  var base = 'https://lcpmarvel.github.io/motion-prompt/';
   var spec = el.spec[lang].map(function (s) { return '- ' + s; }).join('\n');
   var ref = base + 'api/v1/' + lang + '/e/' + el.id + '.txt';
   var kit = base + 'api/v1/kit/' + el.pack + '.js';
   var same = el.name.en === el.name.ja;
   var mean = el.meaning && (el.meaning[lang] || el.meaning.en);
-  if (en) {
+  if (lang === 'en') {
     return [
       'Please use "' + el.name.en + '"' + (same ? '' : ' (' + el.name.ja + ')') + ', one of the names in "' + packTitle + '".',
       'Motion Prompt #' + el.id,
@@ -58,6 +57,23 @@ function mpPrompt(el, packTitle, lang) {
       'Reference implementation (Canvas 2D, a function whose picture depends only on the time): ' + ref,
       'Shared helper code: ' + kit,
       'Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.'
+    ]).join('\n');
+  }
+  if (lang === 'zh-Hans') {
+    var sameZh = el.name['zh-Hans'] === el.name.en;
+    return [
+      '请使用「' + el.name['zh-Hans'] + (sameZh ? '' : '（' + el.name.en + '）') + '」，它是「' + packTitle + '」中的一个名称。',
+      'Motion Prompt #' + el.id,
+      ''
+    ].concat(mean ? ['这是什么：' + mean] : [], [
+      '示例画面：' + el.summary['zh-Hans'],
+      '规格：',
+      spec,
+      '适用场景：' + el.use['zh-Hans'],
+      '',
+      '参考实现（Canvas 2D，画面只随时间变化的函数）：' + ref,
+      '共用辅助代码：' + kit,
+      '请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。'
     ]).join('\n');
   }
   return [
@@ -355,12 +371,15 @@ const T = {
   en: { what: 'What happens', spec: 'Motion spec', use: 'When to use it', size: 'Size', cycle: 'Cycle', needs: 'Needs', demo: 'Live demo', pack: 'Pack', cat: 'Category', tags: 'Tags',
     sig: 'cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.',
     code: 'Element code starts here. CELLS, constants and helpers live in the kit.' },
+  'zh-Hans': { what: '画面内容', spec: '运动规格', use: '适用场景', size: '尺寸', cycle: '循环', needs: 'Needs', demo: '动态示例', pack: '包', cat: '分类', tags: '标签',
+    sig: 'cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。',
+    code: '以下为元素代码。CELLS、常量与辅助函数位于 kit 中。' },
 };
 
 function elementTxt(el, lang) {
   const t = T[lang], p = packOf[el.pack];
   const cat = p.categories.find(c => c.slug === el.category);
-  const name = lang === 'ja' ? `${el.name.ja} / ${el.name.en}` : `${el.name.en} / ${el.name.ja}`;
+  const name = lang === 'ja' ? `${el.name.ja} / ${el.name.en}` : lang === 'zh-Hans' ? `${el.name['zh-Hans']} / ${el.name.en}` : `${el.name.en} / ${el.name.ja}`;
   const head = [
     `Motion Prompt #${el.id} · ${LICENCE} · ${SITE}#${el.id}`,
     '',
@@ -388,7 +407,7 @@ function kitJs(p) {
     `Motion Prompt ${range} · ${LICENCE} · ${SITE}#${p.first}`,
     '',
     `Kit for pack "${p.pack}" (${p.title.en} / ${p.title.ja}): the constants and helpers its elements share.`,
-    `Elements ${range} · ${W}x${H} px · cycle ${C} s. Element code: ${SITE}api/v1/en/e/<id>.txt (or /ja/).`,
+    `Elements ${range} · ${W}x${H} px · cycle ${C} s. Element code: ${SITE}api/v1/en/e/<id>.txt (or /ja/, /zh-Hans/).`,
     ...(p.fonts.length ? [`Fonts used: ${p.fonts.map(f => `${f.family} (${SITE}packs/${p.pack}/${f.url})`).join(', ')}. Load them before drawing.`] : []),
     ...(p.images ? [`Images used: ${p.images.length} files under ${SITE}packs/${p.pack}/img/. The kit loads them itself (from the folder of pack.js, or from that URL when pasted on its own); \`ready\` resolves when they have arrived, and until then every cell draws a plain background.`] : []),
     '',
@@ -414,7 +433,7 @@ function catalogTsv(lang) {
   const head = `# Motion Prompt catalog (${lang}) · ${catalog.count} elements · ${SITE} · columns: id\tpack\tcategory\ttitle\ttags\tsummary`;
   const rows = catalog.elements.map(el => {
     const cat = packOf[el.pack].categories.find(c => c.slug === el.category);
-    const title = lang === 'ja' ? `${el.name.ja} (${el.name.en})` : `${el.name.en} (${el.name.ja})`;
+    const title = lang === 'ja' ? `${el.name.ja} (${el.name.en})` : lang === 'zh-Hans' ? `${el.name['zh-Hans']} (${el.name.en})` : `${el.name.en} (${el.name.ja})`;
     return [el.id, el.pack, cat ? cat[lang] : el.category, title, el.tags.join(','), el.summary[lang]].map(tsvCell).join('\t');
   });
   return [head, ...rows].join('\n') + '\n';

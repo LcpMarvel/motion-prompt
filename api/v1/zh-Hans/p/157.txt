@@ -1,0 +1,15 @@
+请使用「悬停图片预览（Hover image reveal）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #157
+
+这是什么：悬停列表项时显示对应照片
+示例画面：光标停在纯文字列表的某行上时，该行的照片在光标旁淡入并跟随移动。
+规格：
+- A 511 × 168 viewport with a text-only list of four rows (39 px rows, 17 px names). The cursor moves down the rows, about 1 s on each. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- Hovered row: over 0.25 s (cubic ease-out) the name shifts 8 px right and the name and the arrow at the right turn orange; on leave they return over 0.25 s.
+- Photo: that row's photo (132 × 84, radius 6, drop shadow) appears 26 px right of the cursor, a little above it, kept inside the window vertically.
+- Over the same 0.25 s the photo goes from opacity 0 to 1 and from 0.85× to 1×. It follows the cursor without lag; moving to the next row fades the old photo out as the new one comes in.
+适用场景：Use it on lists of work, projects or properties that stay text-only and light, while letting people check a photo for the rows they care about.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/157.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

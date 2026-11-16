@@ -1,0 +1,15 @@
+请使用「步进器（Stepper (+/−)）」，它是「UI 组件」中的一个名称。
+Motion Prompt #063
+
+这是什么：通过加减按钮逐次修改数值
+示例画面：按三次 + 数字从 1 升到 4，再按三次 − 回到 1；每次数字都弹一下。
+规格：
+- 4.5 s cycle on a 542×191 card. A 200×60 box (radius 12) at (171, 52): "−" in the left 60 px, a blue "+" in the right 60 px, and a bold 30 px number in the middle.
+- Clicks: + at 0.9, 1.35, 1.8 s (1 → 4), − at 2.8, 3.25, 3.7 s (4 → 1).
+- The pressed segment is tinted light blue from 0.05 s before to 0.15 s after each click.
+- Number: on each press its scale goes linearly from 1.18 back to 1 over 0.25 s, and it is blue meanwhile.
+适用场景：Use it for small whole numbers changed one at a time, such as quantity or number of guests.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/063.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

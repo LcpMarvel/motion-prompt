@@ -1,0 +1,15 @@
+请使用「仪表图（Gauge chart）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #229
+
+这是什么：用半圆表盘和指针显示达成率
+示例画面：半圆仪表的指针扫过、摆动后停在 72%；蓝色弧带与数字跟随指针。
+规格：
+- Dial: a half-circle band of radius 120 px and 30 px thick (gray), with ticks every 10% (longer at 0, 50 and 100%)
+- Needle: starts at 0.5 s and follows a damped spring 1 − e^(−3.2t)·cos(7.5t), swinging past and wobbling before it settles at 72%
+- Band and number: the band is blue up to the needle, and the percentage (26 px) below matches the needle
+- End: from 4.1 s to 4.5 s the needle, band and number go back to 0% (cubic ease-in-out; one pass = 4.7 s)
+适用场景：To show with one number how far you are toward a target.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/229.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,17 @@
+请使用「交叉剪辑（Cross-cutting）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #190
+
+这是什么：交替呈现同时发生的两个场景
+示例画面：同时发生的两个场景——跑步者与汽车——以越来越短的镜头交替出现。
+规格：
+- Two scenes share one clock: A is a runner (0.3 m left, depth 15 m → 4.5 m, legs at u×12), B is a car in the city (1 m right, depth 17 m → 4.5 m); both close in over 4.7 s
+- Cuts: straight cuts between A and B at 0 / 1.1 / 2.0 / 2.7 / 3.3 / 3.8 / 4.2 / 4.5 s; the shots shorten 1.1 → 0.9 → 0.7 → 0.6 → 0.5 → 0.4 → 0.3 s to raise the tension
+- Each scene keeps running while the other is on screen (when it comes back, its subject has moved on)
+- Camera: A at height 1.3 m, fixed, with four posts in the foreground; B at height 1.6 m, pitch +0.06 rad, fixed, with the city and sun
+- Bottom strip: eight alternating sections A (grey) and B (blue) with a playhead; the last 0.3 s cross-fades back to the start of A
+- Top-right readout shows "SCENE A" / "SCENE B"
+适用场景：To build tension between things happening at once, such as a chase or a rescue.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/190.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

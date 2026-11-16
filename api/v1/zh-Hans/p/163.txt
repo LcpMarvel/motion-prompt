@@ -1,0 +1,15 @@
+请使用「图片热点（Hotspots）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #163
+
+这是什么：点击图片上的圆点显示说明
+示例画面：产品图上白色圆点脉动；点击弹出该部位的说明气泡，再点其他点则切换气泡。
+规格：
+- A 511 × 168 viewport: a product picture (a backpack) on the left, name and price on the right, with two dots on the picture (white circle, radius 8, drop shadow; orange center, radius 4). One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- Pulse: from each dot a white ring (width 2) grows from radius 8 to 20 while fading from 0.75 to 0 opacity, every 1.57 s (a third of 4.7 s), two rings half a period apart.
+- At 0.9 s the upper dot is clicked: a tooltip (136 × 48, radius 8, with a pointer toward the dot) appears to its left over 0.25 s (cubic ease-out), rising 6 px.
+- At 2.4 s the lower dot is clicked: the first tooltip fades over 0.25 s and the next one opens to the right of the lower dot. A second click at 3.8 s closes it.
+适用场景：Use it on products, floor plans or maps, to explain different spots within one picture.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/163.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

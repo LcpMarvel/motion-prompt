@@ -1,0 +1,16 @@
+请使用「散点图（Scatter plot）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #225
+
+这是什么：用点的分布看两个数字的关系
+示例画面：L 形坐标轴上蓝色小点自左向右弹出，向右上方散布，虚线趋势线随后画出。
+规格：
+- Axes: L-shaped axes from x = 96 to 448 and y = 24 to 184 (gray, 2.5 px) with three light horizontal grid lines; they stay for the whole cycle
+- Dots: 52 dots (fixed seed) of radius 5 px in blue, scattered upward to the right, each popping in over 0.28 s (ease-out-back) from left to right between 0.4 s and 1.65 s according to its x
+- Trend line: a gray dashed line (7 px dash, 8 px gap) grows from bottom-left to top-right from 1.85 s to 2.5 s
+- Unlike #226 Bubble chart: many small dots, all the same size
+- End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
+适用场景：To show whether two numbers are related, for example whether one rises when the other does.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/225.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

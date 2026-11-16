@@ -1,0 +1,16 @@
+请使用「遮罩显现（Mask reveal）」，它是「动态图形」中的一个名称。
+Motion Prompt #005
+
+这是什么：文字从不可见的边界后移出
+示例画面：标题文字从一条细线标记的隐形边缘后滑出。
+规格：
+- One pass per 2.35 s. Divider line (coral, 380 × 6, y = 124): grows from the centre at 0.1–0.5 s (cubic ease-in-out), shrinks away at 2.05–2.3 s.
+- Top text (bold 98 px, white): clipped to the area above the line (y 8–119); moves up into place from 120 px below at 0.35–1.0 s, quintic ease-out.
+- Bottom text (32 px, yellow): clipped to the area below the line (y 129–181); moves down into place from 60 px above at 0.55–1.15 s, quintic ease-out.
+- Exit: top text moves 150 px up at 1.7–2.05 s (backIn, s = 1.2, dipping slightly first); bottom text moves 70 px down at 1.75–2.05 s (cubic ease-in).
+- Opacity never changes; the text is hidden only by leaving the clip area.
+适用场景：Use it for titles and headings that should appear in a clean, composed way.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/005.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

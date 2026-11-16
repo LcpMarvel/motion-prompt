@@ -1,0 +1,16 @@
+请使用「气泡图（Bubble chart）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #226
+
+这是什么：用圆的大小表示第三个数字
+示例画面：L 形轴上五个大小不一的半透明圆依次长大；只有最大的一个是深蓝色。
+规格：
+- Axes: the same L-shaped axes and grid lines as #225 Scatter plot; they stay for the whole cycle
+- Circles: five, radius 14–44 px, semi-transparent fill (opacity 0.5; the largest is dark blue at 0.42) with a 2.5 px outline in the same color
+- Motion: from 0.45 s, 0.24 s apart, each grows over 0.5 s with a small overshoot (ease-out-back)
+- Unlike #225 Scatter plot: only a few points, and the circle size carries a third number
+- End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
+适用场景：To compare three numbers at once: across, up and size.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/226.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,16 @@
+请使用「矩形树图（Treemap）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #237
+
+这是什么：用方块大小表示整体的构成
+示例画面：虚线外框内七个大小不一的矩形按从大到小依次填满。
+规格：
+- Frame: a 439×172 px dashed outline (6 px dash, 6 px gap); it stays for the whole cycle
+- Rectangles: seven, with 5 px corners: the large A on the left (206×172 px, dark blue), then B (140×96 px), C, D and three small ones; dark blue, mid blue, light blue, gray
+- Motion: from 0.4 s, 0.22 s apart, each grows from 0.55× to full size over 0.4 s with an overshoot (ease-out-back) while fading in
+- Labels: letters at the top-left of A–D (A in 24 px white, the others 20 px)
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show at a glance how much of the whole each part takes up.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/237.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

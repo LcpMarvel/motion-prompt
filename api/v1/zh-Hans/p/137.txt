@@ -1,0 +1,15 @@
+请使用「推入转场（Push transition）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #137
+
+这是什么：下一画面把当前画面推出
+示例画面：下一场景从侧面滑入，把当前场景一起推出去。
+规格：
+- Sea scene → mountain scene → sea scene, 2.35 s each. The change runs at 0.45–1.6 s of each half (1.15 s), cubic ease-in-out.
+- The two scenes stay joined and move together by the full frame width (539 px); no overlap and no fade.
+- Direction: sea→mountain moves left (the next scene enters from the right); mountain→sea moves right.
+- A navy line (width 6) marks the seam between the two scenes.
+适用场景：Use it to step through slides, photos or steps, when the change should feel continuous and moving forward.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/137.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

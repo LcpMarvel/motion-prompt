@@ -1,0 +1,17 @@
+请使用「慢动作（Slow motion）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #037
+
+这是什么：放慢动作的播放速度
+示例画面：固定机位前，人缓慢跃起又落下，叶片缓缓飘落，整个动作被拉长。
+规格：
+- Camera: completely fixed (height 1.3 m); only the subject moves
+- Subject: a person 7 m away takes 3.8 s for one jump (0.5 s to 4.3 s); height = 4q(1-q)×1.1 m, a parabola peaking at 1.1 m, with q linear in time
+- Both arms are raised while airborne; the person stands still for 0.5 s before the jump and 0.4 s after landing
+- Leaves: 9 leaves fall from 3.4 m to the ground over 4.7 s while rotating, each offset by 1/9 of the cycle
+- Top-right readout shows "120fps ×0.25" (playback stretched 4×)
+- No hold and no cross-fade; loops seamlessly every 4.7 s
+适用场景：To let viewers study a brief action or expression, or to emphasise an emotional peak.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/037.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,15 @@
+请使用「组合图（柱形图＋折线图）（Combo chart (bar + line)）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #230
+
+这是什么：柱形和折线叠在一张图里（左右两个刻度）
+示例画面：六根柱子对着左侧刻度（灰色）长出，随后一条折线对着右侧刻度（蓝色）从左到右画出。
+规格：
+- Axes: the left axis and its five ticks are gray, the right axis and its five ticks blue, with three light grid lines; they stay for the whole cycle
+- Bars: six light-blue bars 36 px wide grow up over 0.36 s (ease-out), from 0.4 s, 0.12 s apart
+- Line: a 3.5 px blue line joins six points from left to right between 1.3 s and 2.2 s at an even speed; the points are ring markers (radius 7 px) popping in from 1.25 s, 0.18 s apart
+- End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
+适用场景：To show two numbers with different units on one chart, such as sales and margin.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/230.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

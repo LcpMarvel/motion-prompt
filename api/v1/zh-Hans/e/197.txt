@@ -1,0 +1,21 @@
+// Motion Prompt #197 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#197
+//
+// 点彩画 / Pointillism
+// 包: artstyle (图像生成常用的画风名称) · element 05 · 分类: 绘画与版画
+// 画面内容: 同一幅线稿变成完全由色点构成的画，天空、房子、树木与地面都由清晰可见的较大圆点拼成。
+// 运动规格:
+//   - Technique: only dots of color placed side by side; no lines or filled areas
+//   - Dot size: large enough to stay visible on a small card (tiny dots read as watercolor)
+//   - Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+// 适用场景: For a bright picture with a hand-made, rhythmic texture.
+// 标签: pointillism, dots, stipple, painting, texture, colorful
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#197
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 05
+// 点描: 小さな色の点を並べて描く
+CELLS[4] = (k, w, h, u) => gafu(k, w, h, u, '05');

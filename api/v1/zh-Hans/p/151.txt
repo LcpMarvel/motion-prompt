@@ -1,0 +1,15 @@
+请使用「回到顶部按钮（Back-to-top button）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #151
+
+这是什么：往下滚动后出现，点击回到顶部
+示例画面：下滑一段后，右下角出现圆形箭头按钮；点击后页面直接回到顶部。
+规格：
+- A 511 × 168 viewport. Scroll 0→300 px (to the bottom of the page) over 0.2–1.7 s, cubic ease-in-out. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- Button: an orange circle at the bottom right (center x = 472, y = 138; radius 19; white up arrow; 10 px shadow blur). Between 80 and 140 px of scroll it fades in while rising 10 px (cubic ease-out).
+- It is clicked at 2.6 s. While the cursor is on it, it darkens over 0.2 s (#FF5A2C → #D9431C).
+- After the click the scroll goes 300→0 over 2.66–3.26 s (0.6 s, cubic ease-in-out); below 80 px the button fades out by the same formula.
+适用场景：Use it on long pages such as blog posts, long landing pages or product lists, so readers can get back to the menu at the top.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/151.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

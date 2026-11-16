@@ -1,0 +1,17 @@
+请使用「速度渐变（Speed ramp）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #038
+
+这是什么：在同一镜头中改变播放速度
+示例画面：一个镜头内播放速度由快平滑变慢；左下角的曲线图显示速度变化。
+规格：
+- Camera: completely fixed (height 1.3 m); only the playback speed changes
+- Playback speed: 2.4× → 0.25×; the change takes 0.7 s (1.2 s to 1.9 s) with a quadratic ease-in-out (about cubic-bezier(0.45,0,0.55,1))
+- Subject: a person 8 m away runs from 6 m left toward the right; x = -6 + footage time × 2.0 m; they close in quickly during the fast section
+- Jump: a parabola while x is between -1.5 m and 2.5 m, peak 0.99 m, arms raised; take-off at about 0.94 s, most of the airtime plays in slow motion, landing at about 3.68 s
+- Graph: a 120×40 px speed curve at bottom left with a blue dot (radius 5 px) at the current time
+- Return: stops at 4.2 s, then cross-fades back over the last 0.5 s; top-right readout shows the rate (×2.4 → ×0.3)
+适用场景：To slow down only the key part of an action while keeping the lead-in quick.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/038.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

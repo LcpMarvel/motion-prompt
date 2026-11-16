@@ -1,0 +1,16 @@
+请使用「思维导图（Mind map）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #221
+
+这是什么：从中心向四周发散联想
+示例画面：六条弯曲分支自中心的「テーマ」（主题）向两侧生长，再长出细枝与小文字节点。
+规格：
+- Center: a 100×44 px blue rounded box with white text "テーマ" (19 px), popping in at 0.4 s over 0.3 s (ease-out-back)
+- Branches: six cubic Bézier curves (3 px), three to each side, growing over 0.5 s from 0.7 s, 0.09 s apart, each ending in a 54×24 px node; mid blue and gray alternate
+- Twigs: thinner 2.5 px curves grow from the branch ends over 0.35 s (from 1.45 s), each ending in a small 40×18 px node
+- Shape: curved branches and word nodes, unlike the nested rings of #240 Concentric circle diagram
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：For brainstorming, or to spread out and organize ideas around one topic.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/221.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

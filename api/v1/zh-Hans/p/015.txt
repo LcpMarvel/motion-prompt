@@ -1,0 +1,16 @@
+请使用「粒子效果（Particles）」，它是「动态图形」中的一个名称。
+Motion Prompt #015
+
+这是什么：大量小碎片喷出并散开
+示例画面：粒子从发射器持续喷出，散开、落下。
+规格：
+- 84 particles, emitted from the bottom centre (horizontal centre, 20 px above the bottom edge).
+- Initial velocity: ±190 px/s horizontally, 250–400 px/s upward. Gravity 470 px/s² (parabolic paths).
+- Each particle repeats with a period of 2.35 s or about 1.57 s, with a random start offset (fixed seed, so every run looks the same).
+- Lifetime up to 1.5 s: fade in over the first 0.06 s, fade out over the last 30%. Scale 1.15→0.7.
+- Shapes are circles, squares and triangles (size 5–11 px) in blue, coral, yellow and mint, spinning at up to ±4.5 rad/s.
+适用场景：Use it to add celebration or liveliness, in place of confetti or sparks.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/015.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

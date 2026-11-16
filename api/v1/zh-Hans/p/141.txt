@@ -1,0 +1,14 @@
+请使用「像素化转场（Pixelate）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #141
+
+这是什么：马赛克逐渐变粗后切换画面
+示例画面：画面变成越来越粗的色块，在最粗处切换场景，再重新变清晰。
+规格：
+- Field scene → city scene → field, 2.35 s each. At 0.2–1.9 s (1.7 s) the block size steps up and back down through 1, 2, 3, 4, 6, 8, 11, 15, 20, 27 and 36 px (coarsest at the midpoint, 1.05 s).
+- The first half shows the old scene and the second half the new one; the swap happens at the coarsest step.
+- Method: shrink the frame to width ÷ block size with smoothing on, then scale it back up with smoothing off.
+适用场景：Use it for game-like, retro or digital scene changes, or to blur something out as the scene switches.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/141.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

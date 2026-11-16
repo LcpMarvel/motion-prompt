@@ -1,0 +1,15 @@
+请使用「磁吸按钮（Magnetic button）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #084
+
+这是什么：按钮向附近光标偏移
+示例画面：光标靠近时按钮被吸引并跟随之；光标离开后，按钮晃动着回到原位。
+规格：
+- A 168 × 52 button (orange, radius 26) in the centre. The pull range is a 110 px radius from the button's centre.
+- Inside the range: target offset = (cursor − button centre) × 0.35; every frame (60 fps) the button covers 18% of the way to the target.
+- On leaving the range it returns from its current offset to 0 over 1.1 s with elastic.out(1, 0.3): 2^(−10x)·sin((x − 0.075)·2π/0.3) + 1.
+- The cursor enters from the left, circles the button and leaves to the right.
+适用场景：Use it on the one button you most want clicked, such as sign-up or contact.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/084.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,16 @@
+请使用「逻辑树（Logic tree (issue tree)）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #219
+
+这是什么：把一个问题按分支拆解
+示例画面：从左侧的「?」方框向右逐级分叉，1→2→4，以折线相连。
+规格：
+- Root: a 66×50 px blue box with a white "?" at the left (x = 82), popping in at 0.4 s over 0.3 s (ease-out-back)
+- Level 2: two 76×34 px mid-blue boxes at x = 248; their elbow lines draw from 0.75 s to 1.15 s and the boxes pop in at 1.05 s and 1.13 s
+- Level 3: four 92×26 px light-blue boxes at x = 426; their lines draw over 0.4 s starting at 1.35 s, 0.06 s apart, and the boxes pop in from 1.65 s, 0.08 s apart
+- Lines: gray, 3 px, from the right edge of the parent, bending halfway down or up, into the left edge of the child (drawn with cubic ease-in-out)
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To break a problem or goal down completely and list causes or actions.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/219.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

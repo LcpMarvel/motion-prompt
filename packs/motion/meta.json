@@ -15,7 +15,8 @@
       "ask": { "ja": "ロゴをポップインで出して。0.4秒で、行き過ぎは少しだけ。", "en": "Bring the logo in with a pop-in, about 0.4 s, with a slight overshoot.", "zh-Hant": "請用 Pop-in 讓 Logo 出現，大約 0.4 秒，Overshoot 只要一點點。", "es": "Haz que el logo entre con un pop-in, de unos 0,4 s, con un leve overshoot.", "zh-Hans": "让标志以弹性入场出现，时长约 0.4 s，略微超出目标尺寸后回弹。" },
       "summary": {
         "ja": "アプリのアイコンがポンと弾んで現れ、通知バッジが遅れてポンと出る。",
-        "en": "An app icon pops in with a bounce, then a notification badge pops in a moment later."
+        "en": "An app icon pops in with a bounce, then a notification badge pops in a moment later.",
+        "zh-Hans": "应用图标弹跳着出现，片刻后通知角标又弹一下出现。"
       },
       "spec": {
         "ja": [
@@ -48,7 +49,8 @@
       "ask": { "ja": "5枚のカードをスタガーで出して。左から0.08秒ずつずらして。", "en": "Bring in the five cards with a stagger, 0.08 s apart, left to right.", "zh-Hant": "請用 Stagger 讓 5 張卡片出現，由左至右每張間隔 0.08 秒。", "es": "Haz entrar las cinco tarjetas en stagger, con 0,08 s entre cada una, de izquierda a derecha.", "zh-Hans": "用交错动画让五张卡片从左到右依次入场，每张间隔 0.08 s。" },
       "summary": {
         "ja": "グラフの棒が、少しずつ時間をずらして左から順に立ち上がる。",
-        "en": "Chart bars rise one after another from the left, each slightly delayed."
+        "en": "Chart bars rise one after another from the left, each slightly delayed.",
+        "zh-Hans": "图表的柱子从左起依次升起，每根之间略有延迟。"
       },
       "spec": {
         "ja": [
@@ -77,7 +79,8 @@
       "ask": { "ja": "ハートが出る瞬間に、まわりへバーストを入れて。短い線を8本、0.3秒で消す。", "en": "Add a burst around the heart the moment it appears: 8 short lines that fade in 0.3 s.", "zh-Hant": "愛心出現的瞬間，在周圍加上 Burst：8 條短線，0.3 秒內淡出消失。", "es": "Agrega un burst alrededor del corazón cuando aparece: 8 líneas cortas que se desvanecen en 0,3 s.", "zh-Hans": "爱心出现时加一次放射爆发：8 根短线在 0.3 s 内淡出。" },
       "summary": {
         "ja": "「いいね」のハートが点くと同時に、まわりに輪・線・粒が弾ける。",
-        "en": "A like heart fills in, and a ring, lines and dots burst outward at the same moment."
+        "en": "A like heart fills in, and a ring, lines and dots burst outward at the same moment.",
+        "zh-Hans": "点赞红心填满的同时，圆环、射线与粒子向外迸发。"
       },
       "spec": {
         "ja": [
@@ -110,7 +113,8 @@
       "ask": { "ja": "グラフの折れ線を、ラインドローで左から描いて。1.2秒かけて。", "en": "Reveal the chart line with a line draw from the left, over 1.2 s.", "zh-Hant": "請用線條動畫從左邊畫出折線圖的線條，花 1.2 秒。", "es": "Revela la línea del gráfico con un line draw desde la izquierda, en 1,2 s.", "zh-Hans": "让图表曲线从左侧开始，在 1.2 s 内逐渐描绘出来。" },
       "summary": {
         "ja": "グラフの線が描かれるように伸び、消えるときは後ろから追いかけて消える。",
-        "en": "A chart line draws itself on, and is later erased from its starting end."
+        "en": "A chart line draws itself on, and is later erased from its starting end.",
+        "zh-Hans": "图表折线像被画出来一样延伸，消失时再从起点端被擦除。"
       },
       "spec": {
         "ja": [
@@ -143,7 +147,8 @@
       "ask": { "ja": "タイトルをマスクリビールで下からせり上げて。0.6秒、行ごとに少しずらして。", "en": "Bring the title in with a mask reveal from below, 0.6 s, each line slightly after the one before.", "zh-Hant": "標題請用 Mask Reveal 從下方升起，0.6 秒，每一行稍微錯開。", "es": "Haz entrar el título con un mask reveal desde abajo, en 0,6 s, cada línea un poco después de la anterior.", "zh-Hans": "让标题从下方通过遮罩显现，时长 0.6 s，各行稍微错开。" },
       "summary": {
         "ja": "1本の線を境に、見えない枠の向こうから見出しがせり上がる。",
-        "en": "Headline text slides out from behind an invisible edge marked by a single line."
+        "en": "Headline text slides out from behind an invisible edge marked by a single line.",
+        "zh-Hans": "标题文字从一条细线标记的隐形边缘后滑出。"
       },
       "spec": {
         "ja": [
@@ -174,7 +179,8 @@
       "ask": { "ja": "この一文をタイプライターで出して。1文字0.05秒、末尾にカーソルを付けて。", "en": "Show this sentence with a typewriter effect, 0.05 s per character, with a cursor at the end.", "zh-Hant": "這句話請用打字機效果呈現，每個字 0.05 秒，結尾加上游標。", "es": "Muestra esta frase con efecto máquina de escribir, 0,05 s por carácter, con un cursor al final.", "zh-Hans": "给这句话添加打字机效果，每个字 0.05 s，末尾保留光标。" },
       "summary": {
         "ja": "入力欄に1文字ずつ打たれ、打ち終わると送信ボタンが点いて押される。",
-        "en": "Text is typed into an input field one character at a time, then the send button lights up and is pressed."
+        "en": "Text is typed into an input field one character at a time, then the send button lights up and is pressed.",
+        "zh-Hans": "文本逐字敲进输入框，随后发送按钮点亮并被按下。"
       },
       "spec": {
         "ja": [
@@ -207,7 +213,8 @@
       "ask": { "ja": "数字を0から1,280までカウントアップさせて。1.5秒で、最後はゆっくり止めて。", "en": "Count the figure up from 0 to 1,280 in 1.5 s, slowing down at the end.", "zh-Hant": "請用數字跳動讓數字從 0 跳到 1,280，花 1.5 秒，最後慢慢停下來。", "es": "Haz que la cifra suba de 0 a 1.280 en 1,5 s, frenando al final.", "zh-Hans": "用数字递增让数字在 1.5 s 内从 0 增长到 1,280，末尾减速。" },
       "summary": {
         "ja": "数字が勢いよく増えて、最後にピタッと決まる。",
-        "en": "A number races upward and locks onto its final value."
+        "en": "A number races upward and locks onto its final value.",
+        "zh-Hans": "数字快速攀升，最终锁定在目标值。"
       },
       "spec": {
         "ja": [
@@ -240,7 +247,8 @@
       "ask": { "ja": "このナレーションをキネティックタイポグラフィにして。強調する語は大きく、拍に合わせて出して。", "en": "Turn this narration into kinetic typography: make the stressed words larger and land them on the beat.", "zh-Hant": "請把這段旁白做成 Kinetic Typography：強調的詞放大，並配合節拍出現。", "es": "Convierte esta narración en tipografía cinética: las palabras con énfasis más grandes y cayendo en el beat.", "zh-Hans": "把旁白做成动态排版，重读词放大，并对齐节拍出现。" },
       "summary": {
         "ja": "言葉の意味に合わせて文字が動く（のびる／はねる／まわる／ドン！）。",
-        "en": "Words move the way they mean: one stretches, one bounces, one spins, one slams down."
+        "en": "Words move the way they mean: one stretches, one bounces, one spins, one slams down.",
+        "zh-Hans": "单词按自己的含义运动：一个拉伸、一个弹跳、一个旋转、一个砸落。"
       },
       "spec": {
         "ja": [
@@ -273,7 +281,8 @@
       "ask": { "ja": "この移動にイージングをかけて。イーズアウトで、止まり際をゆっくりに。", "en": "Add easing to this move: ease-out, slowing down as it stops.", "zh-Hant": "這段移動請加上 Easing，用 Ease-out，讓停下來之前慢慢減速。", "es": "Ponle easing a este movimiento: ease-out, que vaya frenando al detenerse.", "zh-Hans": "为这段移动添加缓出，使其逐渐减速停下。" },
       "summary": {
         "ja": "同じ距離を同じ時間で動く2つの四角。上は一定の速さ、下は緩急あり。",
-        "en": "Two squares cover the same distance in the same time: the top one at constant speed, the bottom one eased."
+        "en": "Two squares cover the same distance in the same time: the top one at constant speed, the bottom one eased.",
+        "zh-Hans": "两个方块用相同时间走相同距离：上面的匀速，下面的带缓动。"
       },
       "spec": {
         "ja": [
@@ -306,7 +315,8 @@
       "ask": { "ja": "メーターの針をオーバーシュートさせて。目標を1割ほど越えてから戻して。", "en": "Give the gauge needle an overshoot: about 10% past the target, then back.", "zh-Hant": "請讓儀表的指針加上 Overshoot，衝過目標約 10% 之後再回到目標。", "es": "Dale overshoot a la aguja del indicador: un 10 % más allá del objetivo y luego de vuelta.", "zh-Hans": "给仪表指针加上过冲回弹：先超出目标约 10%，再回弹到位。" },
       "summary": {
         "ja": "メーターの針が、目標を行き過ぎてから戻って止まる。",
-        "en": "A gauge needle swings past its target, comes back and settles."
+        "en": "A gauge needle swings past its target, comes back and settles.",
+        "zh-Hans": "仪表指针冲过目标，回摆后停稳。"
       },
       "spec": {
         "ja": [
@@ -337,7 +347,8 @@
       "ask": { "ja": "ボールの着地にスクワッシュ＆ストレッチを入れて。つぶれは弱めに。", "en": "Add squash and stretch when the ball lands; keep the squash subtle.", "zh-Hant": "球落地時請加上擠壓與伸展，擠壓的幅度要小一點。", "es": "Agrega squash and stretch cuando la pelota cae; que el aplastamiento sea sutil.", "zh-Hans": "给球落地时加上轻微的挤压与拉伸。" },
       "summary": {
         "ja": "弾むキャラクターが、着地でつぶれ、飛ぶときに伸びる。",
-        "en": "A bouncing character squashes on landing and stretches as it takes off."
+        "en": "A bouncing character squashes on landing and stretches as it takes off.",
+        "zh-Hans": "弹跳的角色落地时压扁，起跳时拉长。"
       },
       "spec": {
         "ja": [
@@ -368,7 +379,8 @@
       "ask": { "ja": "丸を星にモーフィングさせて。0.8秒で、途中で色も青から黄へ。", "en": "Morph the circle into a star in 0.8 s, changing the color from blue to yellow on the way.", "zh-Hant": "請用形狀變形把圓形變成星形，0.8 秒，過程中顏色也從藍色漸變成黃色。", "es": "Transforma el círculo en estrella en 0,8 s, cambiando el color de azul a amarillo en el camino.", "zh-Hans": "用形状变形让圆形在 0.8 s 内变成星形，同时由蓝色变成黄色。" },
       "summary": {
         "ja": "丸 → 四角 → 星 → ハートと、形と色がなめらかに変わる。",
-        "en": "A shape changes smoothly from circle to square to star to heart, with its colour."
+        "en": "A shape changes smoothly from circle to square to star to heart, with its colour.",
+        "zh-Hans": "一个形状连同颜色，从圆到方、到星、到心平滑变化。"
       },
       "spec": {
         "ja": [
@@ -401,7 +413,8 @@
       "ask": { "ja": "ロゴの登場をリキッドモーションにして。しずくが集まってロゴの形になるように。", "en": "Make the logo entrance a liquid motion: drops gather and form the shape.", "zh-Hant": "Logo 的登場請用液態動畫，像水滴聚在一起組成 Logo 的形狀。", "es": "Haz la entrada del logo con movimiento líquido: gotas que se juntan y forman la figura.", "zh-Hans": "让标志以液态动效入场，由液滴汇聚成形。" },
       "summary": {
         "ja": "しずくが伸びて、ちぎれて、ぬるっと1つにまとまる。",
-        "en": "A blob stretches out, breaks into drops and merges back into one."
+        "en": "A blob stretches out, breaks into drops and merges back into one.",
+        "zh-Hans": "一团液体拉长、断成液滴，又融合回一团。"
       },
       "spec": {
         "ja": [
@@ -432,7 +445,8 @@
       "ask": { "ja": "飛んでいく丸にモーショントレイルを付けて。残像は5個、後ろほど薄く。", "en": "Add a motion trail to the flying circle: five copies that fade out behind it.", "zh-Hant": "飛行中的圓形請加上動態殘影，5 個殘影，越後面越淡。", "es": "Agrega una estela al círculo que vuela: cinco copias que se desvanecen detrás.", "zh-Hans": "给飞行圆球添加五层逐渐淡出的拖尾。" },
       "summary": {
         "ja": "8の字に動く丸の跡に、残像が尾を引く。",
-        "en": "A ball moving in a figure eight leaves a fading trail of copies behind it."
+        "en": "A ball moving in a figure eight leaves a fading trail of copies behind it.",
+        "zh-Hans": "沿 8 字运动的球身后留下渐隐的残影。"
       },
       "spec": {
         "ja": [
@@ -463,7 +477,8 @@
       "ask": { "ja": "達成の瞬間に、下からパーティクルを噴き上げて。4色で、1.5秒で落ちきるように。", "en": "At the moment of success, shoot particles up from the bottom: four colors, all fallen within 1.5 s.", "zh-Hant": "達成的瞬間，請用粒子特效從下方往上噴出，4 種顏色，1.5 秒內全部落完。", "es": "En el momento del éxito, lanza partículas desde abajo: cuatro colores, todas caídas en 1,5 s.", "zh-Hans": "成功时从底部喷出四种颜色的粒子，在 1.5 s 内全部落下。" },
       "summary": {
         "ja": "粒が下の口から次々と噴き出して、飛び散って落ちる。",
-        "en": "Particles keep shooting up from an emitter, spread out and fall."
+        "en": "Particles keep shooting up from an emitter, spread out and fall.",
+        "zh-Hans": "粒子从发射器持续喷出，散开、落下。"
       },
       "spec": {
         "ja": [
@@ -494,7 +509,8 @@
       "ask": { "ja": "この風景を3層に分けて、パララックスで横に流して。手前ほど速く。", "en": "Split this landscape into three layers and scroll them with parallax, nearer layers faster.", "zh-Hant": "請把這張風景分成 3 層，以 Parallax 橫向平移，越近的圖層移動越快。", "es": "Divide este paisaje en tres capas y desplázalas con paralaje, las más cercanas más rápido.", "zh-Hans": "把风景拆成三层，近层滚动更快，形成视差。" },
       "summary": {
         "ja": "横に動く景色。手前ほど大きく、奥ほど小さく動いて、奥行きが出る。",
-        "en": "A landscape pans sideways; near layers move more and far layers move less, creating depth."
+        "en": "A landscape pans sideways; near layers move more and far layers move less, creating depth.",
+        "zh-Hans": "风景横向摇移；近层动得多、远层动得少，产生纵深。"
       },
       "spec": {
         "ja": [
@@ -523,7 +539,8 @@
       "ask": { "ja": "次の場面へはマスクトランジションで。中央の丸が0.7秒で広がって切り替わるように。", "en": "Go to the next scene with a mask transition: a circle grows from the center in 0.7 s.", "zh-Hant": "切換到下一個場景請用遮罩轉場，中央的圓形在 0.7 秒內擴大並完成切換。", "es": "Pasa a la siguiente escena con una transición con máscara: un círculo que crece desde el centro en 0,7 s.", "zh-Hans": "用遮罩转场切换场景，让圆从中心在 0.7 s 内扩展开。" },
       "summary": {
         "ja": "丸や星の形の「窓」が広がり、その中に次の画面が見える。",
-        "en": "A circle- or star-shaped window grows, showing the next scene inside it."
+        "en": "A circle- or star-shaped window grows, showing the next scene inside it.",
+        "zh-Hans": "圆形或星形的窗口逐渐长大，在窗口内露出下一个场景。"
       },
       "spec": {
         "ja": [
@@ -554,7 +571,8 @@
       "ask": { "ja": "場面の切り替えはシェイプトランジションで。4色の斜めの帯が左から覆うように。", "en": "Change scenes with a shape transition: four diagonal color bands sweep in from the left.", "zh-Hant": "場景切換請用形狀轉場，4 種顏色的斜向色帶從左邊掃過來覆蓋畫面。", "es": "Cambia de escena con una transición de formas: cuatro franjas diagonales de color que entran desde la izquierda.", "zh-Hans": "用四条斜向色带从左侧扫入，完成图形转场。" },
       "summary": {
         "ja": "色のついた帯が画面を覆い隠し、抜けると次の画面になっている。",
-        "en": "Coloured bands sweep across and cover the frame; when they leave, the next scene is there."
+        "en": "Coloured bands sweep across and cover the frame; when they leave, the next scene is there.",
+        "zh-Hans": "色带横扫并覆盖画面；移开后已是下一个场景。"
       },
       "spec": {
         "ja": [
@@ -585,7 +603,8 @@
       "ask": { "ja": "ここはリキッドトランジションで。上から青いインクが垂れて画面を満たすように。", "en": "Use a liquid transition here: blue ink drips down from the top and fills the frame.", "zh-Hant": "這裡請用液態轉場，藍色墨水從上方滴下來填滿畫面。", "es": "Usa aquí una transición líquida: tinta azul que gotea desde arriba y llena el cuadro.", "zh-Hans": "用蓝色墨水从顶部滴落铺满画面，完成液态转场。" },
       "summary": {
         "ja": "ペンキのような液体が上から垂れて流れ込み、次の画面になる。",
-        "en": "Paint-like liquid drips down from the top and fills the frame, becoming the next scene."
+        "en": "Paint-like liquid drips down from the top and fills the frame, becoming the next scene.",
+        "zh-Hans": "颜料般的液体自顶部滴落并充满画面，成为下一个场景。"
       },
       "spec": {
         "ja": [
@@ -616,7 +635,8 @@
       "ask": { "ja": "ロゴの「O」の穴へズームスルーして、次の場面へ。0.6秒で、加速しながら。", "en": "Zoom through the hole of the \"O\" in the logo into the next scene, 0.6 s, accelerating.", "zh-Hant": "請用 Zoom Through 穿越轉場鑽進 Logo「O」的洞，進入下一個場景，0.6 秒，逐漸加速。", "es": "Haz un zoom through por el hueco de la \"O\" del logo hacia la siguiente escena, en 0,6 s, acelerando.", "zh-Hans": "用穿越缩放加速穿过标志中字母 O 的孔洞，进入下一场景，时长 0.6 s。" },
       "summary": {
         "ja": "文字の「O」の穴へ突っ込んで、その先の画面へ抜ける。",
-        "en": "The camera pushes into the hole of a letter O and comes out in the next scene."
+        "en": "The camera pushes into the hole of a letter O and comes out in the next scene.",
+        "zh-Hans": "镜头推进字母 O 的孔洞，从另一侧进入下一个场景。"
       },
       "spec": {
         "ja": [
@@ -647,7 +667,8 @@
       "ask": { "ja": "料金カードをフリップで裏返して、裏に詳細を出して。0.5秒で。", "en": "Flip the pricing card to show the details on its back, in 0.5 s.", "zh-Hant": "請用卡片翻轉讓價格卡片翻到背面，並在背面顯示詳細內容，0.5 秒。", "es": "Voltea la tarjeta de precios con un flip para mostrar los detalles al reverso, en 0,5 s.", "zh-Hans": "让价格卡片在 0.5 s 内翻转，展示背面的详情。" },
       "summary": {
         "ja": "カードが縦の軸で回って裏返り、裏の面が出る。",
-        "en": "A card turns over around its vertical axis and shows its other side."
+        "en": "A card turns over around its vertical axis and shows its other side.",
+        "zh-Hans": "卡片绕竖直轴翻到另一面。"
       },
       "spec": {
         "ja": [
@@ -678,7 +699,8 @@
       "ask": { "ja": "ロゴが止まったあとに、ライトスイープを1回。左上から右下へ、弱めに。", "en": "After the logo settles, add one light sweep from top-left to bottom-right, subtle.", "zh-Hant": "Logo 停住之後，請加一次掃光，由左上掃到右下，亮度淡一點。", "es": "Cuando el logo se acomode, agrega un barrido de luz de arriba a la izquierda hacia abajo a la derecha, sutil.", "zh-Hans": "标志停稳后，让一道柔和扫光从左上移到右下。" },
       "summary": {
         "ja": "ロゴの表面を、光の帯が斜めに横切る。",
-        "en": "A band of light crosses the surface of a logo badge at an angle."
+        "en": "A band of light crosses the surface of a logo badge at an angle.",
+        "zh-Hans": "一条光带以斜角掠过徽标表面。"
       },
       "spec": {
         "ja": [
@@ -709,7 +731,8 @@
       "ask": { "ja": "タイトルに一瞬だけグリッチを入れて。0.3秒、色ずれは弱めで、点滅はさせないで。", "en": "Add a brief glitch to the title: 0.3 s, a mild color split, no flashing.", "zh-Hant": "標題請加上短暫的 Glitch，0.3 秒，RGB 分離輕微，不要閃爍。", "es": "Agrega un glitch breve al título: 0,3 s, una separación de color leve, sin destellos.", "zh-Hans": "给标题添加 0.3 s 的轻微故障效果，少量分色，不要闪屏。" },
       "summary": {
         "ja": "文字が横にずれ、色がずれ、帯が走る。明るさの点滅はさせない。",
-        "en": "Text slices shift sideways, colours split and small bars appear, with no brightness flashing."
+        "en": "Text slices shift sideways, colours split and small bars appear, with no brightness flashing.",
+        "zh-Hans": "文字切片横移、颜色分离、出现细条，但没有亮度闪烁。"
       },
       "spec": {
         "ja": [
@@ -742,7 +765,8 @@
       "ask": { "ja": "見出しがドンと落ちた瞬間に、インパクトシェイクを入れて。0.4秒で収まる程度に。", "en": "Add an impact shake when the headline lands; it should settle within 0.4 s.", "zh-Hant": "標題砰地落下的瞬間，請加上畫面震動，0.4 秒內要平息。", "es": "Agrega una sacudida de impacto cuando cae el titular; que se calme en 0,4 s.", "zh-Hans": "标题落地时添加冲击震动，在 0.4 s 内停稳。" },
       "summary": {
         "ja": "重い見出しの板がドンと落ち、その衝撃で画面ごと揺れる。",
-        "en": "A heavy headline slab drops with a thud and the whole frame shakes from the impact."
+        "en": "A heavy headline slab drops with a thud and the whole frame shakes from the impact.",
+        "zh-Hans": "沉重的标题块轰然砸下，整个画面随冲击震动。"
       },
       "spec": {
         "ja": [

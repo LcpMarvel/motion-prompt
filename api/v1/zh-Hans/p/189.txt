@@ -1,0 +1,16 @@
+请使用「切出镜头（Cutaway）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #189
+
+这是什么：切到其他对象后再切回
+示例画面：从说话者切到倾听的观众再切回；插入的是另一个主体。
+规格：
+- Join: two straight cuts (0 frames); to the other subject at 1.7 s and back to the scene at 3.0 s (1.3 s away)
+- Main shot (A): fixed camera (height 1.4 m); a person 5.5 m away talks, swinging arms and legs by 0.45·sin(u×6) rad, with a grey lectern 0.9 m to the right
+- Other subject (CUTAWAY): the listening audience, five people 3.1–4.6 m away in blue and pale blue with both arms up, bouncing by |sin(t×9+i)|×5 cm; no background (a different place)
+- Bottom strip: A (grey), other subject (blue), A (grey) with a playhead (17 Insert shot shows a detail of the same scene)
+- Top-right readout shows "SHOT A" → "CUTAWAY" → "SHOT A"; at 4.7 s it cuts straight back to the start
+适用场景：To show a reaction, or to hide a time skip or a removed slip.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/189.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

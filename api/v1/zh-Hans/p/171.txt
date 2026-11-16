@@ -1,0 +1,17 @@
+请使用「移动延时（Hyperlapse）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #171
+
+这是什么：相机边移动边拍的延时摄影
+示例画面：摄影机沿街道前移，太阳、云与路人快进运行：一段会移动的延时摄影。
+规格：
+- Camera: moves forward 0 m → 22 m (height 1.6 m, pitch +0.05 rad) while the sun, clouds and figures fast-forward through 12 hours (#039 Time-lapse keeps the camera still)
+- Timing: 0.4 s to 4.1 s (3.7 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Street: 12 buildings at x = ±7.5 m (5–55 m deep, 8–16 m tall) approach the camera and leave the frame
+- Sun: travels left to right along an arc, angle -1.25 rad → +1.25 rad, always 170 m ahead of the camera; three clouds drift 140 m right in total, wrapping every 80 m; six small figures cross an 11 m wide street
+- Building shadows fall away from the sun and swing as it moves (translucent grey); the mountains move with the camera so they keep their size
+- Return: cross-fade back to the start over the last 0.5 s; top-right readout shows the clock and the distance travelled (06:00 · 0m → 18:00 · 22m)
+适用场景：To cover a long distance and a long stretch of time in one sweep through a city or a building.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/171.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

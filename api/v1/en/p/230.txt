@@ -10,6 +10,6 @@ Spec:
 - End: the axes and grid stay; only the data fades out from 4.15 s to 4.55 s (one pass = 4.7 s)
 When to use it: To show two numbers with different units on one chart, such as sales and margin.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/230.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://lcpmarvel.github.io/motion-prompt/api/v1/en/e/230.txt
+Shared helper code: https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

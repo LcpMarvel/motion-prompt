@@ -1,4 +1,4 @@
-// Motion Prompt #221 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#221
+// Motion Prompt #221 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#221
 //
 // マインドマップ / Mind map
 // パック: diagram (資料で使う図解・グラフの名前) · element 05 · カテゴリ: 整理する図
@@ -12,8 +12,8 @@
 // 使いどころ: アイデア出しや、1つのテーマから連想を広げて整理するとき。
 // タグ: mind map, brainstorm, ideas, radial, branches, central topic, mindmap
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#221
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#221
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

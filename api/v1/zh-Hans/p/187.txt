@@ -1,0 +1,16 @@
+请使用「淡出到黑场（Fade to black）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #187
+
+这是什么：画面逐渐变暗直至全黑
+示例画面：整个画面沉入黑场，下一个场景再从黑色中亮起。
+规格：
+- Fade out: from 1.4 s to 2.6 s (1.2 s) black (rgb(20,20,24)) is laid over the outgoing picture with opacity 0 → 100%, quadratic ease-in-out (about cubic-bezier(0.45,0,0.55,1))
+- Black: fully black from 2.6 s to 3.1 s; at 2.9 s the incoming picture is swapped in unseen, with a straight cut
+- Fade in: from 3.1 s to 4.3 s (1.2 s) the black goes from 100% → 0 with the same easing
+- Camera: fixed in both pictures (A at height 1.4 m; B at height 1.6 m, pitch +0.1 rad); the subjects do not move either
+- Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "FADE OUT" / "FADE IN"; the viewfinder marks stay over the black
+适用场景：For a chapter break, a long passage of time, or the end of a story.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/187.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

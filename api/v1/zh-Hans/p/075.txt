@@ -1,0 +1,16 @@
+请使用「吸顶页头（Sticky header）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #075
+
+这是什么：滚动时页头停留在屏幕顶部
+示例画面：公告条滚走后，下方的页头停在顶边，内容从其下方滚过。
+规格：
+- Scroll: 0→110 px at 0.4–1.3 s, 110→250 px at 1.9–2.8 s, 250→0 at 3.4–4.4 s (cubic ease-in-out).
+- At the very top, a 22 px announcement strip (navy); below it a 34 px header (logo, three menu items, button).
+- Header position = max(22 − scroll, 0): once the strip is gone, it stops at the top edge (position: sticky; top: 0).
+- Over the next 24 px of scroll, a 12 px shadow under the header fades from 0 to 0.16 opacity.
+- The content (photo, heading, three cards) scrolls normally under the header.
+适用场景：Use it to keep the menu and the call-to-action within reach on a long page.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/075.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

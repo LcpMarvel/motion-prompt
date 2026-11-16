@@ -1,0 +1,17 @@
+请使用「焦点转移（Rack focus）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #033
+
+这是什么：在近处与远处之间切换对焦
+示例画面：机位不动；焦点从前面的花移到后面的人，两者清晰与虚化的关系互换。
+规格：
+- Camera: position, direction and focal length all fixed (height 1.1 m); only the blur amounts change
+- Blur: the foreground flower (0.75 m left, 2 m away) goes 0 px → 7 px; the person and background (person 0.9 m right, 9 m away) go 6 px → 0 px; the ground grid uses 0.6× the background blur
+- Timing: 1.0 s to 2.6 s (1.6 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Focus marker: blue corner brackets travel in a straight line from the flower to the person, half-width shrinking 46 px → 30 px
+- Subject: neither the flower nor the person moves
+- Return: hold 2.6–4.2 s, then cross-fade back over the last 0.5 s; top-right readout shows focus distance (◎ 2m → ◎ 9m)
+适用场景：To move attention from foreground to background (or back) without cutting.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/033.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

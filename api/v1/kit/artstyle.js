@@ -1,8 +1,8 @@
-// Motion Prompt #193-216 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#193
+// Motion Prompt #193-216 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#193
 //
 // Kit for pack "artstyle" (Art styles for image generation / 画像生成で使う画風の名前): the constants and helpers its elements share.
-// Elements #193-216 · 539x208 px · cycle 4.7 s. Element code: https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/).
-// Images used: 27 files under https://showheyohtaki.github.io/motion-prompt/packs/artstyle/img/. The kit loads them itself (from the folder of pack.js, or from that URL when pasted on its own); `ready` resolves when they have arrived, and until then every cell draws a plain background.
+// Elements #193-216 · 539x208 px · cycle 4.7 s. Element code: https://lcpmarvel.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/, /zh-Hans/).
+// Images used: 27 files under https://lcpmarvel.github.io/motion-prompt/packs/artstyle/img/. The kit loads them itself (from the folder of pack.js, or from that URL when pasted on its own); `ready` resolves when they have arrived, and until then every cell draws a plain background.
 //
 // Run one element standalone in a browser:
 //   1. paste this file into a <script>,

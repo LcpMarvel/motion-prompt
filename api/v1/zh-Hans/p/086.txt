@@ -1,0 +1,15 @@
+请使用「下划线动画（Underline animation）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #086
+
+这是什么：悬停时链接下划线从左展开
+示例画面：光标所在的链接下方，橙色线条从左端长出；离开时向右端收缩消失。
+规格：
+- Three links (20 px, bold, 56 apart). The cursor rests on each, left to right, for about 1 s (hit area 6 px wider than the text on each side).
+- Underline: orange, 3 thick, 8 px below the baseline.
+- On hover, width 0→100% from the left end over 0.3 s (cubic ease-out).
+- On leave, the left end moves right over 0.3 s, so the line exits to the right (like scaleX with transform-origin on the right).
+适用场景：Use it on menu and text links to show where the pointer is, quietly.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/086.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -15,7 +15,8 @@
       "ask": { "ja": "会社のあゆみをタイムラインアニメーションにして。スクロールに合わせて縦線を伸ばし、線が届いた年から順に出して。", "en": "Turn the company history into a timeline on scroll: grow the vertical line with the scroll and reveal each year as the line reaches it.", "es": "Convierte la historia de la empresa en una línea de tiempo al hacer scroll: que la línea vertical crezca con el scroll y muestre cada año cuando la línea llega a él.", "zh-Hans": "把公司沿革做成滚动时间轴：竖线随滚动延伸，线到达哪一年就依次显示该年内容。", "zh-Hant": "公司沿革請做成時間軸動畫：縱線隨著捲動延伸，線延伸到哪一年，就依序顯示那一年。" },
       "summary": {
         "ja": "ページを下へスクロールすると、年表の縦線が朱色で上から伸び、線の先が届いた年の点が塗られて、年と出来事が右から現れる。上へ戻すと逆にたどる。",
-        "en": "As the page scrolls down, an orange line grows down the timeline; each dot it reaches fills in and its year and event slide in from the right. Scrolling back up reverses it."
+        "en": "As the page scrolls down, an orange line grows down the timeline; each dot it reaches fills in and its year and event slide in from the right. Scrolling back up reverses it.",
+        "zh-Hans": "页面下滚时，橙色线沿时间轴向下生长；经过的每个圆点依次填实，年份与事件从右侧滑入。上滚则反向。"
       },
       "spec": {
         "ja": [
@@ -46,7 +47,8 @@
       "ask": { "ja": "コンセプト文にスクロールテキストリビールを付けて。最初は薄いグレーで、スクロールに合わせて1文字ずつ濃くして。", "en": "Add a scroll text reveal to the concept statement: start in light gray and darken it one character at a time as the page scrolls.", "es": "Agrega un revelado de texto al hacer scroll a la frase de concepto: que empiece en gris claro y se oscurezca un carácter a la vez mientras se desplaza la página.", "zh-Hans": "给理念文案加上滚动文字显现：初始为浅灰色，随滚动逐字加深。", "zh-Hant": "理念文案加上捲動文字浮現：一開始是淺灰色，隨著捲動一個字一個字變深。" },
       "summary": {
         "ja": "薄いグレーの見出しの文字が、スクロールに合わせて左上から1文字ずつ濃くなり、戻すと後ろから薄くなる。",
-        "en": "A light gray headline darkens one character at a time from the top left as the page scrolls, and fades back from the end when scrolling up."
+        "en": "A light gray headline darkens one character at a time from the top left as the page scrolls, and fades back from the end when scrolling up.",
+        "zh-Hans": "浅灰标题随页面滚动从左上起逐字加深，上滚时从末尾起淡回。"
       },
       "spec": {
         "ja": [
@@ -75,7 +77,8 @@
       "ask": { "ja": "サービスの3ステップをスタッキングカードにして。スクロールで次のカードが下から来て、12pxずつずらして重なるように。", "en": "Show the three service steps as stacking cards: on scroll, each card slides up and stacks 12 px below the top of the one before.", "es": "Muestra los tres pasos del servicio como tarjetas apiladas: al hacer scroll, cada tarjeta sube y se apila 12 px por debajo del borde superior de la anterior.", "zh-Hans": "把服务的三个步骤做成堆叠卡片：滚动时下一张从下方升起，每张比前一张错开 12 px 叠上去。", "zh-Hant": "服務的三個步驟做成堆疊卡片：捲動時下一張卡片從下方上來，每張錯開 12 px 疊上去。" },
       "summary": {
         "ja": "スクロールすると、次のカードが下から上がってきて、前のカードに少しずらして重なる。下になったカードは少し縮んで暗くなる。",
-        "en": "On scroll, the next card rises from below and stacks over the previous one with a small offset; the cards underneath shrink a little and darken."
+        "en": "On scroll, the next card rises from below and stacks over the previous one with a small offset; the cards underneath shrink a little and darken.",
+        "zh-Hans": "滚动时下一张卡片从下方升起，带少量偏移地叠在上一张之上；被压住的卡片略微缩小变暗。"
       },
       "spec": {
         "ja": [
@@ -106,7 +109,8 @@
       "ask": { "ja": "セクションごとに背景色の切り替えを入れて。スクロールで朝はクリーム、夜は濃紺、休日は水色へなめらかに変えて。", "en": "Add a background color change on scroll: blend smoothly from cream for the morning section to navy for night and light blue for the holiday section.", "es": "Agrega un cambio de color de fondo al hacer scroll: que pase suavemente de crema en la sección de la mañana a azul marino en la de la noche y a celeste en la de los días libres.", "zh-Hans": "给各区块加上滚动切换背景色：滚动时从早晨区块的奶油色平滑过渡到夜晚的藏蓝色，再到假日的浅蓝色。", "zh-Hant": "每個區塊加上捲動切換背景色：隨著捲動，從早晨的奶油色、夜晚的深藍色到假日的淺藍色，平順地漸變。" },
       "summary": {
         "ja": "スクロールしてセクションが変わるたびに、ページ全体の背景がクリーム→濃紺→水色となめらかに変わる。暗い背景では文字が白になる。",
-        "en": "Each time the scroll moves into a new section, the whole page background blends from cream to navy to light blue; on the dark background the text turns white."
+        "en": "Each time the scroll moves into a new section, the whole page background blends from cream to navy to light blue; on the dark background the text turns white.",
+        "zh-Hans": "滚动进入新区块时，整页背景由米色渐变为深蓝再到浅蓝；深色背景上文字转白。"
       },
       "spec": {
         "ja": [
@@ -137,7 +141,8 @@
       "ask": { "ja": "ヘッダーを隠れるヘッダーにして。下へスクロールしたら0.3秒で上へ隠し、少しでも上へ戻したら出して。", "en": "Make the header hide on scroll: slide it up out of view over 0.3 s when scrolling down, and bring it back as soon as the user scrolls up.", "es": "Haz un encabezado que se oculta al hacer scroll: que suba fuera de la vista en 0,3 s al bajar y vuelva apenas se haga scroll hacia arriba.", "zh-Hans": "把页头做成滚动隐藏页头：向下滚动时用 0.3 s 向上隐藏，只要稍微向上滚动就重新出现。", "zh-Hant": "把 Header 做成自動隱藏 Header：往下捲動時在 0.3 秒內往上收起，只要稍微往上捲就重新出現。" },
       "summary": {
         "ja": "下へスクロールするとヘッダーが上へ引っ込んで読む場所が広くなり、少し上へ戻すとすぐに出てくる。",
-        "en": "Scrolling down slides the header up out of view to free the screen; scrolling up even a little brings it straight back."
+        "en": "Scrolling down slides the header up out of view to free the screen; scrolling up even a little brings it straight back.",
+        "zh-Hans": "下滑时页头上滑出视野让出屏幕；稍微上滑它就立刻回来。"
       },
       "spec": {
         "ja": [
@@ -166,7 +171,8 @@
       "ask": { "ja": "記事の目次にスクロールスパイを付けて。今読んでいる見出しの項目を朱色にして、切り替えは0.25秒で。", "en": "Add scrollspy to the article's table of contents: highlight the item for the section being read in orange, switching over 0.25 s.", "es": "Agrega scrollspy al índice del artículo: resalta en naranja el elemento de la sección que se está leyendo, con un cambio de 0,25 s.", "zh-Hans": "给文章目录加上滚动监听：当前阅读章节的条目显示为朱红色，切换用时 0.25 s。", "zh-Hant": "文章目錄加上 Scrollspy：正在閱讀的段落所對應的項目變成橘紅色，切換時間 0.25 秒。" },
       "summary": {
         "ja": "本文をスクロールすると、左の目次のうち、いま読んでいる見出しの項目に色が付き、次の見出しに入ると印が移る。",
-        "en": "As the article scrolls, the table-of-contents item for the section being read lights up, and the highlight moves on when the next heading comes in."
+        "en": "As the article scrolls, the table-of-contents item for the section being read lights up, and the highlight moves on when the next heading comes in.",
+        "zh-Hans": "文章滚动时，当前阅读区块对应的目录项点亮，下一个标题进入后高亮随之移动。"
       },
       "spec": {
         "ja": [
@@ -195,7 +201,8 @@
       "ask": { "ja": "記事ページにトップへ戻るボタンを付けて。少しスクロールしたら右下に出して、押したら0.6秒で先頭まで戻して。", "en": "Add a back-to-top button to the article page: show it at the bottom right once the reader has scrolled a little, and scroll to the top in 0.6 s when clicked.", "es": "Agrega un botón de volver arriba a la página del artículo: que aparezca abajo a la derecha cuando el lector haya bajado un poco, y que suba hasta arriba en 0,6 s al hacer clic.", "zh-Hans": "给文章页加上回到顶部按钮：稍微滚动后显示在右下角，点击后用 0.6 s 滚回顶部。", "zh-Hant": "文章頁加上回到頂端按鈕：稍微往下捲之後出現在右下角，點擊後在 0.6 秒內回到頁面最上方。" },
       "summary": {
         "ja": "下までスクロールすると右下に丸い矢印のボタンが現れ、押すとページが一気に先頭まで戻る。",
-        "en": "After scrolling down, a round arrow button appears at the bottom right; clicking it takes the page straight back to the top."
+        "en": "After scrolling down, a round arrow button appears at the bottom right; clicking it takes the page straight back to the top.",
+        "zh-Hans": "下滑一段后，右下角出现圆形箭头按钮；点击后页面直接回到顶部。"
       },
       "spec": {
         "ja": [
@@ -224,7 +231,8 @@
       "ask": { "ja": "ファーストビューの写真をスクロールで拡大にして。中央の小さな写真をスクロールに合わせて画面いっぱいまで広げ、広がりきったら見出しを重ねて。", "en": "Use zoom on scroll for the hero image: grow the small centered photo to fill the viewport as the user scrolls, then fade a headline in over it.", "es": "Usa zoom al hacer scroll en la imagen del hero: que la foto pequeña del centro crezca hasta llenar la pantalla mientras se hace scroll, y luego funde un titular encima.", "zh-Hans": "首屏照片做成滚动放大：中央的小照片随滚动放大到铺满视口，完全展开后叠上标题。", "zh-Hant": "Hero 區塊的照片做成捲動放大：中央的小照片隨著捲動放大到填滿畫面，完全放大後再疊上標題。" },
       "summary": {
         "ja": "スクロールに合わせて、ページ中央の小さな写真が窓いっぱいまで広がり、周りの文字が消えて、写真の上に見出しが出る。",
-        "en": "As the page scrolls, a small photo in the middle grows to fill the window, the text around it fades away and a headline appears over the photo."
+        "en": "As the page scrolls, a small photo in the middle grows to fill the window, the text around it fades away and a headline appears over the photo.",
+        "zh-Hans": "页面滚动时，中央的小照片长大至充满窗口，周围文字淡出，照片上浮现标题。"
       },
       "spec": {
         "ja": [
@@ -253,7 +261,8 @@
       "ask": { "ja": "会員カードに3Dチルトを付けて。カーソルの位置に合わせて最大18°傾けて、光の反射も動かして。", "en": "Add a 3D tilt on hover to the member card: tilt it up to 18° following the cursor, with a moving glare.", "es": "Agrega un tilt 3D al pasar el cursor a la tarjeta de miembro: que se incline hasta 18° siguiendo el cursor, con un reflejo de luz que se mueve.", "zh-Hans": "给会员卡加上 3D 倾斜：随光标位置最大倾斜 18°，反光也跟着移动。", "zh-Hant": "會員卡加上 3D 傾斜效果：跟著游標位置最多傾斜 18 度，表面的反光也跟著移動。" },
       "summary": {
         "ja": "カーソルがカードの上を動くと、カードがカーソルの位置に合わせて奥行きをもって傾き、表面の光の反射も一緒に動く。離れると平らに戻る。",
-        "en": "As the cursor moves over the card, the card tilts in depth to match the cursor position and a glare moves across its surface; it settles flat when the cursor leaves."
+        "en": "As the cursor moves over the card, the card tilts in depth to match the cursor position and a glare moves across its surface; it settles flat when the cursor leaves.",
+        "zh-Hans": "光标在卡片上移动时，卡片随位置在纵深上倾斜，表面掠过一道反光；离开后回平。"
       },
       "spec": {
         "ja": [
@@ -284,7 +293,8 @@
       "ask": { "ja": "特長のカードにスポットライトホバーを付けて。暗いカードの上で、カーソルの周り半径120pxくらいだけ明るくして、縁も光らせて。", "en": "Add a spotlight hover to the feature cards: on the dark cards, light up only a circle of about 120 px around the cursor and make the borders glow too.", "es": "Agrega un spotlight hover a las tarjetas de características: sobre las tarjetas oscuras, ilumina solo un círculo de unos 120 px de radio alrededor del cursor y haz que los bordes también brillen.", "zh-Hans": "给特色卡片加上聚光灯悬停：在深色卡片上只照亮光标周围半径约 120 px 的范围，边框也一起发光。", "zh-Hant": "特色卡片加上 Hover 聚光燈效果：在深色卡片上，只照亮游標周圍半徑約 120 px 的範圍，卡片邊框也要發光。" },
       "summary": {
         "ja": "暗いカードの上をカーソルが動くと、カーソルの周りだけが丸く明るく照らされ、近くのカードの縁も光る。",
-        "en": "As the cursor moves over the dark cards, only a circle around it is lit, and the edges of nearby cards glow."
+        "en": "As the cursor moves over the dark cards, only a circle around it is lit, and the edges of nearby cards glow.",
+        "zh-Hans": "光标在暗色卡片间移动时，只有其周围一圈被照亮，相邻卡片的边缘泛光。"
       },
       "spec": {
         "ja": [
@@ -315,7 +325,8 @@
       "ask": { "ja": "商品一覧にホバーで画像切り替えを付けて。カーソルを乗せたら0.3秒で後ろ姿の写真にクロスフェードして。", "en": "Add an image swap on hover to the product grid: cross-fade to the back view over 0.3 s when the cursor is on a card.", "es": "Agrega un cambio de imagen al pasar el cursor a la cuadrícula de productos: un fundido cruzado a la vista de espalda en 0,3 s cuando el cursor esté sobre una tarjeta.", "zh-Hans": "给商品列表加上悬停切换图片：光标停在卡片上时，用 0.3 s 叠化为背面照片。", "zh-Hant": "商品列表加上 Hover 切換圖片：游標移到卡片上時，用 0.3 秒交叉溶解成背面照片。" },
       "summary": {
         "ja": "商品カードにカーソルを乗せると、Tシャツの正面の写真が後ろ姿の写真にふわっと切り替わり、離れると正面に戻る。",
-        "en": "With the cursor on a product card, the front photo of the T-shirt cross-fades to a back view; it returns to the front when the cursor leaves."
+        "en": "With the cursor on a product card, the front photo of the T-shirt cross-fades to a back view; it returns to the front when the cursor leaves.",
+        "zh-Hans": "光标停在商品卡上时，T 恤正面照片交叉淡化为背面照；离开后回到正面。"
       },
       "spec": {
         "ja": [
@@ -344,7 +355,8 @@
       "ask": { "ja": "グローバルメニューにテキストロールを付けて。カーソルを乗せたら文字が1文字ずつ0.035秒ずらして上へ回り、朱色の同じ文字が下から出るように。", "en": "Give the main menu a text roll on hover: the letters roll up one by one, 0.035 s apart, revealing the same word in orange from below.", "es": "Ponle un text roll al pasar el cursor al menú principal: que las letras rueden hacia arriba una por una, con 0,035 s de diferencia, y aparezca desde abajo la misma palabra en naranja.", "zh-Hans": "给主导航加上悬停文字翻滚：光标悬停时文字逐字向上翻出，每字间隔 0.035 s，同样的朱红色文字从下方翻入。", "zh-Hant": "主選單加上 Hover 文字翻滾：游標移上去時，文字一個字一個字往上翻出，每個字錯開 0.035 秒，同時橘紅色的同一組字從下方翻上來。" },
       "summary": {
         "ja": "メニューの文字にカーソルを乗せると、文字が1文字ずつ上へ回って消え、同じ文字が朱色で下から出てくる。離れると元に戻る。",
-        "en": "With the cursor on a menu word, its letters roll up and out one by one while the same word rolls in from below in orange; it rolls back when the cursor leaves."
+        "en": "With the cursor on a menu word, its letters roll up and out one by one while the same word rolls in from below in orange; it rolls back when the cursor leaves.",
+        "zh-Hans": "光标停在菜单词上时，字母逐个向上滚出，同一个词以橙色从下方滚入；离开后滚回。"
       },
       "spec": {
         "ja": [
@@ -373,7 +385,8 @@
       "ask": { "ja": "施設一覧をホバーで画像プレビューにして。行にカーソルを乗せたら、その写真をカーソルの横に0.25秒で出して、カーソルについて動かして。", "en": "Turn the property list into a hover image reveal: when the cursor is on a row, show its photo beside the cursor over 0.25 s and let it follow the cursor.", "es": "Convierte la lista de propiedades en un hover image reveal: cuando el cursor esté sobre una fila, muestra su foto junto al cursor en 0,25 s y que lo siga.", "zh-Hans": "把设施列表做成悬停图片预览：光标停在某行时，用 0.25 s 在光标旁显示该行照片，并跟随光标移动。", "zh-Hant": "設施列表做成 Hover 圖片預覽：游標移到某一列時，在 0.25 秒內於游標旁邊顯示那一列的照片，並跟著游標移動。" },
       "summary": {
         "ja": "文字だけのリストの行にカーソルを乗せると、その行の写真がカーソルの横にふわっと出て、カーソルについて動く。",
-        "en": "With the cursor on a row of a text-only list, that row's photo fades in beside the cursor and follows it."
+        "en": "With the cursor on a row of a text-only list, that row's photo fades in beside the cursor and follows it.",
+        "zh-Hans": "光标停在纯文字列表的某行上时，该行的照片在光标旁淡入并跟随移动。"
       },
       "spec": {
         "ja": [
@@ -402,7 +415,8 @@
       "ask": { "ja": "フォームの入力欄をフローティングラベルにして。フォーカスしたらラベルを0.24秒で小さくして枠の上の線へ移して。", "en": "Use floating labels in the form: on focus, shrink each label and move it onto the top border over 0.24 s.", "es": "Ponle etiqueta flotante a cada campo del formulario: al enfocarlo, que la etiqueta se achique y pase al borde superior en 0,24 s.", "zh-Hans": "表单输入框使用浮动标签：获得焦点时，标签用 0.24 s 缩小并移到边框顶线上。", "zh-Hant": "表單的輸入欄位改成浮動標籤：聚焦時，標籤在 0.24 秒內縮小並移到外框的上緣線上。" },
       "summary": {
         "ja": "入力欄をクリックするとラベルが小さくなって欄の上の線へ移り、空いた欄に文字を打てる。空にして外すとラベルが中に戻る。",
-        "en": "Clicking the field shrinks the label and moves it onto the top border, leaving the field free for typing; empty and unfocused, the label moves back inside."
+        "en": "Clicking the field shrinks the label and moves it onto the top border, leaving the field free for typing; empty and unfocused, the label moves back inside.",
+        "zh-Hans": "点击输入框时标签缩小并移到上边框上，让出输入空间；留空失焦后标签回到框内。"
       },
       "spec": {
         "ja": [
@@ -433,7 +447,8 @@
       "ask": { "ja": "お問い合わせフォームにインラインバリデーションを入れて。メールアドレスを打っている間は赤で「形式が正しくありません」、正しくなったら緑のチェックを出して。", "en": "Add inline validation to the contact form: while the email address is incomplete show a red \"invalid format\" message, and switch to a green check once it is valid.", "es": "Agrega validación en línea al formulario de contacto: mientras el correo esté incompleto, muestra en rojo \"Formato inválido\", y cambia a un check verde en cuanto sea válido.", "zh-Hans": "给联系表单加上实时校验：邮箱地址未输完整时显示红色“格式不正确”，正确后显示绿色对勾。", "zh-Hant": "聯絡表單加上即時驗證：電子郵件地址還沒輸入完整時，顯示紅色的「格式不正確」，格式正確後改成綠色勾勾。" },
       "summary": {
         "ja": "メールアドレスを打っている途中は欄が赤くなって「形式が正しくありません」と出て、正しく打ち終わった瞬間に緑のチェックとOKに変わる。",
-        "en": "While the email address is half typed the field turns red with an \"invalid format\" message; the moment it is complete it switches to a green check and \"OK\"."
+        "en": "While the email address is half typed the field turns red with an \"invalid format\" message; the moment it is complete it switches to a green check and \"OK\".",
+        "zh-Hans": "邮箱输入到一半时输入框变红并提示「格式不对」；输完的一瞬切换为绿色对勾与「OK」。"
       },
       "spec": {
         "ja": [
@@ -462,7 +477,8 @@
       "ask": { "ja": "送信ボタンをローディングボタンにして。押したら0.3秒で丸く縮めて回る表示にし、終わったら緑のチェックと「完了」に変えて。", "en": "Make the submit button a loading button: on click, shrink it to a circle with a spinner over 0.3 s, then turn it green with a check and \"Done\".", "es": "Haz del botón de enviar un botón de carga: al hacer clic, que se encoja a un círculo con un spinner en 0,3 s y luego se ponga verde con un check y \"Listo\".", "zh-Hans": "把提交按钮做成加载按钮：点击后用 0.3 s 收缩成圆形并显示加载圆环，完成后变成绿色对勾和“完成”。", "zh-Hant": "送出按鈕做成 Loading 按鈕：點擊後 0.3 秒內縮成圓形並顯示轉圈的載入圖示，完成後變成綠色，顯示勾勾和「完成」。" },
       "summary": {
         "ja": "送信ボタンを押すと、ボタンが丸く縮んで中で読み込み表示が回り、終わると緑色のチェック付き「完了」に広がる。",
-        "en": "Clicking the submit button shrinks it to a circle with a spinner inside; when it finishes it widens into a green \"Done\" with a check."
+        "en": "Clicking the submit button shrinks it to a circle with a spinner inside; when it finishes it widens into a green \"Done\" with a check.",
+        "zh-Hans": "点击提交按钮后它收缩成带转圈的圆形；完成后展开为带对勾的绿色「完成」。"
       },
       "spec": {
         "ja": [
@@ -493,7 +509,8 @@
       "ask": { "ja": "実績一覧から詳細ページへの移動をビュートランジションにして。押した写真がそのまま0.6秒で詳細の上部まで広がるように。", "en": "Use a view transition from the works list to the detail page: the clicked photo should grow into the top of the detail page over 0.6 s.", "es": "Usa una view transition de la lista de trabajos a la página de detalle: la foto en la que se hace clic debe crecer hasta la parte superior del detalle en 0,6 s.", "zh-Hans": "从作品列表进入详情页时使用视图过渡：被点击的照片用 0.6 s 直接放大到详情页顶部。", "zh-Hant": "從作品列表到詳細頁的換頁做成 View Transition：點擊的照片直接在 0.6 秒內放大成詳細頁最上方的圖片。" },
       "summary": {
         "ja": "一覧の写真を押すと、その写真が1枚のまま大きくなって詳細ページの上部の写真になり、周りが詳細ページに入れ替わる。戻ると元の位置へ縮む。",
-        "en": "Clicking a photo in the list grows that same photo into the image at the top of the detail page while the rest changes to the detail page; going back shrinks it into place."
+        "en": "Clicking a photo in the list grows that same photo into the image at the top of the detail page while the rest changes to the detail page; going back shrinks it into place.",
+        "zh-Hans": "点击列表中的照片，同一张照片长大为详情页顶部大图，其余部分切换为详情页；返回时它缩回原位。"
       },
       "spec": {
         "ja": [
@@ -524,7 +541,8 @@
       "ask": { "ja": "施工事例の写真をライトボックスで見られるようにして。押したら背景を暗くして写真を中央に拡大し、左右の矢印で前後に送れるように。", "en": "Let visitors view the case-study photos in a lightbox: on click, dim the page and enlarge the photo in the center, with arrows to go to the previous or next photo.", "es": "Muestra las fotos de los proyectos realizados en un lightbox: al hacer clic, oscurece la página y agranda la foto en el centro, con flechas para ir a la anterior o a la siguiente.", "zh-Hans": "让施工案例照片可以在灯箱中查看：点击后背景变暗、照片在中央放大，用左右箭头切换上一张和下一张。", "zh-Hant": "施工案例的照片改成用 Lightbox 燈箱觀看：點擊後背景變暗，照片在中央放大，可用左右箭頭切換上一張、下一張。" },
       "summary": {
         "ja": "ギャラリーのサムネを押すと周りが暗くなり、その写真が画面の中央で大きく表示される。×を押すと元のサムネへ縮んで戻る。",
-        "en": "Clicking a thumbnail in the gallery dims the page and shows that photo large in the center; the × shrinks it back into its thumbnail."
+        "en": "Clicking a thumbnail in the gallery dims the page and shows that photo large in the center; the × shrinks it back into its thumbnail.",
+        "zh-Hans": "点击画廊缩略图，页面变暗，该照片放大居中显示；点 × 缩回缩略图。"
       },
       "spec": {
         "ja": [
@@ -553,7 +571,8 @@
       "ask": { "ja": "商品写真にホットスポットを付けて。特長の場所に脈打つ点を置き、押したら説明の吹き出しを0.25秒で出して。", "en": "Add hotspots to the product photo: put pulsing dots on the key features and open a tooltip over 0.25 s when one is clicked.", "es": "Agrega hotspots a la foto del producto: pon puntos que laten sobre las características clave y abre un tooltip en 0,25 s al hacer clic en uno.", "zh-Hans": "给商品照片加上图片热点：在特色部位放置脉动的圆点，点击后用 0.25 s 弹出说明气泡。", "zh-Hant": "商品照片加上 Hotspot 熱點：在特色的位置放上會脈動的圓點，點擊後在 0.25 秒內跳出說明的 Tooltip。" },
       "summary": {
         "ja": "製品の絵の上で白い点が脈打ち、点を押すとその部分の説明が吹き出しで出る。別の点を押すと吹き出しが入れ替わる。",
-        "en": "White dots pulse on the product picture; clicking one opens a tooltip about that part, and clicking another dot swaps the tooltip."
+        "en": "White dots pulse on the product picture; clicking one opens a tooltip about that part, and clicking another dot swaps the tooltip.",
+        "zh-Hans": "产品图上白色圆点脉动；点击弹出该部位的说明气泡，再点其他点则切换气泡。"
       },
       "spec": {
         "ja": [
@@ -582,7 +601,8 @@
       "ask": { "ja": "キャンペーンの締切にカウントダウンタイマーを付けて。時:分:秒で、数字が変わるたびに0.3秒で下から入れ替わるように。", "en": "Add a countdown timer for the campaign deadline: hours, minutes and seconds, with each changing digit rolling in from below over 0.3 s.", "es": "Agrega una cuenta regresiva para el cierre de la campaña: horas, minutos y segundos, y que cada dígito que cambia aparezca rodando desde abajo en 0,3 s.", "zh-Hans": "给活动截止时间加上倒计时：以时:分:秒显示，每次数字变化时新数字用 0.3 s 从下方滚入。", "zh-Hant": "活動截止時間加上倒數計時器：以時:分:秒顯示，數字每次變動時，用 0.3 秒從下方換上新的數字。" },
       "summary": {
         "ja": "「キャンペーン終了まで」の 時:分:秒 が1秒ごとに減り、変わった数字だけが上へ抜けて新しい数字が下から入る。",
-        "en": "The hours, minutes and seconds under \"キャンペーン終了まで\" (until the campaign ends) count down every second; only the digits that change slide up and out as new ones come in from below."
+        "en": "The hours, minutes and seconds under \"キャンペーン終了まで\" (until the campaign ends) count down every second; only the digits that change slide up and out as new ones come in from below.",
+        "zh-Hans": "「キャンペーン終了まで」（距活动结束）下方的时、分、秒每秒倒数；只有变化的数字向上滑出、新数字从下滑入。"
       },
       "spec": {
         "ja": [
@@ -611,7 +631,8 @@
       "ask": { "ja": "ファーストビューと次のセクションの境目にシェイプディバイダーを入れて。白い波を2枚重ねて、ゆっくり逆向きに揺らし続けて。", "en": "Add an animated shape divider between the hero and the next section: two white wave layers drifting slowly in opposite directions.", "es": "Agrega un divisor de forma animado entre el hero y la sección siguiente: dos capas de olas blancas que se desplazan despacio en direcciones opuestas.", "zh-Hans": "在首屏与下一节之间加入动态形状分隔线：叠放两层白色波浪，缓慢地反向持续摆动。", "zh-Hant": "Hero 區塊和下一個區塊的交界加上形狀分隔線：疊兩層白色波浪，持續朝相反方向慢慢擺動。" },
       "summary": {
         "ja": "青いセクションと白いセクションの境目にある波の形が、2枚重なってゆっくりゆれ続ける。",
-        "en": "Where a blue section meets a white one, two layered wave shapes keep swaying slowly."
+        "en": "Where a blue section meets a white one, two layered wave shapes keep swaying slowly.",
+        "zh-Hans": "蓝色区块与白色区块交界处，两层波浪形状持续缓慢摇曳。"
       },
       "spec": {
         "ja": [
@@ -640,7 +661,8 @@
       "ask": { "ja": "投稿のいいねボタンにいいねアニメーションを付けて。押したらハートを赤く塗って1.45倍まで弾ませ、周りに小さな粒を散らして、数字も1増やして。", "en": "Add a like button animation to posts: fill the heart red, bounce it up to 1.45×, scatter a few small particles and count up by one.", "es": "Agrega una animación de like a las publicaciones: que el corazón se llene de rojo, rebote hasta 1,45×, suelte unas cuantas partículas pequeñas y el contador suba en uno.", "zh-Hans": "给帖子的点赞按钮加上点赞动画：点击后爱心填充红色并弹到 1.45×，周围散开小颗粒，数字加 1。", "zh-Hant": "貼文的讚按鈕加上按讚動畫：點擊後愛心變成紅色、彈到 1.45 倍，周圍散出小顆粒，數字也加 1。" },
       "summary": {
         "ja": "ハートを押すと赤く塗られてポンと弾み、周りに小さな粒が散って、横の数字が1つ増える。もう一度押すと元に戻る。",
-        "en": "Clicking the heart fills it red with a springy pop, small particles burst around it and the count beside it goes up by one; clicking again undoes it."
+        "en": "Clicking the heart fills it red with a springy pop, small particles burst around it and the count beside it goes up by one; clicking again undoes it.",
+        "zh-Hans": "点击爱心，红色带弹性地填充，周围迸出小粒子，旁边计数加一；再点一次撤销。"
       },
       "spec": {
         "ja": [
@@ -671,7 +693,8 @@
       "ask": { "ja": "ファーストビューの下にスクロールダウンの合図を入れて。マウスの形の中の点が約1.5秒ごとに下へ動いて消えるのをくり返して。", "en": "Add a scroll-down cue below the hero: a dot inside a mouse outline slides down and fades about every 1.5 s, on repeat.", "es": "Agrega un indicador de scroll debajo del hero: un punto dentro del contorno de un mouse que baja y se desvanece más o menos cada 1,5 s, en bucle.", "zh-Hans": "在首屏下方加入向下滚动提示：鼠标轮廓内的小圆点约每 1.5 s 向下移动并消失，循环播放。", "zh-Hant": "Hero 區塊下方加上向下捲動提示：滑鼠外框裡的小圓點約每 1.5 秒往下移動並消失，不斷重複。" },
       "summary": {
         "ja": "ファーストビューの下で、「SCROLL」の文字とマウスの形の中の点、両わきの矢印が、下へ促す動きをくり返す。",
-        "en": "Below the hero, the word \"SCROLL\", a dot inside a mouse outline and arrows on either side keep repeating a downward motion."
+        "en": "Below the hero, the word \"SCROLL\", a dot inside a mouse outline and arrows on either side keep repeating a downward motion.",
+        "zh-Hans": "首屏下方，「SCROLL」字样、鼠标轮廓中的圆点与两侧箭头不断重复向下的动作。"
       },
       "spec": {
         "ja": [
@@ -698,7 +721,8 @@
       "ask": { "ja": "ファーストビューを背景動画にして。音なしでくり返し流し、文字が読めるように左側に暗いグラデーションを重ねて。", "en": "Give the hero a background video: muted and looping, with a dark gradient on the left so the headline stays readable.", "es": "Ponle al hero un video de fondo: sin sonido y en bucle, con un degradado oscuro a la izquierda para que el titular se lea bien.", "zh-Hans": "首屏使用背景视频：静音循环播放，左侧叠加深色渐变，保证标题清晰可读。", "zh-Hant": "Hero 區塊做成背景影片：靜音循環播放，左側疊上深色漸層，讓標題看得清楚。" },
       "summary": {
         "ja": "ファーストビューの背景で雲と波が流れ続け、その上に見出しとボタンが動かずに乗っている。",
-        "en": "In the hero background, clouds and waves keep moving, while the headline and button sit still on top."
+        "en": "In the hero background, clouds and waves keep moving, while the headline and button sit still on top.",
+        "zh-Hans": "首屏背景里云与海浪持续运动，标题与按钮静置其上。"
       },
       "spec": {
         "ja": [

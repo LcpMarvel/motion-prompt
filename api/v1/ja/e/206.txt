@@ -1,4 +1,4 @@
-// Motion Prompt #206 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#206
+// Motion Prompt #206 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#206
 //
 // 重ね切り絵 / Layered paper art
 // パック: artstyle (画像生成で使う画風の名前) · element 14 · カテゴリ: グラフィック
@@ -10,8 +10,8 @@
 // 使いどころ: 温かみと立体感のある、絵本やカードのようなビジュアルに。
 // タグ: paper cut, layered paper, papercut, shadow box, depth, craft
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#206
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#206
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

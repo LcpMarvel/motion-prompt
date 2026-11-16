@@ -1,0 +1,17 @@
+请使用「客户旅程地图（Customer journey map）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #236
+
+这是什么：并列各阶段的行为和心情起伏
+示例画面：五个阶段标题与行为卡片排开，随后一条情绪线左右起伏，每个点上带笑脸或皱眉标记。
+规格：
+- Frame: five columns with vertical dividers; the stage headers on top are plain rounded boxes (not arrows; the middle one gray), appearing from 0.35 s, 0.1 s apart
+- Actions: a white card under each header (text as gray bars), rising 8 px while it appears over 0.3 s, from 0.6 s, 0.1 s apart
+- Feeling: against a dotted neutral line at y = 150, a smooth blue curve (3.5 px) through +0.35, +0.7, −0.6, +0.15 and +0.85 (× 36 px) is drawn from left to right between 1.25 s and 2.25 s
+- Marks: as the line reaches each point a face (radius 12 px) pops in: a blue smile above the neutral line, a gray frown below it
+- There are no arrows across lanes (unlike #238 Swimlane diagram)
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To see what customers do at each stage and where their mood drops.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/236.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,32 @@
+// Motion Prompt #098 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#098
+//
+// 轮廓光 / Rim light
+// 包: photo (摄影效果、光线与风格) · element 02 · 分类: 布光与时段
+// 画面内容: 环境变暗，人物身后左右两盏灯只在头与肩的两侧描出细亮边；右下角的平面图显示两盏灯的位置。
+// 运动规格:
+//   - Scene 1: a head-and-shoulders figure in front of a horizon at y 150 (head centre x 270, y 78, radius 29 px, no face or hair). 
+//   - Background: light scene → dark scene (sky #2B2D33, ground #24252A); figure #4D5A75 → #1F2128
+//   - Bright edges: two copies of the figure in amber #FFC75A, shifted 3.5 px left and right and 2.5 px up, placed behind the dark figure (3.5 px wide edges)
+//   - Plan at the bottom right (66×66 px): lights at ±135° seen from above (behind, left and right); top-right readout "±135°"
+//   - Timing: the effect comes in from 0.4 s to 1.4 s, holds until 4.0 s and is gone again by 4.8 s (one pass = 5 s, cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1)))
+// 适用场景: To separate a person or product from a dark background and show its shape.
+// 标签: rim light, rim lighting, edge light, backlight, kicker, outline, studio
+// 尺寸: 539x208 px · 循环: 5 s
+// Needs: kit photo -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/photo.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#098
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 02
+// リムライト: 周りが暗くなり、斜め後ろ左右の2灯で頭と肩の輪郭だけが細く光る
+CELLS[1] = cell((k, u) => {
+  const a = env(u);
+  stagePortrait(k, pal(BASE, DARK, a));
+  k.save(); k.globalAlpha = a; k.fillStyle = BASE.lit;
+  for (const dx of [-3.5, 3.5]) { k.save(); k.translate(dx, -2.5); bustPath(k, PX, PY, PR); k.fill(); k.restore(); }
+  k.restore();
+  bust(k, PX, PY, PR, mixc(BASE.person, DARK.person, a));
+  plan(k, [[Math.PI * 0.75, a], [-Math.PI * 0.75, a]]);
+  hud(k, '±135°');
+});

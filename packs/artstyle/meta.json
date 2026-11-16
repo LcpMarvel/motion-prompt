@@ -62,7 +62,8 @@
    },
    "summary": {
     "ja": "線画の家・木・太陽が、淡い透明水彩の絵に変わる。色がにじんでたまり、紙の白が残る。",
-    "en": "The line drawing of a house, a tree and the sun becomes a pale transparent watercolor, with colors bleeding and pooling and the white paper left showing."
+    "en": "The line drawing of a house, a tree and the sun becomes a pale transparent watercolor, with colors bleeding and pooling and the white paper left showing.",
+        "zh-Hans": "同一幅线稿变成淡而透明的水彩画，颜色晕开、积聚，留出纸张的白色。"
    },
    "spec": {
     "ja": [
@@ -116,7 +117,8 @@
    },
    "summary": {
     "ja": "同じ線画が、絵の具を厚く盛った色の濃い油絵に変わる。筆跡とナイフの跡が凹凸になって見える。",
-    "en": "The same line drawing becomes a richly colored oil painting with thick paint; brush strokes and knife marks stand out as ridges."
+    "en": "The same line drawing becomes a richly colored oil painting with thick paint; brush strokes and knife marks stand out as ridges.",
+        "zh-Hans": "同一幅线稿变成色彩浓重的厚涂油画，笔触与刀痕以浮雕般的肌理凸起。"
    },
    "spec": {
     "ja": [
@@ -170,7 +172,8 @@
    },
    "summary": {
     "ja": "同じ線画が、和紙に墨1色で描いた絵に変わる。濃い墨と薄い墨のにじみ・ぼかしだけで形を作る。",
-    "en": "The same line drawing becomes a picture in one black ink on washi paper, shaped only by dark and pale ink, bleeds and soft washes."
+    "en": "The same line drawing becomes a picture in one black ink on washi paper, shaped only by dark and pale ink, bleeds and soft washes.",
+        "zh-Hans": "同一幅线稿变成和纸上的单色水墨画，仅靠浓淡、晕染与柔和的湿笔成形。"
    },
    "spec": {
     "ja": [
@@ -224,7 +227,8 @@
    },
    "summary": {
     "ja": "同じ線画が、江戸の多色刷り木版画に変わる。家は瓦屋根の日本家屋、木は松になり、太陽は赤い丸、空は上から薄くなるぼかし摺り。",
-    "en": "The same line drawing becomes an Edo-period color woodblock print: the house turns into a tiled-roof Japanese house, the tree into a pine, the sun into a red circle, and the sky fades from deep indigo at the top."
+    "en": "The same line drawing becomes an Edo-period color woodblock print: the house turns into a tiled-roof Japanese house, the tree into a pine, the sun into a red circle, and the sky fades from deep indigo at the top.",
+        "zh-Hans": "同一幅线稿变成江户时代的彩色木版画：房子变成瓦顶日式民居，树变成松树，太阳变成红色圆轮，天空自上而下由深靛蓝渐淡。"
    },
    "spec": {
     "ja": [
@@ -280,7 +284,8 @@
    },
    "summary": {
     "ja": "同じ線画が、色の点だけを並べた絵に変わる。空・家・木・地面のすべてが、はっきり見える大きめの点でできている。",
-    "en": "The same line drawing becomes a picture made only of dots of color; sky, house, tree and ground are all built from clearly visible, fairly large dots."
+    "en": "The same line drawing becomes a picture made only of dots of color; sky, house, tree and ground are all built from clearly visible, fairly large dots.",
+        "zh-Hans": "同一幅线稿变成完全由色点构成的画，天空、房子、树木与地面都由清晰可见的较大圆点拼成。"
    },
    "spec": {
     "ja": [
@@ -334,7 +339,8 @@
    },
    "summary": {
     "ja": "同じ線画が、色鉛筆で塗った手描きの絵に変わる。細い線の重なりと、白く残る紙の目が見える。",
-    "en": "The same line drawing becomes a hand-drawn colored pencil picture, with layered fine strokes and white paper grain showing through."
+    "en": "The same line drawing becomes a hand-drawn colored pencil picture, with layered fine strokes and white paper grain showing through.",
+        "zh-Hans": "同一幅线稿变成手绘彩色铅笔画，细密笔触层层叠加，透出纸张的纹理。"
    },
    "spec": {
     "ja": [
@@ -388,7 +394,8 @@
    },
    "summary": {
     "ja": "同じ線画が、版を彫って刷った白黒の絵に変わる。太い線と面だけで、灰色やぼかしはない。",
-    "en": "The same line drawing becomes a black-and-white print from a carved block, made only of bold lines and shapes with no gray or blur."
+    "en": "The same line drawing becomes a black-and-white print from a carved block, made only of bold lines and shapes with no gray or blur.",
+        "zh-Hans": "同一幅线稿变成刻版印出的黑白版画，只有粗犷的线条与色块，没有灰色与晕染。"
    },
    "spec": {
     "ja": [
@@ -444,7 +451,8 @@
    },
    "summary": {
     "ja": "同じ線画が、黒い鉛の枠で区切ったガラスの絵に変わる。空・丘・家・木がそれぞれ色ガラスの破片になり、光が透ける。",
-    "en": "The same line drawing becomes a glass picture divided by black lead lines; sky, hill, house and tree each turn into pieces of colored glass with light shining through."
+    "en": "The same line drawing becomes a glass picture divided by black lead lines; sky, hill, house and tree each turn into pieces of colored glass with light shining through.",
+        "zh-Hans": "同一幅线稿变成由黑色铅条分割的玻璃画，天空、山丘、房子与树各自成为透光的彩色玻璃块。"
    },
    "spec": {
     "ja": [
@@ -498,7 +506,8 @@
    },
    "summary": {
     "ja": "同じ線画が、原色の平らな面と太い黒い輪郭の絵に変わる。ところどころに網点が入る。",
-    "en": "The same line drawing becomes flat primary colors with bold black outlines, with halftone dots here and there."
+    "en": "The same line drawing becomes flat primary colors with bold black outlines, with halftone dots here and there.",
+        "zh-Hans": "同一幅线稿变成平涂的原色与粗黑轮廓线，间或点缀网点。"
    },
    "spec": {
     "ja": [
@@ -552,7 +561,8 @@
    },
    "summary": {
     "ja": "同じ線画が、暗いレンガの壁に光るネオン管の線だけで描いた絵に変わる。家・木・太陽・丘の稜線が光ってにじむ。",
-    "en": "The same line drawing becomes glowing neon tubes on a dark brick wall; the house, tree, sun and the line of the hill glow and bloom."
+    "en": "The same line drawing becomes glowing neon tubes on a dark brick wall; the house, tree, sun and the line of the hill glow and bloom.",
+        "zh-Hans": "同一幅线稿变成暗色砖墙上的霓虹灯管，房子、树木、太阳与山脊线发光泛出光晕。"
    },
    "spec": {
     "ja": [
@@ -606,7 +616,8 @@
    },
    "summary": {
     "ja": "同じ線画が、金と黒のポスターに変わる。太陽から直線の光が放射状に広がり、幾何学的な直線の装飾がほぼ左右対称に並ぶ。",
-    "en": "The same line drawing becomes a gold-and-black poster: straight rays spread out from the sun, and geometric straight-line ornament is arranged almost symmetrically."
+    "en": "The same line drawing becomes a gold-and-black poster: straight rays spread out from the sun, and geometric straight-line ornament is arranged almost symmetrically.",
+        "zh-Hans": "同一幅线稿变成金黑两色的海报：太阳射出平直光芒，几何直线装饰近乎对称地排布。"
    },
    "spec": {
     "ja": [
@@ -662,7 +673,8 @@
    },
    "summary": {
     "ja": "同じ線画が、1900年頃のポスターに変わる。輪郭は流れる太い曲線になり、葉・草・太陽の光がつると花の装飾になって家と木を囲む。",
-    "en": "The same line drawing becomes a poster from around 1900: outlines turn into flowing thick curves, and leaves, grass and sun rays become ornaments of vines and flowers around the house and tree."
+    "en": "The same line drawing becomes a poster from around 1900: outlines turn into flowing thick curves, and leaves, grass and sun rays become ornaments of vines and flowers around the house and tree.",
+        "zh-Hans": "同一幅线稿变成 1900 年前后的海报：轮廓化为流畅的粗曲线，叶片、草与光线化作缠绕房屋与树木的藤蔓花卉纹样。"
    },
    "spec": {
     "ja": [
@@ -718,7 +730,8 @@
    },
    "summary": {
     "ja": "同じ線画が、黄と青緑の2色インクで刷った絵に変わる。2つの版が少しずれて重なり、インクの粒と紙の質感が見える。",
-    "en": "The same line drawing becomes a print in two inks, yellow and teal; the two layers overlap slightly out of register, with ink grain and paper texture visible."
+    "en": "The same line drawing becomes a print in two inks, yellow and teal; the two layers overlap slightly out of register, with ink grain and paper texture visible.",
+        "zh-Hans": "同一幅线稿变成黄与青两种油墨的孔版印刷，两层颜色微微错位，可见墨粒与纸纹。"
    },
    "spec": {
     "ja": [
@@ -774,7 +787,8 @@
    },
    "summary": {
     "ja": "同じ線画が、切り抜いた色紙を何層も重ねた絵に変わる。層の段差に影が落ち、奥行きが出る。",
-    "en": "The same line drawing becomes many layers of cut colored paper; shadows fall where the layers step, giving depth."
+    "en": "The same line drawing becomes many layers of cut colored paper; shadows fall where the layers step, giving depth.",
+        "zh-Hans": "同一幅线稿变成多层裁切彩色纸的层叠纸雕，层与层的落差投下阴影，产生纵深。"
    },
    "spec": {
     "ja": [
@@ -828,7 +842,8 @@
    },
    "summary": {
     "ja": "同じ線画が、輪郭線も影もない平らな色の面だけの絵に変わる。",
-    "en": "The same line drawing becomes a picture made only of flat areas of color, with no outlines and no shadows."
+    "en": "The same line drawing becomes a picture made only of flat areas of color, with no outlines and no shadows.",
+        "zh-Hans": "同一幅线稿变成只用平涂色块构成的插画，没有轮廓线，也没有阴影。"
    },
    "spec": {
     "ja": [
@@ -882,7 +897,8 @@
    },
    "summary": {
     "ja": "同じ線画が、クリーム色の紙に濃紺のペン1色で描き込んだ細密な線画に変わる。瓦・葉・草・太陽の光まで線で描く。",
-    "en": "The same line drawing becomes a detailed drawing in one dark navy pen on cream paper, with every roof tile, leaf, blade of grass and sun ray drawn in line."
+    "en": "The same line drawing becomes a detailed drawing in one dark navy pen on cream paper, with every roof tile, leaf, blade of grass and sun ray drawn in line.",
+        "zh-Hans": "同一幅线稿变成米色纸上以深藏青钢笔绘成的精细线描，每片瓦、每片叶、每根草与每道光都用线条画出。"
    },
    "spec": {
     "ja": [
@@ -938,7 +954,8 @@
    },
    "summary": {
     "ja": "同じ線画が、マス目のドットでできた平らなゲーム風の絵に変わる。立体感はなく、1つ1つのドットがはっきり見える。",
-    "en": "The same line drawing becomes a flat, game-style picture made of square pixels, with no depth and every pixel clearly visible."
+    "en": "The same line drawing becomes a flat, game-style picture made of square pixels, with no depth and every pixel clearly visible.",
+        "zh-Hans": "同一幅线稿变成游戏风的平面像素画，没有纵深，每个方形像素清晰可辨。"
    },
    "spec": {
     "ja": [
@@ -992,7 +1009,8 @@
    },
    "summary": {
     "ja": "同じ線画が、小さな立方体を積んだ3Dのジオラマに変わる。家・木・太陽・丘のどれも立方体の集まりで、上面と側面に光と影がつく。",
-    "en": "The same line drawing becomes a 3D diorama of stacked small cubes; the house, tree, sun and hill are all made of cubes with light on top and shade on the sides."
+    "en": "The same line drawing becomes a 3D diorama of stacked small cubes; the house, tree, sun and hill are all made of cubes with light on top and shade on the sides.",
+        "zh-Hans": "同一幅线稿变成小方块堆叠而成的 3D 立体模型，房子、树木、太阳与山丘全由立方体构成，顶面受光、侧面背光。"
    },
    "spec": {
     "ja": [
@@ -1048,7 +1066,8 @@
    },
    "summary": {
     "ja": "同じ線画が、三角形の面だけで組んだ3Dに変わる。面ごとに色の明るさが違い、角ばった立体に見える。",
-    "en": "The same line drawing becomes 3D made only of triangular faces; each face has its own shade, so the forms look faceted."
+    "en": "The same line drawing becomes 3D made only of triangular faces; each face has its own shade, so the forms look faceted.",
+        "zh-Hans": "同一幅线稿变成仅由三角面构成的 3D 造型，每个面明暗不同，形体呈现切割般的棱面感。"
    },
    "spec": {
     "ja": [
@@ -1102,7 +1121,8 @@
    },
    "summary": {
     "ja": "同じ線画が、色画用紙を折って組み立てた立体模型の写真に変わる。家は箱型、木と太陽は多面体で、折り目・のりしろ・紙の切り口が見える。",
-    "en": "The same line drawing becomes a photo of models folded from colored card stock: the house is a box, the tree and sun are polyhedra, and folds, glue tabs and cut edges show."
+    "en": "The same line drawing becomes a photo of models folded from colored card stock: the house is a box, the tree and sun are polyhedra, and folds, glue tabs and cut edges show.",
+        "zh-Hans": "同一幅线稿变成彩色卡纸折叠模型的实拍照片：房子是方形纸盒，树与太阳是多面体，折痕、粘贴翼与裁切边都可见。"
    },
    "spec": {
     "ja": [
@@ -1158,7 +1178,8 @@
    },
    "summary": {
     "ja": "同じ線画が、粘土で作った立体の模型に変わる。表面に指あとと粘土の質感が残る。",
-    "en": "The same line drawing becomes 3D models made of clay, with fingerprints and clay texture on the surface."
+    "en": "The same line drawing becomes 3D models made of clay, with fingerprints and clay texture on the surface.",
+        "zh-Hans": "同一幅线稿变成黏土捏成的 3D 模型，表面留着指纹与黏土质感。"
    },
    "spec": {
     "ja": [
@@ -1212,7 +1233,8 @@
    },
    "summary": {
     "ja": "同じ線画が、布地に色糸で縫い込んだ刺繍に変わる。糸のステッチと布の織り目が見える。",
-    "en": "The same line drawing becomes embroidery in colored thread on fabric, with the stitches and the weave of the cloth visible."
+    "en": "The same line drawing becomes embroidery in colored thread on fabric, with the stitches and the weave of the cloth visible.",
+        "zh-Hans": "同一幅线稿变成布面上的彩线刺绣，针脚与织纹清晰可见。"
    },
    "spec": {
     "ja": [
@@ -1266,7 +1288,8 @@
    },
    "summary": {
     "ja": "同じ線画が、80年代風のネオンの世界に変わる。地面は紫と水色の光る格子、太陽は横縞の入った大きな夕日、家と木はネオンの輪郭になる。",
-    "en": "The same line drawing becomes an 1980s neon world: the ground is a glowing purple and cyan grid, the sun a big striped sunset, and the house and tree neon outlines."
+    "en": "The same line drawing becomes an 1980s neon world: the ground is a glowing purple and cyan grid, the sun a big striped sunset, and the house and tree neon outlines.",
+        "zh-Hans": "同一幅线稿变成 1980 年代的霓虹世界：地面是发光的紫青色网格，太阳是带条纹的巨大落日，房子与树化作霓虹轮廓。"
    },
    "spec": {
     "ja": [
@@ -1322,7 +1345,8 @@
    },
    "summary": {
     "ja": "同じ線画が、青い地に白い細線で引いた設計図に変わる。寸法線や補助線が少し入る。",
-    "en": "The same line drawing becomes a technical drawing in fine white lines on blue, with a few dimension and construction lines."
+    "en": "The same line drawing becomes a technical drawing in fine white lines on blue, with a few dimension and construction lines.",
+        "zh-Hans": "同一幅线稿变成蓝底白细线的技术图纸，带少量尺寸线与作图线。"
    },
    "spec": {
     "ja": [

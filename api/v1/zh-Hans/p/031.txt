@@ -1,0 +1,17 @@
+请使用「升镜头（Crane up）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #031
+
+这是什么：相机整体向上升起
+示例画面：摄影机上升并逐渐下压镜头，最后俯视地上的人。
+规格：
+- Camera: rises from 1.4 m to 9 m while moving forward 0 m → 1.5 m
+- Direction: tilts down to keep the person (8 m ahead) in frame; pitch = -0.86 × atan2(height - 1.0, 8 - forward), about -2.5° → -44°
+- Timing: 0.5 s to 3.4 s (2.9 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Subject: the person does not move; they get smaller as the camera rises, the ground grid fills the frame and the horizon leaves at the top
+- Return: hold 3.4–4.2 s, then cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
+- Top-right readout shows the height (↑ 1.4m → ↑ 9.0m)
+适用场景：To pull away from a person at the end of a scene or to reveal how large the location is.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/031.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

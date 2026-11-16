@@ -1,0 +1,17 @@
+请使用「圈出（Iris out）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #188
+
+这是什么：圆形窗口收拢，画面变黑
+示例画面：一个圆形光圈向人物收缩直至全黑，再张开进入下一个场景。
+规格：
+- Iris out: from 1.3 s to 2.7 s (1.4 s) the circular window shrinks from radius 340 px to 0 (quadratic ease-in-out (about cubic-bezier(0.45,0,0.55,1))); outside the circle is black (#141418)
+- Centre of the window: the current picture's subject, the person's head in A (0.6 m left, 1.63 m high, 7 m away) or the car in B (1.2 m right, 0.9 m high, 9 m away), projected to the screen
+- Black: 2.7–3.1 s; at 2.9 s the incoming picture is swapped in with a straight cut
+- Iris in: from 3.1 s to 4.4 s (1.3 s) the circle grows from 0 to 340 px around the incoming picture's subject
+- Edge: while the radius is at least 1 px, a 2 px blue circle marks the rim; the camera is fixed in both pictures
+- Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "IRIS OUT" / "IRIS IN"
+适用场景：For a silent-film or cartoon-style ending, or a playful break.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/188.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

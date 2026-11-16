@@ -1,4 +1,4 @@
-// Motion Prompt #216 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#216
+// Motion Prompt #216 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#216
 //
 // Blueprint / ブループリント（設計図風）
 // Pack: artstyle (Art styles for image generation) · element 24 · Category: Digital, 3D & materials
@@ -10,8 +10,8 @@
 // When to use it: To show how a product works, or to give a "being planned" feel.
 // Tags: blueprint, technical drawing, schematic, plan, engineering, white lines
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#216
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#216
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

@@ -1,0 +1,14 @@
+请使用「百叶窗转场（Blinds transition）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #138
+
+这是什么：从细条缝隙中打开下一画面
+示例画面：一排细条的缝隙逐渐张开，直到下一场景完全展开。
+规格：
+- Day scene → night scene → day, 2.35 s each. Seven horizontal strips (208 ÷ 7 ≈ 29.7 px each).
+- 0.4–1.65 s (1.25 s), quadratic ease-in-out: in every strip at once, the next scene is revealed from the strip's top edge downward, opening from 0 to the full strip height.
+- The previous scene stays underneath. Neither picture moves.
+适用场景：Use it for a clear switch between two scenes, such as day and night or before and after, or for a retro feel.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/138.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

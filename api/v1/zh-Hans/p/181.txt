@@ -1,0 +1,17 @@
+请使用「鸟瞰镜头（Bird's-eye view）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #181
+
+这是什么：从正上方垂直向下拍
+示例画面：从头顶正上方向下看：道路、行人、车辆与树木呈俯视图形，镜头升高时视野扩大。
+规格：
+- Camera: points straight down (pitch -π/2 = -90°) and rises from 9 m to 15 m, directly above the origin
+- Timing: 0.5 s to 3.4 s (2.9 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Ground: a 2 m grid and a 3.2 m wide road (white dashed centre line) drawn as one plane; six trees as circles and three buildings as squares, seen from above
+- Subjects: a person (head circle and shoulder ellipse) walks 5.2 m up the right side of the road, a car (1.8×4 m) drives 6.8 m down the left side; both move in proportion to the progress p
+- As the camera rises everything shrinks and more of the ground comes into view (10 High angle looks down at a slant)
+- Return: hold 3.4–4.2 s, then cross-fade back to the start over the last 0.5 s; top-right readout shows "↓ 90° · 9m → 15m"
+适用场景：To show layout and paths like a diagram, or for a god's-eye overview.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/181.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

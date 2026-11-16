@@ -1,0 +1,15 @@
+请使用「悬停抬升（Hover lift）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #081
+
+这是什么：悬停时元素抬高并加深阴影
+示例画面：只有光标下的卡片轻微抬起、阴影扩散；光标离开后落回原位。
+规格：
+- Three cards (146 × 128, radius 10). The cursor rests on each, left to right, for about 1 s.
+- On hover the card rises 10 px over 0.3 s (cubic ease-out); on leave it returns over the same 0.3 s (like a CSS transition).
+- Shadow, changed together with the lift: blur 6→22 px, y offset 2→12 px, opacity 0.08→0.22.
+- Light grey page, white cards, so the shadow reads.
+适用场景：Use it to make cards and buttons look clickable.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/081.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

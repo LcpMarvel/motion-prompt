@@ -1,0 +1,16 @@
+请使用「热力图（Heatmap）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #227
+
+这是什么：用颜色深浅填充表格的格子
+示例画面：12×5 表格的单元格按从左上到右下的波次填上深浅蓝色，再以同样方式退回灰色。
+规格：
+- Table: 12 columns × 5 rows of 30×28 px cells (4 px corners, 4 px gaps), with short gray bars as row labels on the left
+- Colors: from light gray to one of five blues (light to dark) by value; the values (fixed seed) form a wave
+- Fill: each cell takes its color over 0.32 s (ease-out) starting at 0.4 s + column × 0.075 s + row × 0.06 s, so it spreads diagonally from top-left to bottom-right
+- Clear: from 3.95 s + column × 0.025 s + row × 0.02 s each cell goes back to gray over 0.22 s (cubic ease-in-out)
+- The table itself (cells and labels) stays for the whole cycle
+适用场景：To show at a glance where a table, such as weekday by hour, is high or low.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/227.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

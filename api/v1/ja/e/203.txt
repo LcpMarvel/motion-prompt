@@ -1,4 +1,4 @@
-// Motion Prompt #203 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#203
+// Motion Prompt #203 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#203
 //
 // アールデコ / Art Deco
 // パック: artstyle (画像生成で使う画風の名前) · element 11 · カテゴリ: グラフィック
@@ -11,8 +11,8 @@
 // 使いどころ: 高級感やクラシックな華やかさを出したいとき。
 // タグ: art deco, 1920s, gold, geometric, symmetry, poster
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#203
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#203
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

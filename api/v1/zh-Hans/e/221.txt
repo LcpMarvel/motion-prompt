@@ -1,0 +1,57 @@
+// Motion Prompt #221 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#221
+//
+// 思维导图 / Mind map
+// 包: diagram (资料中常用的图解与图表名称) · element 05 · 分类: 整理思路的图
+// 画面内容: 六条弯曲分支自中心的「テーマ」（主题）向两侧生长，再长出细枝与小文字节点。
+// 运动规格:
+//   - Center: a 100×44 px blue rounded box with white text "テーマ" (19 px), popping in at 0.4 s over 0.3 s (ease-out-back)
+//   - Branches: six cubic Bézier curves (3 px), three to each side, growing over 0.5 s from 0.7 s, 0.09 s apart, each ending in a 54×24 px node; mid blue and gray alternate
+//   - Twigs: thinner 2.5 px curves grow from the branch ends over 0.35 s (from 1.45 s), each ending in a small 40×18 px node
+//   - Shape: curved branches and word nodes, unlike the nested rings of #240 Concentric circle diagram
+//   - End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+// 适用场景: For brainstorming, or to spread out and organize ideas around one topic.
+// 标签: mind map, brainstorm, ideas, radial, branches, central topic, mindmap
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#221
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 05
+// 05 マインドマップ: a center word, curved branches out to both sides, then smaller twigs
+const MM = [
+  // [side, end dx, end dy, color, twigs [dx, dy]]
+  [1, 128, -52, C.blueM, [[204, -72], [204, -32]]],
+  [1, 142, 8, C.g4, []],
+  [1, 124, 56, C.blueM, [[204, 76]]],
+  [-1, 128, -52, C.g4, [[204, -70]]],
+  [-1, 140, 10, C.blueM, []],
+  [-1, 124, 56, C.g4, [[204, 36], [204, 76]]],
+];
+function mindmap(k, w, h, u) {
+  bg(k, w, h);
+  k.globalAlpha = fade(u);
+  const cx = w / 2, cy = h / 2;
+  MM.forEach(([sd, ex, ey, col, twigs], i) => {
+    const x0 = cx + sd * 40, x1 = cx + sd * ex, y1 = cy + ey;
+    const pts = bezPts([x0, cy], [cx + sd * 78, cy], [cx + sd * (ex - 50), y1], [x1 - sd * 26, y1]);
+    pen(k, col, 3); trace(k, pts, easeInOut(P(u, 0.7 + i * 0.09, 1.2 + i * 0.09)));
+    twigs.forEach(([tx, ty], j) => {
+      const a = [x1 + sd * 26, y1], b = [cx + sd * tx - sd * 20, cy + ty], t0 = 1.45 + i * 0.07 + j * 0.05;
+      const tp = bezPts(a, [a[0] + sd * 22, a[1]], [b[0] - sd * 26, b[1]], b, 16);
+      pen(k, col, 2.5); trace(k, tp, easeInOut(P(u, t0, t0 + 0.35)));
+      box(k, cx + sd * tx, cy + ty, 40, 18, 9, pop(u, t0 + 0.3, 0.25), col === C.g4 ? C.g3 : C.blueL);
+    });
+    box(k, x1, y1, 54, 24, 12, pop(u, 1.15 + i * 0.09, 0.28), col === C.g4 ? C.g4 : C.blueM);
+  });
+  const s = pop(u, 0.4);
+  if (s > 0.01) {
+    k.save(); k.translate(cx, cy); k.scale(s, s);
+    k.fillStyle = C.blue; rr(k, -50, -22, 100, 44, 22); k.fill();
+    txt(k, 'テーマ', 0, 1, `700 19px ${FONT}`, '#FFFFFF', 'center', 'middle');
+    k.restore();
+  }
+  k.globalAlpha = 1;
+}
+CELLS[4] = mindmap;

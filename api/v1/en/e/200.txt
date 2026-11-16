@@ -1,4 +1,4 @@
-// Motion Prompt #200 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#200
+// Motion Prompt #200 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#200
 //
 // Stained glass / ステンドグラス
 // Pack: artstyle (Art styles for image generation) · element 08 · Category: Painting & printmaking
@@ -10,8 +10,8 @@
 // When to use it: For a solemn or festive decorative look that glows with light.
 // Tags: stained glass, glass, lead lines, mosaic, window, glowing
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#200
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#200
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

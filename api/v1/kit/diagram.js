@@ -1,7 +1,7 @@
-// Motion Prompt #217-240 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#217
+// Motion Prompt #217-240 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#217
 //
 // Kit for pack "diagram" (Diagrams and charts for slides / 資料で使う図解・グラフの名前): the constants and helpers its elements share.
-// Elements #217-240 · 539x208 px · cycle 4.7 s. Element code: https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/).
+// Elements #217-240 · 539x208 px · cycle 4.7 s. Element code: https://lcpmarvel.github.io/motion-prompt/api/v1/en/e/<id>.txt (or /ja/, /zh-Hans/).
 //
 // Run one element standalone in a browser:
 //   1. paste this file into a <script>,

@@ -1,0 +1,16 @@
+请使用「轻提示（Toast notification）」，它是「UI 组件」中的一个名称。
+Motion Prompt #056
+
+这是什么：短消息出现后自动消失
+示例画面：点击「保存」，右下角滑入一条深色通知；其时间条走完后滑走。
+规格：
+- 4.5 s cycle on a 542×191 card. The cursor clicks the blue "Save" button (110×36, bottom left) at 1.0 s and leaves to the bottom left.
+- Toast: #26282c, 214×52, radius 10, 18 px from the right and 16 px from the bottom; slides in 240 px from the right over 1.05–1.4 s with easeOutCubic.
+- Inside: a white check in a blue circle and white 15 px text "Saved".
+- A time-left line along the bottom (3 px tall) shrinks linearly from 194 px to 0 over 1.4–3.2 s.
+- Exit: slides 240 px out to the right over 3.2–3.55 s with easeInOutCubic.
+适用场景：Use it to confirm a result such as a save or send without interrupting the user.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/056.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

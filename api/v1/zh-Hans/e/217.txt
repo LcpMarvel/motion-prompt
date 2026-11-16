@@ -1,0 +1,40 @@
+// Motion Prompt #217 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#217
+//
+// 维恩图 / Venn diagram
+// 包: diagram (资料中常用的图解与图表名称) · element 01 · 分类: 整理思路的图
+// 画面内容: 两个圆从两侧滑入并重叠，只有重叠部分变成深蓝色。
+// 运动规格:
+//   - Circles: two circles of radius 78 px; A on the left in light blue with a blue outline, B on the right in light gray with a gray outline; only the overlap is filled dark blue
+//   - Motion: fade in from 0.3 s to 0.7 s (ease-out), then the centers move from ±150 px to ±44 px from the middle between 0.5 s and 1.6 s (cubic ease-in-out)
+//   - Labels: A and B (26 px) on the outer side of each circle
+//   - #240 Concentric circle diagram nests circles inside each other; a Venn diagram sets them side by side and overlaps only part
+//   - End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+// 适用场景: To show what two or more things share and where they differ, on one slide.
+// 标签: venn, venn diagram, overlap, intersection, compare, common ground, circles
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#217
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 01
+// 01 ベン図: two circles slide in from the sides and overlap; only the shared part turns blue
+function venn(k, w, h, u) {
+  bg(k, w, h);
+  const app = easeOut(P(u, 0.3, 0.7)), m = easeInOut(P(u, 0.5, 1.6));
+  if (app <= 0) return;
+  const r = 78, cy = h / 2, d = lerp(150, 44, m), ax = w / 2 - d, bx = w / 2 + d;
+  k.save(); k.globalAlpha = fade(u) * app;
+  k.fillStyle = C.blueL; k.beginPath(); k.arc(ax, cy, r, 0, TAU); k.fill();
+  k.fillStyle = C.g2; k.beginPath(); k.arc(bx, cy, r, 0, TAU); k.fill();
+  // shared part: B inside A
+  k.save(); k.beginPath(); k.arc(ax, cy, r, 0, TAU); k.clip();
+  k.fillStyle = C.blue; k.beginPath(); k.arc(bx, cy, r, 0, TAU); k.fill(); k.restore();
+  pen(k, C.blueM, 3); k.beginPath(); k.arc(ax, cy, r, 0, TAU); k.stroke();
+  pen(k, C.g4, 3); k.beginPath(); k.arc(bx, cy, r, 0, TAU); k.stroke();
+  txt(k, 'A', ax - 38, cy + 1, `600 26px ${FONT}`, C.blue, 'center', 'middle');
+  txt(k, 'B', bx + 38, cy + 1, `600 26px ${FONT}`, C.mark, 'center', 'middle');
+  k.restore();
+}
+CELLS[0] = venn;

@@ -1,4 +1,4 @@
-// Motion Prompt #211 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#211
+// Motion Prompt #211 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#211
 //
 // ローポリ / Low poly
 // パック: artstyle (画像生成で使う画風の名前) · element 19 · カテゴリ: デジタル・立体・素材
@@ -10,8 +10,8 @@
 // 使いどころ: シンプルでモダンな3Dの背景やアイコンに。
 // タグ: low poly, polygon, faceted, triangles, 3d, geometric
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#211
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#211
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

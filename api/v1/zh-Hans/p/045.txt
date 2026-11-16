@@ -1,0 +1,17 @@
+请使用「划像转场（Wipe）」，它是「镜头运动与转场」中的一个名称。
+Motion Prompt #045
+
+这是什么：移动的边界逐步替换画面
+示例画面：一条竖直边缘从左向右移动，后面的新画面逐渐替换旧画面。
+规格：
+- Join: 1.1 s, from 1.7 s to 2.8 s; the edge travels from just outside the left side (x = -4 px) to just outside the right side (x = 543 px)
+- Easing: cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- The incoming picture shows left of the edge and the outgoing one right of it; neither picture moves (a reveal by clipping, not a push)
+- Edge: a 4 px blue vertical line, visible only while it is moving
+- Camera: fixed in both pictures; the subjects do not move either
+- Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "A → B" / "B → A"
+适用场景：To mark a clear change of scene or topic, or to switch between the two sides of a comparison.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/045.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

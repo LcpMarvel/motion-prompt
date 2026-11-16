@@ -1,0 +1,16 @@
+请使用「往返循环（Ping-pong loop）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #127
+
+这是什么：正放后倒放，反复来回
+示例画面：方块走到一端后沿原路返回，像倒放一样，如此往复。
+规格：
+- One round trip per 4.7 s: 2.35 s forward, then the same motion played backwards for 2.35 s (progress g goes 0→1→0, linear).
+- A mint rounded square (48 px, radius 13) hops from x = 92 to 447 along three arches of height 62·|sin(3πg)|, turning one full turn with g.
+- Four ghost copies, 0.045 s apart, opacity 0.1–0.4.
+- A playback bar below: blue with a play label while going forward, coral with a reverse label while going back. The progress bar and its knob follow g.
+- Vertical posts mark the two turning points.
+适用场景：Use it for loaders, idle animations and any move that should repeat back and forth without a cut.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/127.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

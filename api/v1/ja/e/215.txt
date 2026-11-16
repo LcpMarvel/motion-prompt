@@ -1,4 +1,4 @@
-// Motion Prompt #215 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#215
+// Motion Prompt #215 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#215
 //
 // シンセウェイヴ / Synthwave
 // パック: artstyle (画像生成で使う画風の名前) · element 23 · カテゴリ: デジタル・立体・素材
@@ -11,8 +11,8 @@
 // 使いどころ: レトロフューチャーな音楽・ゲーム・イベントのビジュアルに。
 // タグ: synthwave, retrowave, 80s, neon grid, outrun, retro
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#215
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#215
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

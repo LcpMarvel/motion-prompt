@@ -1,0 +1,14 @@
+请使用「扁平插画（Flat illustration）」，它是「图像生成常用的画风名称」中的一个名称。
+Motion Prompt #207
+
+这是什么：只有平涂色块，没有线条和阴影
+示例画面：同一幅线稿变成只用平涂色块构成的插画，没有轮廓线，也没有阴影。
+规格：
+- Look: shapes made only of flat fills of color
+- Avoid: outlines, shadows and gradients
+- Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+适用场景：For clean illustrations on websites, in apps or in slides.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/207.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

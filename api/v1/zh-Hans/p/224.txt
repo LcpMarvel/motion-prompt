@@ -1,0 +1,15 @@
+请使用「鱼骨图（Fishbone diagram）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #224
+
+这是什么：以鱼骨的形状列出原因
+示例画面：一条主骨通向鱼头（结果），斜骨自上下汇入，每根斜骨再带小刺（原因）。
+规格：
+- Spine: after the tail (0.35–0.6 s), a line from x = 52 to x = 404 (dark gray, 3 px, 14 px head) grows from 0.45 s to 1.0 s; the head, a 92×56 px blue box reading "結果" (result), pops in at 0.95 s
+- Bones: six bones from x = 150, 258 and 366 on the spine, slanting up-left and down-left (62 px across, 80 px up or down, mid blue, 3 px), drawn over 0.35 s from 1.1 s, 0.14 s per column, the lower ones 0.07 s later
+- Side bones: at 36% and 68% along each bone, a 26 px horizontal line to the left (gray, 2.5 px), growing over 0.22 s just after the bone, 0.08 s apart
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To list the possible causes of one result, grouped by kind.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/224.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

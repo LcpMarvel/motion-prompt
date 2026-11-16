@@ -10,6 +10,6 @@ Spec:
 - End: from 4.1 s to 4.5 s the needle, band and number go back to 0% (cubic ease-in-out; one pass = 4.7 s)
 When to use it: To show with one number how far you are toward a target.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/229.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://lcpmarvel.github.io/motion-prompt/api/v1/en/e/229.txt
+Shared helper code: https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

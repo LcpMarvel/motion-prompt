@@ -1,0 +1,21 @@
+// Motion Prompt #202 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#202
+//
+// 霓虹灯招牌 / Neon sign
+// 包: artstyle (图像生成常用的画风名称) · element 10 · 分类: 平面设计风格
+// 画面内容: 同一幅线稿变成暗色砖墙上的霓虹灯管，房子、树木、太阳与山脊线发光泛出光晕。
+// 运动规格:
+//   - Material: a dark brick wall and glowing neon tubes
+//   - Look: shapes drawn only with tube lines, with the light blooming around them; the sample uses red, yellow and green tubes
+//   - Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+// 适用场景: For a night-time mood or a shop or bar sign look.
+// 标签: neon, neon sign, glow, night, tube light, sign
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#202
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 10
+// ネオンサイン: 暗い壁に、光る管で形を描く
+CELLS[9] = (k, w, h, u) => gafu(k, w, h, u, '10');

@@ -62,7 +62,8 @@
       },
       "summary": {
         "ja": "画面の外にあった太陽が人物の頭の真後ろへ回り込む。胸像の縁が細く光り、全体に淡い光の色がかかり、カメラ側の体は暗く沈む。",
-        "en": "The sun moves from outside the frame to directly behind the person's head; a thin bright edge appears around the figure, a pale warm haze covers the frame and the side facing the camera darkens."
+        "en": "The sun moves from outside the frame to directly behind the person's head; a thin bright edge appears around the figure, a pale warm haze covers the frame and the side facing the camera darkens.",
+        "zh-Hans": "太阳从画外移到人物头部正后方；轮廓出现一圈亮边，画面蒙上淡淡的暖雾，朝向镜头的一面变暗。"
       },
       "spec": {
         "ja": [
@@ -121,7 +122,8 @@
       },
       "summary": {
         "ja": "周りが暗く落ち、斜め後ろ左右の2灯で、暗い人物の頭と肩の両側にだけ細い光の縁が出る。右下の図で2灯の位置を示す。",
-        "en": "The surroundings go dark and two lights behind the person, left and right, draw thin bright edges only along both sides of the head and shoulders; the plan at the bottom right shows where the two lights are."
+        "en": "The surroundings go dark and two lights behind the person, left and right, draw thin bright edges only along both sides of the head and shoulders; the plan at the bottom right shows where the two lights are.",
+        "zh-Hans": "环境变暗，人物身后左右两盏灯只在头与肩的两侧描出细亮边；右下角的平面图显示两盏灯的位置。"
       },
       "spec": {
         "ja": [
@@ -180,7 +182,8 @@
       },
       "summary": {
         "ja": "露出を明るい夕空に合わせていくと、人物・建物・街灯・木が細部のない黒い形になり、空だけが明るく残る。",
-        "en": "As the exposure is set for the bright evening sky, the person, buildings, lamp and tree turn into flat black shapes with no detail and only the sky stays bright."
+        "en": "As the exposure is set for the bright evening sky, the person, buildings, lamp and tree turn into flat black shapes with no detail and only the sky stays bright.",
+        "zh-Hans": "按明亮的晚空曝光后，人物、建筑、路灯与树都变成没有细节的黑色剪影，只有天空保持明亮。"
       },
       "spec": {
         "ja": [
@@ -240,7 +243,8 @@
       },
       "summary": {
         "ja": "光が正面寄り（20°）から真横（90°）へ回り、頭の影が三日月から半分へ広がって、顔が鼻筋の位置で縦に明暗2つに分かれる。",
-        "en": "The light swings from near the front (20°) to directly at the side (90°); the shadow on the head grows from a crescent to exactly half, splitting the face down the middle."
+        "en": "The light swings from near the front (20°) to directly at the side (90°); the shadow on the head grows from a crescent to exactly half, splitting the face down the middle.",
+        "zh-Hans": "光从近正面（20°）摆到正侧（90°）；头上的阴影从月牙形长到恰好一半，把脸从中线分开。"
       },
       "spec": {
         "ja": [
@@ -298,7 +302,8 @@
       },
       "summary": {
         "ja": "斜め45°・上45°の光が入り、顔の右側が影に沈む中で、影側の頬にだけ小さな逆三角形の光が残る。",
-        "en": "A light 45° to the side and 45° up comes on; the right side of the face falls into shadow except for a small inverted triangle of light on the shadow-side cheek."
+        "en": "A light 45° to the side and 45° up comes on; the right side of the face falls into shadow except for a small inverted triangle of light on the shadow-side cheek.",
+        "zh-Hans": "侧 45°、上 45° 的一盏灯亮起；右脸没入阴影，只有暗侧脸颊上留下一小块倒三角亮区。"
       },
       "spec": {
         "ja": [
@@ -356,7 +361,8 @@
       },
       "summary": {
         "ja": "顔の正面・高い位置からの光が入り、顔は左右対称に明るくなり、あごの下にだけ左右対称の小さな影が落ちる。",
-        "en": "A light in front of the face and high above comes on; the face lights evenly on both sides and only a small symmetrical shadow falls under the chin."
+        "en": "A light in front of the face and high above comes on; the face lights evenly on both sides and only a small symmetrical shadow falls under the chin.",
+        "zh-Hans": "脸正前方高处的灯亮起；面部两侧均匀受光，只有下巴下落下一小片对称阴影。"
       },
       "spec": {
         "ja": [
@@ -414,7 +420,8 @@
       },
       "summary": {
         "ja": "太陽が地平線近くまで下り、空と地面が橙に染まり、人物の左側が光り、街灯と木の影が右へ長く伸びる。",
-        "en": "The sun drops to just above the horizon; sky and ground turn orange, the left side of the person lights up and the shadows of the lamp and tree stretch far to the right."
+        "en": "The sun drops to just above the horizon; sky and ground turn orange, the left side of the person lights up and the shadows of the lamp and tree stretch far to the right.",
+        "zh-Hans": "太阳落到地平线上方；天空与地面转为橙色，人物左侧被照亮，路灯与树的影子向右拉得很长。"
       },
       "spec": {
         "ja": [
@@ -474,7 +481,8 @@
       },
       "summary": {
         "ja": "太陽が沈みきると、空が深い青の2段になり、建物の窓と街灯がアンバーに灯り、人物は青い影の形になる。",
-        "en": "Once the sun has set, the sky turns two bands of deep blue, the windows and street lamp come on in amber and the person becomes a dark blue shape."
+        "en": "Once the sun has set, the sky turns two bands of deep blue, the windows and street lamp come on in amber and the person becomes a dark blue shape.",
+        "zh-Hans": "日落后天空变成两段深蓝，窗灯与路灯以琥珀色亮起，人物成为深蓝色的剪影。"
       },
       "spec": {
         "ja": [
@@ -534,7 +542,8 @@
       },
       "summary": {
         "ja": "絞りを開けていくと、ピントの合った人物はそのまま、背景の建物はぼけ、街灯と遠くの灯りが大きく薄い光の丸に広がる。",
-        "en": "As the aperture opens, the in-focus person stays sharp, the buildings behind soften and the street lamps and distant lights spread into large, pale discs."
+        "en": "As the aperture opens, the in-focus person stays sharp, the buildings behind soften and the street lamps and distant lights spread into large, pale discs.",
+        "zh-Hans": "光圈开大，合焦的人物保持清晰，背后的建筑变柔，路灯与远处灯光扩散成大而淡的圆盘。"
       },
       "spec": {
         "ja": [
@@ -595,7 +604,8 @@
       },
       "summary": {
         "ja": "街の上下の帯がぼけていき、道と車と小さな人たちの並ぶ中央の帯だけにピントが残って、模型の街のように見える。",
-        "en": "The top and bottom bands of the street blur while only the middle band with the road, the car and the small people stays in focus, so the street looks like a model."
+        "en": "The top and bottom bands of the street blur while only the middle band with the road, the car and the small people stays in focus, so the street looks like a model.",
+        "zh-Hans": "街景的上下带虚化，只有中间带（道路、汽车与小个子行人）保持清晰，街道因此像微缩模型。"
       },
       "spec": {
         "ja": [
@@ -654,7 +664,8 @@
       },
       "summary": {
         "ja": "街が夜になり、走る車の本体は薄く消えていき、後ろに赤い尾灯の線が伸び、反対車線には白とアンバーの光の線が通る。",
-        "en": "The street turns to night; the moving car fades to almost nothing, a red tail-light line stretches out behind it and white and amber lines run along the opposite lane."
+        "en": "The street turns to night; the moving car fades to almost nothing, a red tail-light line stretches out behind it and white and amber lines run along the opposite lane.",
+        "zh-Hans": "街道入夜；行驶的汽车淡到几乎消失，身后拖出红色尾灯线，对向车道流过白色与琥珀色光带。"
       },
       "spec": {
         "ja": [
@@ -714,7 +725,8 @@
       },
       "summary": {
         "ja": "走る車をカメラが追い、車は画面の中央でくっきりしたまま、背景の建物や木や街灯だけが横に流れる。",
-        "en": "The camera follows the moving car: the car stays sharp in the middle of the frame while only the buildings, trees and lamps behind it streak sideways."
+        "en": "The camera follows the moving car: the car stays sharp in the middle of the frame while only the buildings, trees and lamps behind it streak sideways.",
+        "zh-Hans": "镜头跟随行驶的汽车：车在画面中央保持清晰，只有身后的建筑、树与路灯横向拖影。"
       },
       "spec": {
         "ja": [
@@ -774,7 +786,8 @@
       },
       "summary": {
         "ja": "太陽が建物の陰から空へ出ると、太陽に光の筋が出て、太陽から画面の中心をはさんだ反対側まで、光の玉と六角形と輪が一列に並ぶ。",
-        "en": "As the sun comes out from behind a building, rays appear around it and a line of light dots, hexagons and a ring runs from the sun through the centre of the frame to the opposite side."
+        "en": "As the sun comes out from behind a building, rays appear around it and a line of light dots, hexagons and a ring runs from the sun through the centre of the frame to the opposite side.",
+        "zh-Hans": "太阳从建筑后探出，周围出现光芒，一列光点、六边形与光环从太阳穿过画面中心延至对侧。"
       },
       "spec": {
         "ja": [
@@ -834,7 +847,8 @@
       },
       "summary": {
         "ja": "街角の中心がふくらみ、建物の縦の線と道の横の線が外側へ丸く曲がり、四隅はそのまま残る。",
-        "en": "The middle of the street scene bulges out; the vertical lines of the buildings and the lines of the road bow outward while the corners stay where they are."
+        "en": "The middle of the street scene bulges out; the vertical lines of the buildings and the lines of the road bow outward while the corners stay where they are.",
+        "zh-Hans": "街景中部鼓出；建筑的竖线与道路的标线向外弯曲，四角位置保持不动。"
       },
       "spec": {
         "ja": [
@@ -894,7 +908,8 @@
       },
       "summary": {
         "ja": "街角の絵を赤・緑・青に分け、少しずつ違う大きさで重ねると、人物や建物や街灯の縁に赤と青緑のずれが出て、画面の端ほど大きくなる。",
-        "en": "The street scene is split into red, green and blue and the three are laid back together at slightly different sizes, so red and cyan fringes appear on the edges of the person, buildings and lamps, larger towards the sides."
+        "en": "The street scene is split into red, green and blue and the three are laid back together at slightly different sizes, so red and cyan fringes appear on the edges of the person, buildings and lamps, larger towards the sides.",
+        "zh-Hans": "街景被拆成红绿蓝三层，以略有差异的尺寸叠回，人物、建筑与路灯边缘出现红青镶边，越靠边越明显。"
       },
       "spec": {
         "ja": [
@@ -952,7 +967,8 @@
       },
       "summary": {
         "ja": "画面の四隅からなだらかに暗くなり、中央の人物と道のあたりだけが明るく残る。",
-        "en": "The frame darkens smoothly from the corners while the person and the road in the middle stay bright."
+        "en": "The frame darkens smoothly from the corners while the person and the road in the middle stay bright.",
+        "zh-Hans": "画面从四角平滑变暗，中央的人物与道路保持明亮。"
       },
       "spec": {
         "ja": [
@@ -1008,7 +1024,8 @@
       },
       "summary": {
         "ja": "風景と人物が白に近い明るい色だけになり、影はごく薄くなって、右下のヒストグラムの山が右端へ寄る。",
-        "en": "The landscape and the person turn to light, near-white colours with very faint shadows, and the hump of the histogram at the bottom right moves to the right end."
+        "en": "The landscape and the person turn to light, near-white colours with very faint shadows, and the hump of the histogram at the bottom right moves to the right end.",
+        "zh-Hans": "风景与人物转为接近白色的明亮色调，阴影极淡；右下直方图的峰移向右端。"
       },
       "spec": {
         "ja": [
@@ -1064,7 +1081,8 @@
       },
       "summary": {
         "ja": "画面の大半が暗く沈み、太陽も消えて、横から日の当たる胸像の右の縁だけが光って浮かぶ。ヒストグラムの山は左端へ寄る。",
-        "en": "Most of the frame sinks into darkness and the sun goes out; only the right edge of the bust, lit from the side, stays bright. The histogram hump moves to the left end."
+        "en": "Most of the frame sinks into darkness and the sun goes out; only the right edge of the bust, lit from the side, stays bright. The histogram hump moves to the left end.",
+        "zh-Hans": "大部分画面沉入黑暗，太阳熄灭；只有侧面受光的半身像右缘保持明亮。直方图的峰移向左端。"
       },
       "spec": {
         "ja": [
@@ -1123,7 +1141,8 @@
       },
       "summary": {
         "ja": "同じ風景から色が抜け、太陽も人物の縁の光も灰色になり、明るさの差だけで形が見える。",
-        "en": "The colour drains from the same landscape; the sun and the light on the figure turn grey and the shapes read only by their brightness."
+        "en": "The colour drains from the same landscape; the sun and the light on the figure turn grey and the shapes read only by their brightness.",
+        "zh-Hans": "同一风景的色彩褪去；太阳与人物身上的光变成灰阶，形状只靠明暗呈现。"
       },
       "spec": {
         "ja": [
@@ -1179,7 +1198,8 @@
       },
       "summary": {
         "ja": "同じ風景の色が、暗い所は藍、明るい所はピンクの2色の間だけに置き換わる。",
-        "en": "The colours of the same landscape are replaced by a range between just two colours: indigo in the darks and pink in the lights."
+        "en": "The colours of the same landscape are replaced by a range between just two colours: indigo in the darks and pink in the lights.",
+        "zh-Hans": "同一风景的颜色被替换为两种颜色之间的过渡：暗部靛蓝，亮部粉红。"
       },
       "spec": {
         "ja": [
@@ -1235,7 +1255,8 @@
       },
       "summary": {
         "ja": "同じ風景の空・丘・地面・人物の影が青緑へ、日の当たる人物の縁と太陽が橙へ寄り、補色の対比になる。",
-        "en": "In the same landscape the sky, hills, ground and the shadowed figure shift to teal while the sunlit edge of the figure and the sun shift to orange, a complementary contrast."
+        "en": "In the same landscape the sky, hills, ground and the shadowed figure shift to teal while the sunlit edge of the figure and the sun shift to orange, a complementary contrast.",
+        "zh-Hans": "同一风景中，天空、山丘、地面与背光的人物偏向青色，人物的受光边与太阳偏向橙色，形成互补对比。"
       },
       "spec": {
         "ja": [
@@ -1291,7 +1312,8 @@
       },
       "summary": {
         "ja": "同じ風景の全体に細かい粒が乗り、色が少し暖かいクリーム色に寄る。",
-        "en": "Fine grain appears over the whole of the same landscape and the colours lean slightly towards a warm cream."
+        "en": "Fine grain appears over the whole of the same landscape and the colours lean slightly towards a warm cream.",
+        "zh-Hans": "同一风景整体覆上细颗粒，颜色微微偏暖的奶油调。"
       },
       "spec": {
         "ja": [
@@ -1350,7 +1372,8 @@
       },
       "summary": {
         "ja": "同じ風景の右端から、外側ほど淡い黄、端ほど赤い光のにじみが帯になって入り、ゆっくり揺れる。",
-        "en": "From the right edge of the same landscape a band of leaked light comes in, pale yellow on the inside and red at the edge, swaying slowly."
+        "en": "From the right edge of the same landscape a band of leaked light comes in, pale yellow on the inside and red at the edge, swaying slowly.",
+        "zh-Hans": "同一风景的右缘渗入一条漏光带，内侧淡黄、边缘发红，缓缓摇曳。"
       },
       "spec": {
         "ja": [
@@ -1406,7 +1429,8 @@
       },
       "summary": {
         "ja": "背景が白く飛び、胸像の形の中にだけ、縮めた丘・家・木・太陽の風景が写り込む。",
-        "en": "The background turns white and the landscape of hills, house, trees and sun appears, scaled down, only inside the shape of the bust."
+        "en": "The background turns white and the landscape of hills, house, trees and sun appears, scaled down, only inside the shape of the bust.",
+        "zh-Hans": "背景变白，山丘、房屋、树木与太阳的风景缩小后，只出现在剪影人像的形体之内。"
       },
       "spec": {
         "ja": [

@@ -11,6 +11,6 @@ Spec:
 - The table itself (cells and labels) stays for the whole cycle
 When to use it: To show at a glance where a table, such as weekday by hour, is high or low.
 
-Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://showheyohtaki.github.io/motion-prompt/api/v1/en/e/227.txt
-Shared helper code: https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
+Reference implementation (Canvas 2D, a function whose picture depends only on the time): https://lcpmarvel.github.io/motion-prompt/api/v1/en/e/227.txt
+Shared helper code: https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
 Keep the shapes, timing and easing values of the reference implementation as they are, and change only the text, colours and assets to fit what I am making.

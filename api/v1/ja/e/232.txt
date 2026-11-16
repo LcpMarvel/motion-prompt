@@ -1,4 +1,4 @@
-// Motion Prompt #232 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#232
+// Motion Prompt #232 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#232
 //
 // 帯グラフ（100%積み上げ） / 100% stacked bar chart
 // パック: diagram (資料で使う図解・グラフの名前) · element 16 · カテゴリ: 数字を見せるグラフ
@@ -12,8 +12,8 @@
 // 使いどころ: 合計の大きさは気にせず、グループごとの内訳（割合）だけを比べるとき。
 // タグ: 100% stacked bar, stacked bar chart, percentage bar, breakdown, composition, share, proportion
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#232
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#232
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

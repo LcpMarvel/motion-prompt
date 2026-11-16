@@ -1,0 +1,15 @@
+请使用「滚动隐藏页头（Hide-on-scroll header）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #149
+
+这是什么：向下滚动时隐藏，向上滚动时出现
+示例画面：下滑时页头上滑出视野让出屏幕；稍微上滑它就立刻回来。
+规格：
+- A 511 × 168 viewport with a 34 px header fixed at the top. Scroll: 0→170 px over 0.3–1.1 s (down), 170→100 over 1.5–1.9 s (up), 100→230 over 2.4–2.9 s (down), 230→0 over 3.3–4.3 s (up), each with cubic ease-in-out. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- If the last movement was downward the header hides; if upward it shows. Within 34 px of the top of the page it always shows.
+- Hiding and showing both move it 36 px upward over 0.3 s (quadratic ease-in-out), like transform: translateY with a transition.
+- While scrolled, a 12 px shadow sits under the header (opacity 0→0.14 over the first 30 px of scroll). The scrollbar thumb follows the scroll.
+适用场景：Use it when screen space is tight, as on phones, to give the content more room while keeping the menu one small scroll away.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/149.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

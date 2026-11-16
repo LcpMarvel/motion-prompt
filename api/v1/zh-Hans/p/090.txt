@@ -1,0 +1,16 @@
+请使用「懒加载（Lazy loading）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #090
+
+这是什么：图片接近视口时才开始加载
+示例画面：灰色占位块滚入视野时内部出现转圈，图片到达后淡入；第一行从一开始就已加载。
+规格：
+- A 3 × 3 grid of 151 × 92 placeholders; the first row is shown from the start. Scroll: 0→110 px at 0.35–1.1 s, 110→225 px at 1.7–2.5 s, 225→0 at 3.5–4.5 s (cubic ease-in-out).
+- Loading starts when a placeholder's top edge passes above the bottom of the viewport (168 px), with each column 0.12 s later than the one to its left.
+- For 0.45 s a spinner (radius 11, one turn per 0.8 s) turns in the placeholder's centre.
+- Then the image fades in 0→1 over 0.35 s (cubic ease-out). Unloaded placeholders show an image icon.
+- Placeholders that leave the bottom of the view are reset out of sight.
+适用场景：Use it on image-heavy pages to make the first view load faster.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/090.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

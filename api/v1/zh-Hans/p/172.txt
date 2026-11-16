@@ -1,0 +1,17 @@
+请使用「长镜头（Long take）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #172
+
+这是什么：不切换，一个镜头连续拍到底
+示例画面：一个连续镜头跟拍步行的人，全程无剪辑；底部的胶片条保持一整条不断。
+规格：
+- Join: none; for 4.2 s one shot keeps following the person (#041 Jump cut splits it into five)
+- Subject: a person walks at constant speed from front left (x = -3.4 m, 5.2 m deep) to back right (x = 2.8 m, 9.6 m deep); legs and arms swing by sin(t×7)×0.42 rad
+- Camera: trucks right 0 m → 1.4 m after the person while turning, yaw = atan2(person x - camera x, depth)×0.8; height 1.4 m
+- Bottom strip: one blue bar labelled "1ショット・カットなし" (one shot, no cut) with a playhead, showing there is no break
+- Return: stops at 4.2 s, then cross-fades back to the start over the last 0.5 s (one pass = 4.7 s)
+- Top-right readout shows the elapsed time (NO CUT 0.0s → 4.2s)
+适用场景：To keep tension and presence unbroken, or to show a sequence of movement as one flow.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/172.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

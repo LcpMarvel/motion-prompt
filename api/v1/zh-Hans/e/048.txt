@@ -1,0 +1,24 @@
+// Motion Prompt #048 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#048
+//
+// L 型剪辑 / L-cut
+// 包: camera (镜头运动与转场) · element 24 · 分类: 转场
+// 画面内容: 画面已切换后，上一场景的声音延续一段；上方显示画面，下方是视频与音频时间线。
+// 运动规格:
+//   - Join: the picture is a straight cut; only the audio switches to the next scene (B) after the picture does. The offset is 20% of the timeline (0.72 s)
+//   - Playhead: moves left to right at constant speed over 3.6 s (0.4 s to 4.0 s); picture switches at 55% (about 2.38 s), audio at 75% (about 3.10 s)
+//   - In the offset section (55–75%) the picture is already B while the audio is still A; the section is marked with a pale blue band and two blue dashed lines
+//   - Layout: the top 134 px is the picture (fixed camera, subjects do not move); the bottom 74 px holds two timeline rows, video and audio (A grey, B pale blue, waveform on the audio row)
+//   - Labels: "映像A / 映像B" (video A / B) at bottom left of the picture; the audio now playing at bottom right ("♪ Aの音" grey → "♪ Bの音" blue)
+//   - Return: cross-fade back to the start over the last 0.5 s (one pass = 4.7 s)
+// 适用场景: To keep a speaker's voice running while showing the listener's reaction or related footage.
+// 标签: l-cut, l cut, split edit, audio lag, sound carries over, audio transition, edit
+// 尺寸: 539x208 px · 循环: 9.4 s
+// Needs: kit camera -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#048
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 24
+// 24 Lカット: 映像が先に次の場面（B）へ切り替わり、前の場面（A）の音が残る
+CELLS[23] = shot(splitCell(-0.2), 134);

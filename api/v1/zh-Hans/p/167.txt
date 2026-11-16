@@ -1,0 +1,14 @@
+请使用「向下滚动提示（Scroll-down cue）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #167
+
+这是什么：持续循环、引导向下滚动的动画
+示例画面：首屏下方，「SCROLL」字样、鼠标轮廓中的圆点与两侧箭头不断重复向下的动作。
+规格：
+- A 511 × 168 viewport. Centered below the hero: "SCROLL" (11 px, 3 px letter spacing) and a mouse outline (24 × 38, radius 12, line width 2.2). One beat takes 1.57 s (three per 4.7 s, six per 9.4 s pack cycle).
+- The orange dot inside (5 × 9) drops 14 px over the first 70% of the beat (quadratic ease-in-out), fades out between 45% and 75%, and reappears at the top on the next beat.
+- 40 px to each side, two down-chevrons (line width 2.5) per side, half a beat apart, drift 24 px downward; their opacity follows a sine, 0 → 0.8 → 0.
+适用场景：Use it when the hero fills the screen and people need a hint that the page goes on below.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/167.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

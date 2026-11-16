@@ -1,4 +1,4 @@
-// Motion Prompt #225 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#225
+// Motion Prompt #225 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#225
 //
 // 散布図 / Scatter plot
 // パック: diagram (資料で使う図解・グラフの名前) · element 09 · カテゴリ: 数字を見せるグラフ
@@ -12,8 +12,8 @@
 // 使いどころ: 2つの数字に関係があるか（片方が増えるともう片方も増えるか）を見せるとき。
 // タグ: scatter plot, scatter chart, correlation, dots, trend line, xy chart, data
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#225
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#225
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

@@ -1,4 +1,4 @@
-// Motion Prompt #230 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#230
+// Motion Prompt #230 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#230
 //
 // 複合グラフ（棒＋折れ線） / Combo chart (bar + line)
 // パック: diagram (資料で使う図解・グラフの名前) · element 14 · カテゴリ: 数字を見せるグラフ
@@ -11,8 +11,8 @@
 // 使いどころ: 売上と利益率のように、単位の違う2つの数字を1枚で見せるとき。
 // タグ: combo chart, combination chart, bar and line, dual axis, secondary axis, chart, data
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#230
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#230
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

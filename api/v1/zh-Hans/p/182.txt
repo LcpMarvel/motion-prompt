@@ -1,0 +1,16 @@
+请使用「深焦镜头（Deep focus）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #182
+
+这是什么：从近处到远处全部清晰
+示例画面：从前面的花到后面的人物与建筑，所有距离的物体同时清晰合焦。
+规格：
+- Camera: position, direction and focal length all fixed (height 1.1 m); only the blur amounts change
+- Blur: the foreground flower (0.75 m left, 2 m away) goes 5 px → 0 px and the background (person 0.9 m right, 9 m away; buildings; mountains) goes 6 px → 0 px, both sharpening together (#033 Rack focus blurs one side)
+- Timing: 0.5 s to 3.4 s (2.9 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Focus markers: blue corner brackets on both the flower (half-width 46 px) and the person (half-width 30 px), opacity 0 → 1 as focus arrives
+- Return: hold 3.4–4.2 s, then cross-fade back to the start over the last 0.5 s; top-right readout shows the aperture (f/1.8 → f/16)
+适用场景：When the viewer may look anywhere in the frame, or to show several things happening at different depths at once.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/182.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,15 @@
+请使用「滚动文字显现（Scroll text reveal）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #146
+
+这是什么：随着阅读，文字逐字变深
+示例画面：浅灰标题随页面滚动从左上起逐字加深，上滚时从末尾起淡回。
+规格：
+- A 511 × 168 viewport. Scroll progress p: 0→1 over 0.3–2.6 s, 1→0 over 3.2–4.4 s (cubic ease-in-out). The page moves up by p × 40 px. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- A three-line headline, 24 characters in all (27 px, weight 800, 38 px line height), all light gray (#D6DBE4) at the start.
+- Character n (counting from 0) has darkness clamp(p × 26 − n): each character takes 1/26 of the progress to reach the text color (#1C2333), in step with the scroll.
+- Scrolling back fades them from the last character by the same formula. The body-text bars and the scrollbar thumb move with the page.
+适用场景：Use it on a short statement, such as a concept or a message from the founder, that should be read slowly.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/146.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

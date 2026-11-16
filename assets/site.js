@@ -130,6 +130,66 @@
       outDemo: 'Demo', outSpec: 'Spec and code', outNote: 'Note',
       outEnd: 'The get command of the motion-prompt skill returns the full spec (without the skill, read the "Spec and code" URL on each line).',
     },
+    'zh-Hans': {
+      title: 'Motion Prompt｜向 AI 下单时用的「名称」库',
+      skip: '跳到示例列表', navLabel: '站内', navHow: '使用方法', navFound: '案例', langLabel: '语言',
+      themeToDark: '切换到深色模式', themeToLight: '切换到浅色模式',
+      eyebrow: '向 AI 下单时用的「名称」库',
+      h1: '致指挥 AI 的创意总监',
+      lead: '把动态图形、运镜、UI 组件、落地页与网页效果、摄影表现、画风、资料图解与图表的 {n} 个名称，配上会动的示例排在一起。复制提示词，运动规格与参考实现会一并带过去。',
+      factMoves: '名称', factPacks: '分类包', factLicense: '许可',
+      installSkillH: '用技能安装',
+      installSkillP: '在终端运行。装好后对 AI 说「打开 motion-prompt 库」，这个图鉴就会在浏览器打开。选中想要的再点「发送给 AI」。',
+      installPromptH: '用提示词安装',
+      installPromptP: '把下面这段话贴给 Claude Code 或 Codex，AI 会装好技能并告诉你用法。',
+      installPrompt: '阅读 https://github.com/showheyohtaki/motion-prompt ，在这个环境里安装 motion-prompt 技能。装好后用三行话告诉我怎么用。',
+      copy: '复制', copied: '已复制', copyFailed: '复制失败',
+      copyCmdLabel: '复制安装命令', copyInstallLabel: '复制安装提示词',
+      galleryH: '示例列表', packFilterLabel: '按分类包筛选', catFilterLabel: '按类别筛选',
+      all: '全部', allIn: '此包全部',
+      searchLabel: '搜索示例', searchPh: '名称、编号或标签',
+      pause: '暂停', play: '播放', pauseLabel: '暂停所有示例', playLabel: '播放所有示例',
+      count: '{n} 个', countOf: '{n} 个（共 {total} 个）',
+      empty: '没有找到。换个词或编号试试。',
+      openLabel: '打开 #{id} {name}', loadFailed: '加载失败',
+      howH: '使用方法',
+      s1h: '让 AI 打开这个库', s1p: '对装了 motion-prompt 技能的 AI 说「打开 motion-prompt 库」，图鉴就会在浏览器打开。',
+      s2h: '边看边选', s2p: '在想要的示例上点「选中」，选多少个都行。选中的会排在屏幕下方，还能加一句备注，比如「用在片头标题上」。',
+      s3h: '发给 AI，然后提需求', s3p: '点「发送给 AI」，选中的内容就会送达。接着说「把这条片子的开头剪成这种感觉」。这个按钮只在 AI 打开本库时出现。',
+      skillH: '可以这样对它说',
+      skillP: '不必记住名称或编号。拿不准的时候，像查字典一样让 AI 把库打开就好。',
+      say1: '打开 motion-prompt 库',
+      say2: '有哪些运镜？列表给我看看',
+      say3: '（选中并发送后）把这条片子的开头剪成这种感觉',
+      altH: '没有技能时、或已知编号时',
+      altP1: '对没装技能的 AI，把屏幕下方「复制所选」生成的内容贴给它即可，里面有示例与规格的 URL。只用一个时，详情里的「复制提示词」也可以。',
+      altP2: '已知编号的话也可以直接说：「用 motion-prompt 的 #012 和 #045」。',
+      implH: '关于参考实现',
+      implP: '每个示例都是用 Canvas 2D 写的、画面只随时间变化的函数，没有外部库。可以逐帧绘制，因此也能用来输出视频。',
+      author: '作者', authorName: '大滝昇平',
+      thanks1: '「会动的示例 + 可复制的提示词」这一形式，参考了', thanks2: '，谨致谢意。',
+      whyLink: '为什么做这个', makeLink: '为自己的领域或语言做一个', addLink: '补充你所在领域的名称', listLink: '名称列表（GitHub）',
+      removeP1: '需要下架或更正，请使用 ', removeLink: 'GitHub 的 Issue 表单', removeP2: '。确认后会尽快处理。',
+      dAsk: '向 AI 提需求的示例',
+      ownP: '这里的内容只是一个范例。你也可以为自己的领域、用自己的语言，做出同样的名称示例库。', ownLink: '做法与提示词（make-your-own）',
+      langsP: '名称列表另有西班牙语与中文（简体、繁体）版本。', langsLink: '五种语言的列表（GitHub）',
+      dSpec: '运动规格', dUse: '适用场景', tagsLabel: '标签', promptLabel: '将被复制的提示词',
+      copyPrompt: '复制提示词', copyCode: '复制代码', showCode: '查看代码',
+      prev: '上一个', next: '下一个', close: '关闭',
+      kitLink: '共用辅助代码（kit/{pack}.js）', txtLink: '带规格的代码（{id}.txt）',
+      codeLoading: '加载中…', codeFailed: '代码加载失败。',
+      size: '{w}×{h}px · 循环 {c}s',
+      pick: '选中', picked: '已选中', pickLabel: '选中 #{id} {name}', unpickLabel: '取消 #{id} {name}',
+      trayCount: '已选 {n} 个', trayWait: 'AI 正在等待。选好后点「发送给 AI」。',
+      trayEmpty: '在示例上点「选中」，就会排列在这里。',
+      noteLabel: '备注（可选）', notePh: '例如：用在片头标题上',
+      send: '发送给 AI', sending: '正在发送…', copyPicked: '复制所选', shareUrl: '复制所选链接', clearAll: '全部清除',
+      pickedLive: '已选中 #{id} {name}。共 {n} 个。', unpickedLive: '已取消 #{id} {name}。共 {n} 个。',
+      clearedLive: '已清除全部选择。',
+      outIntro: '我在 motion-prompt 图鉴里选中了这 {n} 个，请按它们来剪。',
+      outDemo: '示例', outSpec: '规格与代码', outNote: '备注',
+      outEnd: '详细规格可用 motion-prompt 技能的 get 命令获取（没有装技能时，请读取每行「规格与代码」的 URL）。',
+    },
   };
 
   // ------------------------------------------------------------------ state
@@ -140,7 +200,7 @@
   var reduceMotion = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
   var darkQuery = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : { matches: false };
   var state = {
-    lang: root.lang === 'en' ? 'en' : 'ja',
+    lang: root.lang === 'en' ? 'en' : root.lang === 'zh-Hans' ? 'zh-Hans' : 'ja',
     pack: 'all', cat: 'all', q: '',
     playing: !reduceMotion.matches,
     open: null,           // id shown in the detail view
@@ -155,12 +215,14 @@
 
   function t(key, vars) {
     var s = I18N[state.lang][key];
-    if (s == null) s = I18N.ja[key] || key;
+    if (s == null) s = I18N.en[key] || I18N.ja[key] || key;
     if (vars) Object.keys(vars).forEach(function (k) { s = s.split('{' + k + '}').join(vars[k]); });
     return s;
   }
   function names(el) {
-    var ja = state.lang === 'ja';
+    var l = state.lang;
+    if (l === 'zh-Hans') return { main: el.name['zh-Hans'] || el.name.en, sub: el.name.en };
+    var ja = l === 'ja';
     return { main: ja ? el.name.ja : el.name.en, sub: ja ? el.name.en : el.name.ja };
   }
   function h(tag, attrs, kids) {
@@ -315,8 +377,9 @@
   function haystack(el) {
     var p = packBy[el.pack];
     var c = p.categories.filter(function (x) { return x.slug === el.category; })[0] || {};
-    return ['#' + el.id, el.id, String(+el.id), el.slug, el.pack, el.name.ja, el.name.en, el.meaning ? el.meaning.ja + ' ' + el.meaning.en : '', el.summary.ja, el.summary.en,
-      el.tags.join(' '), p.title.ja, p.title.en, c.ja || '', c.en || ''].join(' ').toLowerCase();
+    return ['#' + el.id, el.id, String(+el.id), el.slug, el.pack, el.name.ja, el.name.en, el.name['zh-Hans'] || '',
+      el.meaning ? el.meaning.ja + ' ' + el.meaning.en + ' ' + (el.meaning['zh-Hans'] || '') : '', el.summary.ja, el.summary.en, el.summary['zh-Hans'] || '',
+      el.tags.join(' '), p.title.ja, p.title.en, p.title['zh-Hans'] || '', c.ja || '', c.en || '', c['zh-Hans'] || ''].join(' ').toLowerCase();
   }
   function matches(el) {
     if (state.pack !== 'all' && state.pack.split(',').indexOf(el.pack) < 0) return false; // one pack, or several joined by commas (camera,camera2)
@@ -671,7 +734,7 @@
     var lang = state.lang, lines = [t('outIntro', { n: state.picks.length }), ''];
     state.picks.forEach(function (id, i) {
       var nm = names(elBy[id]);
-      var sub = nm.sub && nm.sub !== nm.main ? (lang === 'ja' ? '（' + nm.sub + '）' : ' (' + nm.sub + ')') : '';
+      var sub = nm.sub && nm.sub !== nm.main ? (lang === 'en' ? ' (' + nm.sub + ')' : '（' + nm.sub + '）') : '';
       lines.push((i + 1) + '. #' + id + ' ' + nm.main + sub);
       lines.push('   ' + t('outDemo') + ': ' + SITE + '#' + id);
       lines.push('   ' + t('outSpec') + ': ' + SITE + 'api/v1/' + lang + '/e/' + id + '.txt');

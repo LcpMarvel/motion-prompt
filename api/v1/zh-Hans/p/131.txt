@@ -1,0 +1,15 @@
+请使用「路径文字（Text on a path）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #131
+
+这是什么：文字沿线条或曲线流动
+示例画面：一行文字沿波浪线流动，每个字母随线转向。
+规格：
+- Path: y = 118 + 42·sin(2πx ÷ 330 + 0.6) for x = −70 to 609, shown 6 px below as a navy dashed line (14/10, width 5).
+- "ALONG THE LINE • " (42 px, bold, 2 px letter spacing) is repeated. Each character is placed at its arc-length position on the path and rotated to the path direction.
+- The text moves along the path by the length of one copy of the string every 4.7 s, so the loop joins up.
+- Letters are white; the bullet is yellow.
+适用场景：Use it to run text along a shape: around a logo, along a road, river or wave, or as a looping band of text.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/131.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

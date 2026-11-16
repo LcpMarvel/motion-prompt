@@ -1,0 +1,28 @@
+// Motion Prompt #187 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#187
+//
+// 淡出到黑场 / Fade to black
+// 包: camera2 (镜头运动与转场（第 2 弹）) · element 19 · 分类: 转场与剪辑
+// 画面内容: 整个画面沉入黑场，下一个场景再从黑色中亮起。
+// 运动规格:
+//   - Fade out: from 1.4 s to 2.6 s (1.2 s) black (rgb(20,20,24)) is laid over the outgoing picture with opacity 0 → 100%, quadratic ease-in-out (about cubic-bezier(0.45,0,0.55,1))
+//   - Black: fully black from 2.6 s to 3.1 s; at 2.9 s the incoming picture is swapped in unseen, with a straight cut
+//   - Fade in: from 3.1 s to 4.3 s (1.2 s) the black goes from 100% → 0 with the same easing
+//   - Camera: fixed in both pictures (A at height 1.4 m; B at height 1.6 m, pitch +0.1 rad); the subjects do not move either
+//   - Alternates A→B and B→A every 4.7 s (9.4 s for the round trip); top-right readout shows "FADE OUT" / "FADE IN"; the viewfinder marks stay over the black
+// 适用场景: For a chapter break, a long passage of time, or the end of a story.
+// 标签: fade to black, fade out, fade in, black, ending, transition
+// 尺寸: 539x208 px · 循环: 9.4 s
+// Needs: kit camera2 -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#187
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 19
+// 19 フェードアウト: 画面全体が黒へ沈んで終わり、黒から次の場面が明けてくる
+CELLS[18] = shot(abCell((k, w, h, u, A, B) => {
+  const out = eIOs(P(u, 1.4, 2.6)), inn = eIOs(P(u, 3.1, 4.3));
+  if (u < 2.9) A(k, w, h); else B(k, w, h);
+  const a = u < 2.9 ? out : 1 - inn;
+  if (a > 0) { k.fillStyle = `rgba(20,20,24,${a.toFixed(3)})`; k.fillRect(0, 0, w, h); }
+}, u => u < 2.9 ? 'FADE OUT' : 'FADE IN'));

@@ -1,0 +1,16 @@
+请使用「万花筒（Kaleidoscope）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #135
+
+这是什么：像万花筒一样对称展开
+示例画面：八重对称的图案自中心旋转展开，如万花筒一般。
+规格：
+- The area around the centre is split into eight 45° wedges; every other wedge is drawn mirrored, giving eight mirror-symmetric sections.
+- One wedge holds 13 shapes (circles, diamonds, triangles; four colours; fixed random seed). They travel outward from the centre to radius 300, one full radius per 4.7 s, wrapping back to the centre.
+- Shapes grow as they go out ((5 + 0.1r) × 0.7–1.4) and spin 0.02 rad per px. They fade in over the first 30 px and out over the last 70 px; each sways ±0.08 rad once per 4.7 s.
+- The whole pattern turns 90° per 4.7 s (two wedges, so the loop joins up).
+- A white eight-point star at the centre (radius 20 ± 4, pulsing twice per 4.7 s).
+适用场景：Use it for music videos, live backdrops or dreamy scene changes, wherever a pattern has to hold up on repeat.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/135.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

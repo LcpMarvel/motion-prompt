@@ -1,0 +1,16 @@
+请使用「斯坦尼康（Steadicam）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #173
+
+这是什么：消除抖动，平稳流畅地移动
+示例画面：摄影机跟随步行者平滑前移，只有缓慢轻微的摆动，没有手持的抖动。
+规格：
+- Camera: moves forward at a constant 1.7 m/s (8 m per 4.7 s); height 1.45 m, pitch -0.02 rad; no easing
+- Sway: height ±3.5 cm (2 cycles per 4.7 s), sideways ±5 cm (1 cycle), yaw ±0.012 rad, roll ±0.006 rad, all sine waves with integer periods, slow and wide (#034 Handheld is fast and irregular)
+- Subject: a person walks 5 m ahead of the camera at the same speed; legs and arms take 5 strides per 4.7 s
+- Trees: 3.6 m tall at x = -5 m and 3.2 m tall at x = +5 m, every 8 m (the two rows offset by 4 m); the mountains and sun move with the camera
+- 8 m is a multiple of the grid (2 m) and tree (8 m) spacing, so it loops seamlessly every 4.7 s; top-right readout shows "STEADICAM"
+适用场景：To make a walking move look smooth and cinematic.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/173.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

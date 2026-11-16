@@ -1,0 +1,15 @@
+请使用「立方体转场（Cube transition）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #139
+
+这是什么：像立方体旋转一样切换画面
+示例画面：像转动的立方体，正面摆开，下一面转过来。
+规格：
+- Face A (an "A" on coral) and face B (a "B" on mint), each 250 × 146. 2.35 s each, A→B→A.
+- Rotation 0→90° at 0.45–1.6 s (1.15 s), cubic ease-in-out, around a vertical axis through the centre of the cube (depth equal to the face width, 250).
+- Perspective: camera distance 820 px. Each face is drawn as 2 px vertical slices, each sized and placed by its perspective factor.
+- The face turning away darkens up to 55% (0.55·sinφ); the incoming face starts 55% dark and brightens (0.55·cosφ). The floor shadow follows the visible width.
+适用场景：Use it to show products, plans or screens one after another with a sense of depth.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/139.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

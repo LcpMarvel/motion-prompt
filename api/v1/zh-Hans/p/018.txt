@@ -1,0 +1,16 @@
+请使用「图形转场（Shape transition）」，它是「动态图形」中的一个名称。
+Motion Prompt #018
+
+这是什么：图形覆盖画面后揭示下一场景
+示例画面：色带横扫并覆盖画面；移开后已是下一个场景。
+规格：
+- Day → night → day, 2.35 s each. Four horizontal bands (height 52; blue, coral, yellow, mint) whose ends are slanted by 80 px.
+- Cover: 0.38–1.0 s. Each band's leading edge travels from one side of the frame to the other. Bands are delayed by 14% of the phase each, and each uses cubic ease-in-out over 58% of the phase.
+- At 1.0 s, when everything is covered, the scene underneath is swapped for the next one.
+- Uncover: 1.12–1.75 s. Each band's trailing edge follows with the same delays and curve, exposing the next scene.
+- Direction: left to right for day→night, mirrored for night→day.
+适用场景：Use it to change scenes with shapes in brand colours: chapter breaks, topic changes.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/018.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

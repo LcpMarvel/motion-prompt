@@ -15,7 +15,8 @@
       "ask": { "ja": "カメラの向きは変えずに、目の高さから3mまでペデスタルで真上に上げて。", "en": "Pedestal up from eye level to about 3 meters, keeping the camera pointed straight ahead.", "es": "Pedestal hacia arriba desde la altura de los ojos hasta unos 3 metros, con la cámara apuntando siempre al frente.", "zh-Hans": "保持镜头朝向不变，用垂直升降镜头从眼睛高度直线上升到约 3 m。", "zh-Hant": "攝影機方向不變，用 Pedestal 垂直升降從視線高度往正上方升到約 3 公尺。" },
       "summary": {
         "ja": "カメラが向きを変えずに真上へ平行移動する。地平線は画面の中央のまま、人物と建物が下へ流れる。",
-        "en": "The camera moves straight up without changing its direction; the horizon stays centred while the person and buildings slide down."
+        "en": "The camera moves straight up without changing its direction; the horizon stays centred while the person and buildings slide down.",
+        "zh-Hans": "摄影机沿竖直方向直线上升，朝向不变；地平线保持在画面中央，人物与建筑向下滑出。"
       },
       "spec": {
         "ja": [
@@ -48,7 +49,8 @@
       "ask": { "ja": "ドローンの映像をバレルロールで1回転させて。3秒かけて。", "en": "Barrel roll the drone shot through one full rotation over 3 seconds.", "es": "Barrel roll de la toma de dron: una vuelta completa en 3 segundos.", "zh-Hans": "让无人机画面用横滚镜头旋转一整圈，用时 3 s。", "zh-Hant": "空拍畫面請用 Barrel roll 翻轉一整圈，花 3 秒。" },
       "summary": {
         "ja": "カメラがレンズの軸でぐるりと1回転し、地平線が一周して元に戻る。",
-        "en": "The camera rolls a full turn around its lens axis; the horizon goes all the way round and comes back level."
+        "en": "The camera rolls a full turn around its lens axis; the horizon goes all the way round and comes back level.",
+        "zh-Hans": "摄影机绕镜头光轴整整旋转一圈，地平线转一圈后回到水平。"
       },
       "spec": {
         "ja": [
@@ -79,7 +81,8 @@
       "ask": { "ja": "駅から公園まで歩きながらのハイパーラプス。雲が流れて、人が早送りで動くように。", "en": "Hyperlapse walking from the station to the park, clouds streaming and people in fast forward.", "es": "Hyperlapse caminando de la estación al parque, con las nubes pasando rápido y la gente en cámara rápida.", "zh-Hans": "拍一段从车站走到公园的移动延时：云朵流动，行人像快进一样移动。", "zh-Hant": "用移動縮時拍從車站走到公園的過程，雲快速飄過，路人像快轉一樣移動。" },
       "summary": {
         "ja": "街路を前へ進みながら、太陽・雲・人影が早送りで動く。タイムラプスとカメラの移動を同時に行う。",
-        "en": "The camera travels forward along a street while the sun, clouds and passers-by run in fast forward: a time-lapse that moves."
+        "en": "The camera travels forward along a street while the sun, clouds and passers-by run in fast forward: a time-lapse that moves.",
+        "zh-Hans": "摄影机沿街道前移，太阳、云与路人快进运行：一段会移动的延时摄影。"
       },
       "spec": {
         "ja": [
@@ -112,7 +115,8 @@
       "ask": { "ja": "準備から出発までを長回しで。カットを割らずに人物についていって。", "en": "Shoot from the preparation to the departure as one long take, following the person without a cut.", "es": "Graba desde la preparación hasta la salida en un plano secuencia, siguiendo a la persona sin cortar.", "zh-Hans": "从准备到出发用一个长镜头拍完，跟着人物，中间不切镜头。", "zh-Hant": "從準備到出發用一鏡到底拍完，中間不剪接，一路跟著人物。" },
       "summary": {
         "ja": "歩く人物をカットなしで追い続ける1ショット。画面下の帯は切れ目のない1本のまま。",
-        "en": "One continuous shot follows a walking person with no cut; the bar at the bottom stays a single unbroken strip."
+        "en": "One continuous shot follows a walking person with no cut; the bar at the bottom stays a single unbroken strip.",
+        "zh-Hans": "一个连续镜头跟拍步行的人，全程无剪辑；底部的胶片条保持一整条不断。"
       },
       "spec": {
         "ja": [
@@ -145,7 +149,8 @@
       "ask": { "ja": "廊下を歩く人物の後ろをステディカムで。揺れなしでなめらかに。", "en": "Follow the person down the corridor with a Steadicam: smooth, no shake.", "es": "Sigue con Steadicam a la persona por el pasillo: suave, sin temblor.", "zh-Hans": "用斯坦尼康跟拍走廊里人物的背后，平稳无晃动。", "zh-Hant": "用 Steadicam 跟在走過走廊的人物後方，不晃動、平順地移動。" },
       "summary": {
         "ja": "細かい揺れのない、ゆっくり大きなうねりだけで前へ進み、歩く人物を追う。手持ちとの違いが分かる。",
-        "en": "The camera glides forward after a walking person with only a slow, gentle sway and no jitter, unlike handheld."
+        "en": "The camera glides forward after a walking person with only a slow, gentle sway and no jitter, unlike handheld.",
+        "zh-Hans": "摄影机跟随步行者平滑前移，只有缓慢轻微的摆动，没有手持的抖动。"
       },
       "spec": {
         "ja": [
@@ -176,7 +181,8 @@
       "ask": { "ja": "森の中を歩く人物の背中をフォローショットで。少し遅れてついていって。", "en": "Follow shot behind the person walking through the woods, trailing a little behind.", "es": "Follow shot por detrás de la persona que camina por el bosque, siguiéndola un poco atrás.", "zh-Hans": "用背后跟拍拍摄在林中行走的人物背影，稍微落后一点跟着。", "zh-Hant": "用背後跟拍拍攝在森林裡走路的人物，稍微落後一點跟著走。" },
       "summary": {
         "ja": "蛇行して歩く人物の後ろを、同じ道筋で少し遅れてついていく。人物は中央付近に留まり、背中が見える。",
-        "en": "The camera trails a weaving walker along the same path a few metres behind; the person stays near the centre, seen from the back."
+        "en": "The camera trails a weaving walker along the same path a few metres behind; the person stays near the centre, seen from the back.",
+        "zh-Hans": "摄影机在几米外沿同一路径尾随蜿蜒行走的背影；人物始终保持在画面中心附近。"
       },
       "spec": {
         "ja": [
@@ -207,7 +213,8 @@
       "ask": { "ja": "交差点をロックオフで。カメラは三脚で固定して、人や車だけが通り過ぎるように。", "en": "Locked-off shot of the crossing: camera fixed on a tripod, only the people and cars pass through.", "es": "Plano fijo de la intersección: la cámara fija en un trípode, y que solo pasen las personas y los carros.", "zh-Hans": "用固定镜头拍十字路口：相机固定在三脚架上，只有行人和车辆经过。", "zh-Hant": "十字路口用固定鏡頭拍：攝影機架在三腳架上固定不動，只有行人和車輛經過。" },
       "summary": {
         "ja": "三脚で固定したカメラの前を人物が横切り、奥を車が通る。カメラは1pxも動かない。",
-        "en": "A person crosses in front of a tripod-fixed camera and a car passes behind; the camera does not move by a pixel."
+        "en": "A person crosses in front of a tripod-fixed camera and a car passes behind; the camera does not move by a pixel.",
+        "zh-Hans": "人从固定在三脚架上的镜头前走过，车从后方驶过；机位一像素都不动。"
       },
       "spec": {
         "ja": [
@@ -238,7 +245,8 @@
       "ask": { "ja": "窓からフライスルーで部屋の中へ入って、テーブルの上まで寄って。", "en": "Fly-through from the window into the room and over to the table.", "es": "Fly-through desde la ventana hacia adentro del cuarto y hasta la mesa.", "zh-Hans": "用穿越镜头从窗户进入房间，一直推到桌子上方。", "zh-Hant": "用 Fly-through 穿越鏡頭從窗戶飛進房間，一路靠近到桌子上方。" },
       "summary": {
         "ja": "窓のあいた壁へ向かって進み、窓を通り抜けて向こう側の場所へ出る。",
-        "en": "The camera flies toward a wall with a window, passes through the opening and comes out into the place beyond."
+        "en": "The camera flies toward a wall with a window, passes through the opening and comes out into the place beyond.",
+        "zh-Hans": "摄影机朝着带窗的墙飞去，穿过窗口进入墙后的空间。"
       },
       "spec": {
         "ja": [
@@ -271,7 +279,8 @@
       "ask": { "ja": "ヒーローの登場はローアングルで。地面近くから見上げて。", "en": "Shoot the hero's entrance from a low angle, looking up from near the ground.", "es": "Graba la entrada del héroe en contrapicado, mirando hacia arriba desde cerca del suelo.", "zh-Hans": "英雄登场用低角度镜头，从贴近地面处向上拍。", "zh-Hant": "英雄登場用仰角鏡頭，從靠近地面的位置往上拍。" },
       "summary": {
         "ja": "カメラを地面近くまで下げて見上げる。人物が大きく、建物が高くそびえて見える。",
-        "en": "The camera drops to near the ground and looks up; the person looks big and the buildings tower."
+        "en": "The camera drops to near the ground and looks up; the person looks big and the buildings tower.",
+        "zh-Hans": "镜头降到贴近地面仰拍；人物显得高大，建筑如高塔耸立。"
       },
       "spec": {
         "ja": [
@@ -302,7 +311,8 @@
       "ask": { "ja": "迷子の場面はハイアングルで。少し上から見下ろして小さく見せて。", "en": "Use a high angle for the lost-child scene, looking down from above so they look small.", "es": "Usa un picado para la escena del niño perdido, mirando desde arriba para que se vea pequeño.", "zh-Hans": "迷路孩子的场景用高角度镜头，从稍高处向下拍，让孩子显得很小。", "zh-Hant": "迷路小孩的場景用俯角鏡頭，從稍高的地方往下拍，讓他看起來很渺小。" },
       "summary": {
         "ja": "カメラを高い位置へ上げて見下ろす。人物が小さく、地面が画面の大半を占める。",
-        "en": "The camera rises and looks down; the person looks small and the ground fills most of the frame."
+        "en": "The camera rises and looks down; the person looks small and the ground fills most of the frame.",
+        "zh-Hans": "镜头升高俯拍；人物显得渺小，地面占满大部分画面。"
       },
       "spec": {
         "ja": [
@@ -333,7 +343,8 @@
       "ask": { "ja": "ドアを開けて部屋に入る瞬間はPOVショットで。本人の目線で。", "en": "The moment of opening the door and entering the room as a POV shot, through their eyes.", "es": "El momento de abrir la puerta y entrar al cuarto en plano subjetivo, a través de sus ojos.", "zh-Hans": "开门走进房间的那一刻用 POV 镜头，以角色本人的视线拍摄。", "zh-Hant": "打開門走進房間的那一刻用 POV 主觀鏡頭，以本人的視線拍攝。" },
       "summary": {
         "ja": "登場人物の目で見た画。歩く揺れと画面下の両手で一人称だと分かり、前の人物がこちらに手を振る。",
-        "en": "Seen through a character's eyes: the walking sway and the hands at the bottom say first person, and the person ahead waves at you."
+        "en": "Seen through a character's eyes: the walking sway and the hands at the bottom say first person, and the person ahead waves at you.",
+        "zh-Hans": "以角色第一人称视角呈现：行走的晃动与下方的双手表明这是主观镜头，前方的人朝你挥手。"
       },
       "spec": {
         "ja": [
@@ -364,7 +375,8 @@
       "ask": { "ja": "会話は肩越しのオーバーザショルダーで。手前の肩は少しぼかして。", "en": "Shoot the conversation over the shoulder, with the foreground shoulder slightly out of focus.", "es": "Graba la conversación en plano sobre el hombro, con el hombro en primer plano un poco desenfocado.", "zh-Hans": "对话用过肩镜头拍摄，前景的肩膀稍微虚化。", "zh-Hant": "對話用過肩鏡頭拍，前景的肩膀稍微模糊。" },
       "summary": {
         "ja": "手前の人物の後頭部と肩を画面の端に入れ、その肩越しに相手を撮る。手前はぼけ、相手にピント。",
-        "en": "The back of one person's head and shoulder sit at the edge of frame and the other person is seen past them; the foreground is soft, the subject sharp."
+        "en": "The back of one person's head and shoulder sit at the edge of frame and the other person is seen past them; the foreground is soft, the subject sharp.",
+        "zh-Hans": "一个人的后脑与肩膀位于画面边缘，越过他看到另一个人；前景虚、主体实。"
       },
       "spec": {
         "ja": [
@@ -395,7 +407,8 @@
       "ask": { "ja": "交差点を真上からのバーズアイで。人と車が上から見た形で動くように。", "en": "Bird's-eye view of the crossing from directly above, people and cars moving as seen from the top.", "es": "Plano cenital de la intersección, justo desde arriba, con las personas y los carros moviéndose vistos desde lo alto.", "zh-Hans": "从正上方用鸟瞰镜头拍十字路口，人和车以从上往下看的样子移动。", "zh-Hant": "十字路口用正上方的鳥瞰鏡頭拍，讓行人和車輛以從上往下看的樣子移動。" },
       "summary": {
         "ja": "真上から真下を見下ろす。道・人・車・木がすべて上から見た形になり、上がるほど広い範囲が見える。",
-        "en": "Looking straight down from overhead: road, people, cars and trees appear as top-down shapes, and more comes into view as the camera rises."
+        "en": "Looking straight down from overhead: road, people, cars and trees appear as top-down shapes, and more comes into view as the camera rises.",
+        "zh-Hans": "从头顶正上方向下看：道路、行人、车辆与树木呈俯视图形，镜头升高时视野扩大。"
       },
       "spec": {
         "ja": [
@@ -428,7 +441,8 @@
       "ask": { "ja": "手前のカップも奥の人物もはっきり見せたいので、ディープフォーカスで。", "en": "Deep focus, so the cup in front and the person behind are both sharp.", "es": "Foco profundo, para que la taza de adelante y la persona de atrás se vean nítidas.", "zh-Hans": "前景的杯子和后方的人物都要清晰，所以用深焦镜头。", "zh-Hant": "前景的杯子和後方的人物都要拍清楚，請用深焦。" },
       "summary": {
         "ja": "手前の花から奥の人物・建物まで、同時に全部にピントが合っていく。",
-        "en": "From the flower in front to the person and buildings behind, everything comes into sharp focus at the same time."
+        "en": "From the flower in front to the person and buildings behind, everything comes into sharp focus at the same time.",
+        "zh-Hans": "从前面的花到后面的人物与建筑，所有距离的物体同时清晰合焦。"
       },
       "spec": {
         "ja": [
@@ -459,7 +473,8 @@
       "ask": { "ja": "冒頭は街全体が見えるエスタブリッシングショットから。場所の名前も出して。", "en": "Open with an establishing shot of the whole town, with the location name on screen.", "es": "Abre con un plano de establecimiento de todo el pueblo, con el nombre del lugar en pantalla.", "zh-Hans": "开头先用能看到整个城镇的定场镜头，同时显示地名。", "zh-Hant": "開場先用看得到整座城鎮的定場鏡頭，並打上地點名稱。" },
       "summary": {
         "ja": "広角・高い位置から街全体を見せる引きの画。ゆっくり寄りながら、場所の表示が左下に出る。",
-        "en": "A wide, high view of the whole town; the camera pushes in slowly and a location caption appears at bottom left."
+        "en": "A wide, high view of the whole town; the camera pushes in slowly and a location caption appears at bottom left.",
+        "zh-Hans": "高角度大视野展现整座小镇；镜头缓慢推进，左下角出现地点字幕。"
       },
       "spec": {
         "ja": [
@@ -490,7 +505,8 @@
       "ask": { "ja": "涙がこぼれる瞬間は、目だけのエクストリームクローズアップで。", "en": "Extreme close-up on just the eye at the moment the tear falls.", "es": "Primerísimo primer plano solo del ojo en el momento en que cae la lágrima.", "zh-Hans": "眼泪落下的瞬间，用只拍眼睛的大特写。", "zh-Hant": "眼淚滑落的瞬間，用只拍眼睛的大特寫。" },
       "summary": {
         "ja": "顔のクローズアップから、目だけが画面を埋めるまで寄る。",
-        "en": "From a close-up of the face to a frame filled by nothing but the eyes."
+        "en": "From a close-up of the face to a frame filled by nothing but the eyes.",
+        "zh-Hans": "从面部特写推进到整幅画面只剩一双眼睛。"
       },
       "spec": {
         "ja": [
@@ -521,7 +537,8 @@
       "ask": { "ja": "鍵を回すところはインサートショットで手元に寄って、すぐ戻して。", "en": "Insert shot of the hand turning the key, then straight back to the scene.", "es": "Inserto de la mano girando la llave, y de vuelta a la escena enseguida.", "zh-Hans": "转动钥匙时用插入镜头拍手部特写，然后马上切回。", "zh-Hant": "轉鑰匙的地方用插入鏡頭拍手部特寫，接著馬上回到原本的畫面。" },
       "summary": {
         "ja": "人物の場面に、同じ場面の手元の時計の大写しを1.3秒だけ差し込み、元の画へ戻る。",
-        "en": "A big close-up of the watch on the person's wrist is cut into the scene for 1.3 s, then it returns to the same shot."
+        "en": "A big close-up of the watch on the person's wrist is cut into the scene for 1.3 s, then it returns to the same shot.",
+        "zh-Hans": "场景中切入 1.3 秒人物手腕上手表的大特写，然后回到原镜头。"
       },
       "spec": {
         "ja": [
@@ -552,7 +569,8 @@
       "ask": { "ja": "インタビューの言い直しをモーフカットで消して、つなぎ目が見えないように。", "en": "Remove the repeated sentence in the interview with a morph cut, so the join is invisible.", "es": "Quita la frase repetida de la entrevista con un morph cut, para que no se note la unión.", "zh-Hans": "用变形剪切去掉采访中说错重来的部分，让接缝看不出来。", "zh-Hant": "請用 Morph Cut 剪掉訪談中重講的句子，讓接點看不出來。" },
       "summary": {
         "ja": "同じ人物の2つのテイクを、位置と姿勢をなめらかに補間してつなぐ。ジャンプカットのように飛ばない。",
-        "en": "Two takes of the same person are joined by smoothly interpolating position and pose, so nothing jumps as in a jump cut."
+        "en": "Two takes of the same person are joined by smoothly interpolating position and pose, so nothing jumps as in a jump cut.",
+        "zh-Hans": "同一个人的两段素材靠位置与姿态的平滑插值缝合，不像跳切那样跳跃。"
       },
       "spec": {
         "ja": [
@@ -583,7 +601,8 @@
       "ask": { "ja": "場面の終わりは1秒のフェードアウトで黒へ。次の場面は黒から明けて。", "en": "End the scene with a 1-second fade to black, then fade in from black.", "es": "Cierra la escena con un fundido a negro de 1 segundo, y luego abre la siguiente desde negro.", "zh-Hans": "场景结尾用 1 s 淡出到黑场，下一场景再从黑场中淡入。", "zh-Hant": "場景結尾用 1 秒的淡出至黑，下一個場景再從黑畫面淡入。" },
       "summary": {
         "ja": "画面全体が黒へ沈んで終わり、黒から次の場面が明けてくる。",
-        "en": "The whole picture sinks to black, and the next scene brightens out of the black."
+        "en": "The whole picture sinks to black, and the next scene brightens out of the black.",
+        "zh-Hans": "整个画面沉入黑场，下一个场景再从黑色中亮起。"
       },
       "spec": {
         "ja": [
@@ -614,7 +633,8 @@
       "ask": { "ja": "昔の映画風に、主人公を中心にアイリスアウトで閉じて終わって。", "en": "Old-film style: iris out, closing on the hero to end the scene.", "es": "Al estilo del cine antiguo: iris out, cerrando sobre el protagonista para terminar la escena.", "zh-Hans": "以老电影的风格，用圈出收拢到主角身上，结束这个场景。", "zh-Hant": "做成老電影的風格，以主角為中心用 Iris out 圓形收合，收成全黑後結束。" },
       "summary": {
         "ja": "人物を中心に丸い窓が閉じて黒になり、次の場面は丸い窓が開いて現れる。",
-        "en": "A circle closes down on the person until the frame is black, then opens again on the next scene."
+        "en": "A circle closes down on the person until the frame is black, then opens again on the next scene.",
+        "zh-Hans": "一个圆形光圈向人物收缩直至全黑，再张开进入下一个场景。"
       },
       "spec": {
         "ja": [
@@ -647,7 +667,8 @@
       "ask": { "ja": "話している途中で客席の反応にカットアウェイして、また戻して。", "en": "Cut away to the audience reaction in the middle of the talk, then back.", "es": "A mitad de la charla, corta a un plano de recurso de la reacción del público y vuelve.", "zh-Hans": "讲话途中用切出镜头切到观众的反应，再切回来。", "zh-Hant": "講話講到一半，用 Cutaway 切出鏡頭切到觀眾的反應，再切回來。" },
       "summary": {
         "ja": "話す人物の場面から、聞いている客席へ切り替えて戻る。差し込むのは別の対象。",
-        "en": "From the speaker to the listening audience and back; what is cut in is a different subject."
+        "en": "From the speaker to the listening audience and back; what is cut in is a different subject.",
+        "zh-Hans": "从说话者切到倾听的观众再切回；插入的是另一个主体。"
       },
       "spec": {
         "ja": [
@@ -678,7 +699,8 @@
       "ask": { "ja": "逃げる人と追う車をクロスカッティングで交互に。だんだん短く切って。", "en": "Cross-cut between the runner and the chasing car, with the cuts getting shorter.", "es": "Montaje paralelo entre la persona que corre y el carro que la persigue, con cortes cada vez más cortos.", "zh-Hans": "用交叉剪辑交替展示逃跑的人和追赶的车，镜头逐渐变短。", "zh-Hant": "逃跑的人和追趕的車用交叉剪接交替呈現，每個鏡頭越剪越短。" },
       "summary": {
         "ja": "同時に進む2つの場面（走る人物と走る車）を、だんだん短く交互に見せる。",
-        "en": "Two scenes happening at the same time, a runner and a car, alternate in shorter and shorter cuts."
+        "en": "Two scenes happening at the same time, a runner and a car, alternate in shorter and shorter cuts.",
+        "zh-Hans": "同时发生的两个场景——跑步者与汽车——以越来越短的镜头交替出现。"
       },
       "spec": {
         "ja": [
@@ -711,7 +733,8 @@
       "ask": { "ja": "跳んだ頂点でバレットタイム。時間を止めてカメラだけ回り込んで。", "en": "Bullet time at the top of the jump: freeze the moment and circle the camera around.", "es": "Bullet time en lo más alto del salto: congela el momento y haz que la cámara gire alrededor.", "zh-Hans": "在跳跃最高点用子弹时间：让时间停住，只有相机绕着人物转。", "zh-Hant": "跳到最高點時用子彈時間：時間停住，只有攝影機繞著人物轉。" },
       "summary": {
         "ja": "跳躍の頂点で時間がほぼ止まり、その間にカメラが人物の周りを回り込む。",
-        "en": "Time nearly stops at the top of a jump while the camera circles around the person."
+        "en": "Time nearly stops at the top of a jump while the camera circles around the person.",
+        "zh-Hans": "跳跃最高点时间近乎凝固，摄影机同时绕人物环行。"
       },
       "spec": {
         "ja": [
@@ -742,7 +765,8 @@
       "ask": { "ja": "練習の1か月をモンタージュで。短いカットを7つくらい並べて。", "en": "A one-month training montage: about seven short shots in a row.", "es": "Una secuencia de montaje de un mes de entrenamiento: unas siete tomas cortas seguidas.", "zh-Hans": "用蒙太奇表现一个月的练习，连续排列约 7 个短镜头。", "zh-Hant": "一個月的練習用蒙太奇呈現，接約 7 個短鏡頭。" },
       "summary": {
         "ja": "7つの短いカットで30日分の練習を見せる。つなぎは直結で、右上の日付が飛ぶ。",
-        "en": "Seven short shots show thirty days of training; straight cuts, with the date jumping at top right."
+        "en": "Seven short shots show thirty days of training; straight cuts, with the date jumping at top right.",
+        "zh-Hans": "七个短镜头讲完三十天训练；硬切，右上角日期跳变。"
       },
       "spec": {
         "ja": [

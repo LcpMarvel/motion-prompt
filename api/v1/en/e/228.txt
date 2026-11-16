@@ -1,4 +1,4 @@
-// Motion Prompt #228 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#228
+// Motion Prompt #228 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#228
 //
 // Radar chart / レーダーチャート
 // Pack: diagram (Diagrams and charts for slides) · element 12 · Category: Charts that show numbers
@@ -11,8 +11,8 @@
 // When to use it: To compare the balance of several items, or the strengths and weaknesses of two things.
 // Tags: radar chart, spider chart, web chart, polygon, compare, skills, balance
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#228
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#228
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

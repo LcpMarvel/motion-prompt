@@ -1,0 +1,15 @@
+请使用「金字塔图（Pyramid diagram）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #220
+
+这是什么：由下往上叠起的层级
+示例画面：四层三角形自下而上堆叠，每层依次落位；只有顶层是深蓝色。
+规格：
+- Shape: a triangle from y = 16 (apex) to y = 192 (base), 336 px wide at the base, cut into four layers with 6 px gaps
+- Colors from the bottom: light gray, light blue, mid blue, dark blue
+- Motion: from the bottom layer up, 0.32 s apart (0.4, 0.72, 1.04, 1.36 s), each layer drops 34 px into place over 0.4 s while fading in (ease-out)
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show stages that build on each other, or levels that get smaller toward the top.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/220.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

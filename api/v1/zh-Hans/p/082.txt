@@ -1,0 +1,14 @@
+请使用「悬停图片放大（Image zoom on hover）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #082
+
+这是什么：图片在固定边框内放大
+示例画面：光标下的照片缓缓放大而画框尺寸不变，光标离开后缩回。
+规格：
+- Two photo frames, 222 × 118 (radius 8). The cursor rests on the left one, then the right one, for about 1.5 s each.
+- On hover the content scales 1→1.15 from the centre over 0.5 s (cubic ease-out); on leave it returns over 0.5 s.
+- Anything outside the frame is clipped (overflow: hidden). The frame and the caption do not move.
+适用场景：Use it on photo grids (work, products, articles) to show which item is about to be chosen.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/082.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

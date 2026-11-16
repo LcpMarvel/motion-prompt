@@ -1,0 +1,14 @@
+请使用「可变字体动画（Variable font animation）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #132
+
+这是什么：文字粗细平滑变化
+示例画面：同一个单词从细到极粗平滑过渡再返回，下方的滑杆显示字重。
+规格：
+- "MOTION" (112 px, system-ui, 2 px letter spacing). The weight goes back and forth twice per 4.7 s: v = 0.5 − 0.5·cos(2π × 2 × time ÷ 4.7), which eases at both ends.
+- Weight = round(100 + 800v), from 100 to 900, set directly as the font weight.
+- A slider below (x = 112→427, y = 180) labelled thin on the left and bold on the right. The knob (yellow, radius 14) follows v, with the current weight shown above it.
+适用场景：Use it on a title, a logo or a single word to show loudness or emotion through the letters themselves.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/132.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

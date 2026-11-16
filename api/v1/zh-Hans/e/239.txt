@@ -1,0 +1,51 @@
+// Motion Prompt #239 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#239
+//
+// V 形流程图 / Chevron process
+// 包: diagram (资料中常用的图解与图表名称) · element 23 · 分类: 展示流程与全局的图
+// 画面内容: 箭头形的步骤 1–5 从左依次滑入，各带简短说明；蓝色向右逐渐加深。
+// 运动规格:
+//   - Shape: five chevrons 104 px wide and 74 px tall (point depth 24 px, 6 px gaps); from the second on, the left side is notched to fit the one before
+//   - Colors: light blue, light blue, mid blue, mid blue, dark blue, with the numbers 1–5 (24 px) in the middle
+//   - Motion: from 0.4 s, 0.3 s apart, each slides in from 34 px to the left over 0.42 s while fading in (ease-out)
+//   - Notes: two gray bars (62 px and 44 px long) under each step, fading in over 0.3 s from 0.25 s after the step starts
+//   - End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+// 适用场景: To show steps that follow each other, such as a training schedule or a rollout, in one row.
+// 标签: chevron, chevron process, process arrows, steps, phases, smartart, roadmap
+// 尺寸: 539x208 px · 循环: 4.7 s
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// 动态示例: https://lcpmarvel.github.io/motion-prompt/#239
+//
+// cells[i](k, w, h, u)……k = CanvasRenderingContext2D（调用方已清空画布并包好 save/restore），w、h = 尺寸，u = 秒（0 ≤ u < 循环时长）。画面仅由 u 决定。
+// 以下为元素代码。CELLS、常量与辅助函数位于 kit 中。
+
+// @element 23
+// 23 矢羽根図（シェブロン）: arrow-shaped steps line up from left to right, each with short notes below
+function chevron(k, w, h, u) {
+  bg(k, w, h);
+  const f = fade(u), n = 5, cw = 104, dp = 24, gp = 6, step = cw - dp + gp;
+  const tot = n * step - gp + dp, x0 = (w - tot) / 2, y0 = 40, ch = 74, ym = y0 + ch / 2;
+  const COL = [C.blueL, C.blueL, C.blueM, C.blueM, C.blue];
+  for (let i = 0; i < n; i++) {
+    const t0 = 0.4 + i * 0.3, p = appear(u, t0, 0.42);
+    if (p <= 0) continue;
+    const x = x0 + i * step - (1 - p) * 34;
+    k.globalAlpha = f * Math.min(1, p * 1.6);
+    k.fillStyle = COL[i];
+    k.beginPath();
+    k.moveTo(x, y0); k.lineTo(x + cw - dp, y0); k.lineTo(x + cw, ym); k.lineTo(x + cw - dp, y0 + ch); k.lineTo(x, y0 + ch);
+    if (i > 0) k.lineTo(x + dp, ym);
+    k.closePath(); k.fill();
+    const tx = x + (i > 0 ? dp : 0) / 2 + (cw - dp) / 2 + (i > 0 ? 0 : -2);
+    txt(k, String(i + 1), tx + 4, ym + 1, `700 24px ${FONT}`, i === n - 1 ? '#FFFFFF' : C.mark, 'center', 'middle');
+    // short notes under each step
+    const pn = P(u, t0 + 0.25, t0 + 0.55);
+    if (pn > 0) {
+      k.globalAlpha = f * pn; k.fillStyle = C.g3;
+      const bx = x0 + i * step + (i > 0 ? dp : 0) + 4;
+      rr(k, bx, y0 + ch + 20, 62, 8, 4); k.fill();
+      rr(k, bx, y0 + ch + 36, 44, 8, 4); k.fill();
+    }
+  }
+  k.globalAlpha = 1;
+}
+CELLS[22] = chevron;

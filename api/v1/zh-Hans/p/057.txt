@@ -1,0 +1,16 @@
+请使用「标签页（Tabs）」，它是「UI 组件」中的一个名称。
+Motion Prompt #057
+
+这是什么：点击标签切换内容面板
+示例画面：依次点击「概览、定价、评价」标签，蓝色下划线滑过，下方内容切换。
+规格：
+- 4.5 s cycle on a 542×191 card. Three tabs at x 24, 114, 204, widths 70, 70, 100; a 2 px divider at y 50 and a 4 px blue underline.
+- The cursor clicks the second tab at 1.0 s, the third at 2.2 s and the first at 3.4 s.
+- Underline: position and width move to the new tab over 0.25 s from each click with easeInOutCubic (from the third back to the first it passes through the middle).
+- Labels: selected is blue and bold, others grey; the switch happens at 1.1, 2.3 and 3.5 s.
+- Content: the old panel fades out linearly in 0.2 s; 0.1 s later the new one fades in over 0.2 s while rising 8 px.
+适用场景：Use it to show several related views in the same space and let people switch between them.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/057.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

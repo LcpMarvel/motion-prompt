@@ -1,32 +1,33 @@
 <!doctype html>
-<html lang="ja">
+<html lang="zh-Hans">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Motion Prompt｜AIに頼むための「名前」のライブラリ</title>
-<meta name="description" content="AIに何かを作ってもらうときに使う「名前」のライブラリです。モーショングラフィックス、カメラワーク、UIパーツ、LP・Webサイトの演出、写真の表現の名前に、動く見本・一言の意味・頼み方の例が付いています。MITライセンス。">
-<link rel="canonical" href="https://showheyohtaki.github.io/motion-prompt/">
+<title>Motion Prompt｜向 AI 下单时用的「名称」库</title>
+<meta name="description" content="让 AI 帮你做东西时使用的「名称」库：动态图形、运镜、UI 组件、落地页与网页效果、摄影表现、画风、资料图解与图表的名称，配上会动的示例、一句话释义和向 AI 提需求的示例。MIT 许可。">
+<link rel="canonical" href="https://lcpmarvel.github.io/motion-prompt/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Motion Prompt">
-<meta property="og:title" content="Motion Prompt｜AIに頼むための「名前」のライブラリ">
-<meta property="og:description" content="AIを指揮するクリエイティブディレクターへ。モーショングラフィックス、カメラワーク、UIパーツ、LP・Webサイトの演出、写真の表現の名前を、動く見本つきで並べました。">
-<meta property="og:url" content="https://showheyohtaki.github.io/motion-prompt/">
-<meta property="og:image" content="https://showheyohtaki.github.io/motion-prompt/assets/og.png">
-<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="Motion Prompt｜向 AI 下单时用的「名称」库">
+<meta property="og:description" content="致指挥 AI 的创意总监：动态图形、运镜、UI 组件、落地页与网页效果、摄影表现、画风、图解与图表的名称，配上会动的示例排在一起。">
+<meta property="og:url" content="https://lcpmarvel.github.io/motion-prompt/">
+<meta property="og:image" content="https://lcpmarvel.github.io/motion-prompt/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:creator" content="@showheyohtaki">
-<meta name="twitter:image" content="https://showheyohtaki.github.io/motion-prompt/assets/og.png">
+<meta name="twitter:image" content="https://lcpmarvel.github.io/motion-prompt/assets/og.png">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script>
 /* Apply the saved theme and language before first paint. */
 (function () {
-  var d = document.documentElement, t = null, l = null, m = /[?&]lang=(ja|en)(?:&|$)/.exec(location.search);
+  var d = document.documentElement, t = null, l = null, m = /[?&]lang=(ja|en|zh-Hans)(?:&|$)/.exec(location.search);
   try { t = localStorage.getItem('mp-theme'); l = localStorage.getItem('mp-lang'); } catch (e) {}
   if (m) l = m[1]; /* ?lang= (set when an agent opens the gallery) wins for this visit */
   if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t);
-  if (l !== 'ja' && l !== 'en') l = /^ja\b/i.test(navigator.language || 'ja') ? 'ja' : 'en';
+  if (l !== 'ja' && l !== 'en' && l !== 'zh-Hans') l = /^ja\b/i.test(navigator.language || '') ? 'ja' : 'zh-Hans';
   d.lang = l;
 })();
 </script>
@@ -43,7 +44,8 @@
       <a class="top-link" href="found.html" data-t="navFound">事例</a>
       <a class="top-link top-gh" href="https://github.com/showheyohtaki/motion-prompt" rel="noopener">GitHub</a>
       <div class="seg" role="group" aria-label="言語" data-t-attr="aria-label:langLabel">
-        <button type="button" class="seg-b" data-lang="ja" aria-pressed="true" aria-label="日本語">JA</button>
+        <button type="button" class="seg-b" data-lang="zh-Hans" aria-pressed="true" aria-label="简体中文">简</button>
+        <button type="button" class="seg-b" data-lang="ja" aria-pressed="false" aria-label="日本語">JA</button>
         <button type="button" class="seg-b" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
       </div>
       <button type="button" class="icon-b" id="theme" aria-label="ダークモードに切り替える">
@@ -110,7 +112,7 @@
       <p class="count" id="count" role="status" aria-live="polite"></p>
       <div id="grid"></div>
       <p class="empty" id="empty" hidden data-t="empty">見つかりませんでした。別の言葉や番号で探してみてください。</p>
-      <noscript><p class="empty">見本の再生には JavaScript が必要です。一覧は <a href="api/v1/ja/catalog.tsv">catalog.tsv</a> でも読めます。</p></noscript>
+      <noscript><p class="empty">播放示例需要 JavaScript。列表也可通过 <a href="api/v1/zh-Hans/catalog.tsv">catalog.tsv</a> 阅读。</p></noscript>
     </div>
   </section>
 
@@ -142,7 +144,7 @@
         <p><a href="api/v1/catalog.json">catalog.json</a> · <a id="tsv-link" href="api/v1/ja/catalog.tsv">catalog.tsv</a> · <a href="https://github.com/showheyohtaki/motion-prompt" rel="noopener">GitHub</a></p>
       </div>
     </div>
-    <p class="how-own"><span data-t="ownP">ここにあるのは見本です。同じような名前の見本を、自分の分野・自分の言語でも作れます。</span> <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="ownLink">作り方とプロンプト（make-your-own）</a></p>
+    <p class="how-own"><span data-t="ownP">ここにあるのは見本です。同じような名前の見本を、自分の分野・自分の言語でも作れます。</span> <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" data-href-zh-Hans="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="ownLink">作り方とプロンプト（make-your-own）</a></p>
     <p class="how-own"><span data-t="langsP">名前の一覧は、スペイン語・中国語（簡体字・繁体字）でも読めます。</span> <a href="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" rel="noopener" data-t="langsLink">5言語の一覧（GitHub）</a></p>
   </section>
 </main>
@@ -151,10 +153,10 @@
   <div class="wrap foot-in">
     <p><strong>Motion Prompt</strong> · MIT License · <span data-t="author">作者</span> <span data-t="authorName">大滝昇平</span>（<a href="https://x.com/showheyohtaki" rel="noopener">@showheyohtaki</a>）</p>
     <p class="foot-links">
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-en="https://github.com/showheyohtaki/motion-prompt#why-i-made-this" rel="noopener" data-t="whyLink">なぜ作ったか</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-ja="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" rel="noopener" data-t="listLink">名前の一覧（GitHub）</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="makeLink">自分の分野・自分の言語で作る</a>
-      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md" rel="noopener" data-t="addLink">あなたの分野の名前を足す</a>
+      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/README.ja.md#なぜ作ったか" data-href-en="https://github.com/showheyohtaki/motion-prompt#why-i-made-this" data-href-zh-Hans="https://github.com/showheyohtaki/motion-prompt#why-i-made-this" rel="noopener" data-t="whyLink">なぜ作ったか</a>
+      <a href="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-ja="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" data-href-zh-Hans="https://github.com/showheyohtaki/motion-prompt/tree/main/packs" rel="noopener" data-t="listLink">名前の一覧（GitHub）</a>
+      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/make-your-own/README.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" data-href-zh-Hans="https://github.com/showheyohtaki/motion-prompt/tree/main/make-your-own" rel="noopener" data-t="makeLink">自分の分野・自分の言語で作る</a>
+      <a href="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-ja="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.ja.md" data-href-en="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md" data-href-zh-Hans="https://github.com/showheyohtaki/motion-prompt/blob/main/CONTRIBUTING.md" rel="noopener" data-t="addLink">あなたの分野の名前を足す</a>
     </p>
     <p class="foot-remove"><span data-t="removeP1">掲載の削除・訂正は</span><a href="https://github.com/showheyohtaki/motion-prompt/issues/new?template=3-removal.yml" rel="noopener" data-t="removeLink">GitHub の Issue のフォーム</a><span data-t="removeP2">から依頼できます。確認後、すみやかに対応します。</span></p>
     <p class="foot-thanks"><span data-t="thanks1">動く見本を並べて、プロンプトをコピーして使う形は</span> <a href="https://lucianlabs.dev/uxui-prompt/" rel="noopener">Lucian UX/UI Prompt</a> <span data-t="thanks2">から着想を得ました。ありがとうございます。</span></p>

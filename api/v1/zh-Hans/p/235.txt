@@ -1,0 +1,17 @@
+请使用「漏斗图（Funnel chart）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #235
+
+这是什么：人数逐级减少的漏斗
+示例画面：四根居中的条自上而下依次从中部展开，一根比一根短，之间以浅灰色梯形相连。
+规格：
+- Bars: 470, 350, 236 and 132 px wide, 34 px tall, 10 px apart, 7 px corners; light blue, mid blue, mid blue, dark blue
+- Motion: from the top, 0.36 s apart starting at 0.4 s, each bar grows out from the middle over 0.45 s (ease-out)
+- Joints: light gray trapezoids (opacity 0.8) narrowing from the bar above to the bar below fill the gaps
+- Numbers: 100, 58, 27 and 9 in the middle of the bars (20 px), fading in over 0.25 s from 0.3 s after each bar starts
+- The bars are separate and centered so they do not read as #220 Pyramid diagram upside down
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show how the count drops at each stage, such as visit → sign-up → purchase.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/235.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

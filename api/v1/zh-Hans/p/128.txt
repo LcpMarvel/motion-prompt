@@ -1,0 +1,16 @@
+请使用「定格动画风格（Stop-motion style）」，它是「动态图形（第 2 弹）」中的一个名称。
+Motion Prompt #128
+
+这是什么：抽帧后动作一顿一顿
+示例画面：星星以约每秒 8 帧的顿挫步子跳跃前进，每帧都略有偏差。
+规格：
+- 38 frames per 4.7 s (about 8 per second, each held for about 0.124 s). Only those frames are drawn; nothing is drawn in between.
+- A yellow star (radius 38) hops from x = −44 to 583 along three arches of height 54·|sin(3πt)|, turning twice.
+- Each frame gets a fixed random jitter: position ±5 px across and ±4.5 px up and down, rotation ±0.15 rad, size ±5%.
+- The previous two frames stay faintly visible (opacity 0.28 and 0.12), like onion skin.
+- Black film-strip bands top and bottom (26 px each, with sprocket holes) and a frames-per-second label.
+适用场景：Use it for a handmade, claymation or collage look, when smooth motion feels too slick.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/128.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/motion2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

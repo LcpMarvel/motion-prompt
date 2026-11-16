@@ -1,0 +1,16 @@
+请使用「V 形流程图（Chevron process）」，它是「资料中常用的图解与图表名称」中的一个名称。
+Motion Prompt #239
+
+这是什么：横向排列箭头形状的步骤
+示例画面：箭头形的步骤 1–5 从左依次滑入，各带简短说明；蓝色向右逐渐加深。
+规格：
+- Shape: five chevrons 104 px wide and 74 px tall (point depth 24 px, 6 px gaps); from the second on, the left side is notched to fit the one before
+- Colors: light blue, light blue, mid blue, mid blue, dark blue, with the numbers 1–5 (24 px) in the middle
+- Motion: from 0.4 s, 0.3 s apart, each slides in from 34 px to the left over 0.42 s while fading in (ease-out)
+- Notes: two gray bars (62 px and 44 px long) under each step, fading in over 0.3 s from 0.25 s after the step starts
+- End: the whole figure fades out from 4.1 s to 4.5 s and the card stays empty until the 4.7 s loop
+适用场景：To show steps that follow each other, such as a training schedule or a rollout, in one row.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/239.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

@@ -1,0 +1,16 @@
+请使用「横滚镜头（Barrel roll）」，它是「镜头运动与转场（第 2 弹）」中的一个名称。
+Motion Prompt #170
+
+这是什么：相机绕镜头光轴旋转一整圈
+示例画面：摄影机绕镜头光轴整整旋转一圈，地平线转一圈后回到水平。
+规格：
+- Camera: position fixed (height 1.5 m); roll only, 0 → 2π rad (360°); the whole picture turns around the frame centre
+- Timing: 0.5 s to 3.6 s (3.1 s), cubic ease-in-out (about cubic-bezier(0.65,0,0.35,1))
+- Subject: a person stands still 7 m ahead; horizon, buildings and person all turn by the same angle, and white shows in the corners while turning
+- Hold: 3.6–4.2 s. After a full turn the picture equals the start, so the final 0.5 s cross-fade is invisible (one pass = 4.7 s)
+- Top-right readout shows the angle (↻ 0° → ↻ 360°)
+适用场景：For aerial or drone footage that needs energy, or to show dizziness and confusion.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/170.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/camera2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

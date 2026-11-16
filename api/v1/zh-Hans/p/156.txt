@@ -1,0 +1,15 @@
+请使用「悬停文字翻滚（Text roll on hover）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #156
+
+这是什么：文字向上翻转并替换
+示例画面：光标停在菜单词上时，字母逐个向上滚出，同一个词以橙色从下方滚入；离开后滚回。
+规格：
+- A 511 × 168 viewport with three menu words (WORKS, ABOUT, CONTACT; 30 px, weight 800, 1 px letter spacing). The cursor rests on each, left to right, for about 0.85 s. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- An orange copy of each word sits 40 px below it, and both are clipped to a 39 px tall box (overflow: hidden).
+- On hover each letter, staggered by 0.035 s, moves 40 px up and out over 0.36 s (cubic ease-in-out) while its orange copy rises into place.
+- On leave the letters roll back down with the same stagger and timing.
+适用场景：Use it on header menus or buttons to give short text links a tactile response.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/156.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

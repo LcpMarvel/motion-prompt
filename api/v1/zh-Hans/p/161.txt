@@ -1,0 +1,16 @@
+请使用「视图过渡（View transition (shared element)）」，它是「落地页与网页效果（第 2 弹）」中的一个名称。
+Motion Prompt #161
+
+这是什么：列表中的照片直接展开为详情页
+示例画面：点击列表中的照片，同一张照片长大为详情页顶部大图，其余部分切换为详情页；返回时它缩回原位。
+规格：
+- A 511 × 168 viewport with three photos in a list (143 × 80, radius 6). The middle photo is clicked at 0.75 s, and "← 一覧へ" (back to list) on the detail page at 3.05 s. One pass takes 4.7 s (twice per 9.4 s pack cycle).
+- Forward: over 0.85–1.45 s (0.6 s, cubic ease-in-out) the clicked photo moves and resizes continuously from its list slot to the 479 × 94 image at the top of the detail page (radius 8). It stays one photo throughout.
+- The other photos and the heading fade out over the first 62% of the move; the detail title, text and back button fade in over the last 40%. At 50% the URL changes from /works to /works/02.
+- Back: over 3.15–3.75 s (0.6 s) the same move runs in reverse to the list slot.
+- This is how the View Transitions API looks when the list photo and the detail photo share the same view-transition-name.
+适用场景：Use it on galleries or product pages that go back and forth between a list and a detail view, so people never lose track of what they opened.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/161.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp2.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

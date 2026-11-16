@@ -1,4 +1,4 @@
-// Motion Prompt #240 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#240
+// Motion Prompt #240 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#240
 //
 // Concentric circle diagram / 同心円図
 // Pack: diagram (Diagrams and charts for slides) · element 24 · Category: Diagrams of flow and the whole picture
@@ -12,8 +12,8 @@
 // When to use it: To show how you narrow down from the whole to the part you target, as in TAM, SAM and SOM.
 // Tags: concentric circles, tam sam som, market size, nested circles, onion diagram, target market, layers
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit diagram -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/diagram.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#240
+// Needs: kit diagram -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/diagram.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#240
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

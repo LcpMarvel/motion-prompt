@@ -1,4 +1,4 @@
-// Motion Prompt #214 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#214
+// Motion Prompt #214 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#214
 //
 // 刺繍 / Embroidery
 // パック: artstyle (画像生成で使う画風の名前) · element 22 · カテゴリ: デジタル・立体・素材
@@ -10,8 +10,8 @@
 // 使いどころ: 手仕事のぬくもりがほしいグッズ・パッケージ・季節の挨拶に。
 // タグ: embroidery, stitch, thread, fabric, textile, handmade
 // サイズ: 539x208 px · 1周: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// 動く見本: https://showheyohtaki.github.io/motion-prompt/#214
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// 動く見本: https://lcpmarvel.github.io/motion-prompt/#214
 //
 // cells[i](k, w, h, u) … k = CanvasRenderingContext2D（呼ぶ側でクリアと save/restore 済み）、w・h = サイズ、u = 秒（0 以上 1周 未満）。u だけで絵が決まる。
 // ここから要素のコード。CELLS や定数・補助関数は kit にある。

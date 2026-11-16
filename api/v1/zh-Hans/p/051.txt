@@ -1,0 +1,16 @@
+请使用「底部面板（Bottom sheet）」，它是「UI 组件」中的一个名称。
+Motion Prompt #051
+
+这是什么：从屏幕底部升起的面板
+示例画面：手指点按「查看详情」，面板从底部升起；下拽其把手即可关闭。
+规格：
+- 4.5 s cycle on a 542×191 card. A finger (semi-transparent circle, radius 17, white rim) taps the "View details" pill (170×36, bottom centre) at 1.0 s.
+- Open amount: 0→1 over 1.05–1.45 s with easeOutCubic. Full-card scrim rgba(18,20,28) at opacity 0.36·a.
+- Sheet: white, 136 tall, top corners radius 18, top edge at y = 191 − 136·a. Shadow blur 22, offset y −4. A 52×6 grab handle at top centre.
+- Inside: a bold title bar and two rows with 26×26 icons.
+- Close: the finger lands on the handle (271, 68) at 2.75 s and drags down over 3.0–3.6 s; a is multiplied by (1 − easeInOutCubic over 3.0–3.6 s), so the sheet follows the finger off the bottom.
+适用场景：Use it on mobile to show details or choices while keeping the current screen in view.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/051.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

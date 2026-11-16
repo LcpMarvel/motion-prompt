@@ -1,0 +1,14 @@
+请使用「像素画（Pixel art）」，它是「图像生成常用的画风名称」中的一个名称。
+Motion Prompt #209
+
+这是什么：用方格像素画出的游戏风
+示例画面：同一幅线稿变成游戏风的平面像素画，没有纵深，每个方形像素清晰可辨。
+规格：
+- Look: low resolution with every pixel (square) clearly visible
+- View: a flat picture seen from the front, with no depth (for a build of cubes, see Voxel art #210)
+- Sample: the same base sketch (a line drawing of a house, a tree and the sun on a hill) was given to an image model as a reference and redrawn in this style. A diagonal wipe turns the sketch into the style from 0.5 s to 1.35 s, the picture slowly zooms to 1.045x until 4.0 s, and it fades back to the sketch from 4.0 s to 4.5 s (one pass = 4.7 s, cubic ease-in-out)
+适用场景：For game-like or retro icons and banners.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/209.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

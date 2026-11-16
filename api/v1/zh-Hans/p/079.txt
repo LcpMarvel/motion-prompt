@@ -1,0 +1,15 @@
+请使用「滚动进度条（Scroll progress bar）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #079
+
+这是什么：顶部条显示阅读进度
+示例画面：随文章一点点读下去，顶部细线从左端生长，到页面底部到达右端。
+规格：
+- The article scrolls 0→430 px in four 110 px steps, each moving for 0.45 s then pausing 0.4 s (cubic ease-in-out).
+- It returns 430→0 at 3.75–4.55 s.
+- A 6 px bar along the top of the viewport: light grey track, orange fill.
+- Fill width = 511 px × scroll / 430, the scroll fraction itself (the same as CSS animation-timeline: scroll()).
+适用场景：Use it on long articles to show how much is left to read.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/079.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

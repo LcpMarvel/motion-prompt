@@ -1,0 +1,16 @@
+请使用「离站挽留弹窗（Exit-intent popup）」，它是「落地页与网页效果」中的一个名称。
+Motion Prompt #088
+
+这是什么：访客准备离开时出现的弹窗
+示例画面：光标朝页面顶部（标签页与关闭按钮方向）离开时，页面变暗并弹出「等等！」弹窗；点 × 关闭。
+规格：
+- The cursor rises from the page toward the browser's address bar at 0.7–1.25 s (cubic ease-in-out).
+- It fires when the cursor crosses the top edge of the viewport (y = 0, at about 1.07 s), the same test as mouseleave on document with clientY ≤ 0.
+- Opens 0.05–0.45 s after firing (cubic ease-out): backdrop navy 0→0.5 opacity; popup (260 × 132, radius 12) opacity 0→1 and scale 0.9→1.
+- Inside: a heading, a discount line (orange), a coupon button and an × at the top right.
+- Click on the × at 2.9 s; it disappears 0.03–0.25 s later (linear).
+适用场景：Use it to make one last offer to visitors who are about to leave without converting.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/088.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/lp.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。

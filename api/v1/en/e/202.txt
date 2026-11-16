@@ -1,4 +1,4 @@
-// Motion Prompt #202 · MIT License (c) 2026 Shohei Ohtaki · https://showheyohtaki.github.io/motion-prompt/#202
+// Motion Prompt #202 · MIT License (c) 2026 Shohei Ohtaki · https://lcpmarvel.github.io/motion-prompt/#202
 //
 // Neon sign / ネオンサイン
 // Pack: artstyle (Art styles for image generation) · element 10 · Category: Graphic styles
@@ -10,8 +10,8 @@
 // When to use it: For a night-time mood or a shop or bar sign look.
 // Tags: neon, neon sign, glow, night, tube light, sign
 // Size: 539x208 px · Cycle: 4.7 s
-// Needs: kit artstyle -> https://showheyohtaki.github.io/motion-prompt/api/v1/kit/artstyle.js
-// Live demo: https://showheyohtaki.github.io/motion-prompt/#202
+// Needs: kit artstyle -> https://lcpmarvel.github.io/motion-prompt/api/v1/kit/artstyle.js
+// Live demo: https://lcpmarvel.github.io/motion-prompt/#202
 //
 // cells[i](k, w, h, u): k = CanvasRenderingContext2D (already cleared and wrapped in save/restore by the caller), w,h = size, u = seconds in [0, cycle). The picture depends only on u.
 // Element code starts here. CELLS, constants and helpers live in the kit.

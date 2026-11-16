@@ -1,0 +1,15 @@
+请使用「空状态（Empty state）」，它是「UI 组件」中的一个名称。
+Motion Prompt #072
+
+这是什么：列表没有内容时显示的界面
+示例画面：用垃圾桶图标删掉两行列表后，出现空箱子插画、「这里还什么都没有」与「添加」按钮。
+规格：
+- 4.5 s cycle on a 542×191 card. A two-row list (494×48, radius 8, a trash icon at the right).
+- The cursor clicks the trash icons at 0.95 s and 1.65 s. Each row slides 60 px left while fading out over 0.3 s (easeInOutCubic); the second row moves up 58 px into the first slot.
+- Over 1.95–2.3 s (linear) the empty state fades in while rising 8 px: a blue line drawing of an inbox tray, "Nothing here yet" (16 px, in Japanese) and a blue "Add" button (112×34).
+- The cursor clicks "Add" at 3.3 s; the empty state fades over 3.25–3.45 s and the two rows come back from the left over 3.35–3.7 s with easeOutCubic.
+适用场景：Use it for first-use screens or no-results pages to tell people what to do next.
+
+参考实现（Canvas 2D，画面只随时间变化的函数）：https://lcpmarvel.github.io/motion-prompt/api/v1/zh-Hans/e/072.txt
+共用辅助代码：https://lcpmarvel.github.io/motion-prompt/api/v1/kit/ui.js
+请保持参考实现的形状、时间与缓动数值不变，只把其中的文字、颜色与素材替换成我正在制作的内容。
